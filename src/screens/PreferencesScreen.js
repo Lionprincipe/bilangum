@@ -7,10 +7,14 @@ import EthnicLanguageSelection from '../components/EthnicLanguageSelection'
 import ReferenceLanguageSelection from '../components/ReferenceLanguageSelection'
 import Button from '../components/Button'
 const Wrapper = styled.div`
+  border: 1px solid black;
+  max-width: 414px;
+  max-height: 736px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 `
 
 const PreferencesScreen = props => {
