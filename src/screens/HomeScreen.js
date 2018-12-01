@@ -7,11 +7,8 @@ import SearchField from '../components/SearchField'
 import ToggleSearchLanguage from '../components/ToggleSearchLanguage'
 import Footer from '../components/Footer'
 import WordList from '../components/WordList'
-const Wrapper = styled.div`
-  border: 1px solid black;
-  max-width: 414px;
-  max-height: 736px;
-  height: 100vh;
+
+const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,17 +17,34 @@ const Wrapper = styled.div`
 
 const HomeScreen = props => {
   const preferedLanguages = { ethnic: 'afro', reference: 'english' }
-  const wordList = ['to be', 'hello', 'house', 'to do', 'fish', 'cat']
+  const wordList = [
+    'to be',
+    'hello',
+    'house',
+    'to do',
+    'fish',
+    'cat',
+    'to be',
+    'hello',
+    'house',
+    'to do',
+    'fish',
+    'cat',
+  ]
+  const name = 'language'
   return (
-    <Wrapper>
-      <Header>dance</Header>
-      <main>
+    <React.Fragment>
+      <Header />
+      <Main>
         <SearchField />
-        <ToggleSearchLanguage preferedLanguages={preferedLanguages} />
+        <ToggleSearchLanguage
+          preferedLanguages={preferedLanguages}
+          name={name}
+        />
         <WordList wordList={wordList} />
-      </main>
+      </Main>
       <Footer />
-    </Wrapper>
+    </React.Fragment>
   )
 }
 

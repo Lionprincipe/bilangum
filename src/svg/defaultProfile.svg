@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<path display="none" d="M9.468,7.199L8.347,8.319L12.027,12l-3.68,3.678l1.121,1.123L14.27,12L9.468,7.199z M9.468,7.199"/>
+<path id="arrow" display="none" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M8,4l8,8l-8,8"/>
+<path display="none" d="M22,14H2v-4h20V14z M22,18H2v4h20V18z M22,2H2v4h20V2z"/>
+<g>
+	<circle fill="none" stroke="#010202" stroke-miterlimit="10" cx="12" cy="12" r="10"/>
+	<path fill="none" stroke="#010202" stroke-miterlimit="10" d="M3.993,17.982c1.233-3.22,4.353-5.506,8.007-5.506
+		c3.551,0,6.596,2.158,7.898,5.236"/>
+	<circle fill="none" stroke="#010202" stroke-miterlimit="10" cx="12" cy="9.143" r="2.857"/>
+</g>
+</svg>

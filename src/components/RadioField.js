@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
+const StyledRadio = styled.label`
+  display: inline-block;
+  margin: auto 2em;
+`
 const RadioField = ({ text, name }) => {
   return (
-    <label>
+    <StyledRadio>
       <input type="radio" name={name} /> {text}
-    </label>
+    </StyledRadio>
   )
 }
 

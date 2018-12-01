@@ -1,17 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import styled from 'styled-components'
+import WordCard from './WordCard'
+const Wrapper = styled.ul`
+  padding: 0;
+  width: 80%;
+  margin: 1em auto;
+`
 const WordList = ({ wordList }) => {
-  const listElement = wordList.map(el => <li> {el}</li>)
-  return (
-    <div>
-      <ul>{listElement}</ul>
-    </div>
-  )
+  const listElement = wordList.map((el, index) => (
+    <WordCard key={index} word={el} />
+  ))
+  return <Wrapper>{listElement}</Wrapper>
 }
 
 WordList.propTypes = {
-  wordList: PropTypes.arrayOf([PropTypes.string, PropTypes.object]),
+  wordList: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+  ),
 }
 
 export default WordList

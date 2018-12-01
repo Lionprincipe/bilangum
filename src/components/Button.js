@@ -4,13 +4,14 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
   height: 48px;
-  background: ${props => (props.color ? props.color : 'hotpink')};
+  width: 48px;
+  background: ${props => (props.color ? props.color : '#fff')};
   color: white;
-  border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1em;
+  border: none;
   &:hover {
-    background: teal;
+    background: F8F8F8;
   }
 `
 
