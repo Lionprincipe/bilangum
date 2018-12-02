@@ -13,23 +13,24 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 20% 1em 10%;
 `
 
 const HomeScreen = props => {
   const preferedLanguages = { ethnic: 'afro', reference: 'english' }
   const wordList = [
-    'to be',
-    'hello',
-    'house',
-    'to do',
-    'fish',
-    'cat',
-    'to be',
-    'hello',
-    'house',
-    'to do',
-    'fish',
-    'cat',
+    { type: 'noun', language: 'english', word: 'to be' },
+    { type: 'noun', language: 'english', word: 'hello' },
+    { type: 'noun', language: 'english', word: 'house' },
+    { type: 'noun', language: 'english', word: 'to do' },
+    { type: 'noun', language: 'english', word: 'fish' },
+    { type: 'noun', language: 'english', word: 'cat' },
+    { type: 'noun', language: 'english', word: 'to be' },
+    { type: 'noun', language: 'english', word: 'hello' },
+    { type: 'noun', language: 'english', word: 'house' },
+    { type: 'noun', language: 'english', word: 'to do' },
+    { type: 'noun', language: 'english', word: 'fish' },
+    { type: 'noun', language: 'english', word: 'cat' },
   ]
   const name = 'language'
   return (

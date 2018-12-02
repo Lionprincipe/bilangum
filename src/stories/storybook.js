@@ -13,5 +13,12 @@ storiesOf('PreferencesScreen', module).add('default', () => (
 ))
 storiesOf('HomeScreen', module).add('default', () => <HomeScreen />)
 storiesOf('WordCard', module)
-  .add('miniview', () => <WordCard word="word" />)
-  .add('toggled', () => <WordCard word="word" />)
+  .add('miniview', () => (
+    <WordCard word={{ type: 'noun', language: 'english', word: 'to be' }} />
+  ))
+  .add('toggled', () => (
+    <WordCard
+      word={{ type: 'noun', language: 'english', word: 'to be' }}
+      open={true}
+    />
+  ))

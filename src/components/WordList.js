@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import WordCard from './WordCard'
 const Wrapper = styled.ul`
   padding: 0;
-  width: 80%;
+  width: 95%;
   margin: 1em auto;
 `
 const WordList = ({ wordList }) => {
