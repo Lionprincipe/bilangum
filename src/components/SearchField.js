@@ -5,11 +5,12 @@ import styled from 'styled-components'
 import Button from './Button'
 
 const StyledInput = styled.input`
-  ligne-height: 3em;
+  line-height: 5em;
   border: none;
   height: 100%;
   width: 100%;
-  padding-left: 10%;
+  padding-left: 2%;
+  font-size: 1em;
 `
 const Wrapper = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
 const SearchField = ({ placeholder }) => {
   return (
     <Wrapper>
-      <StyledInput type="search" placeholder={placeholder || 'gelb'} />
+      <StyledInput type="search" placeholder={placeholder || '...'} />
       <Button>
         <Icon type="search" />
       </Button>
@@ -36,7 +37,7 @@ const SearchField = ({ placeholder }) => {
 }
 
 SearchField.propTypes = {
-  placeholder: PropTypes.arrayOf([PropTypes.string, PropTypes.number]),
+  placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default SearchField

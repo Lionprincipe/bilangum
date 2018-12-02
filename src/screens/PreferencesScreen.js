@@ -7,15 +7,11 @@ import EthnicLanguageSelection from '../components/EthnicLanguageSelection'
 import ReferenceLanguageSelection from '../components/ReferenceLanguageSelection'
 import Button from '../components/Button'
 const Wrapper = styled.div`
-  border: 1px solid black;
-  max-width: 414px;
-  max-height: 736px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  position : relative;
+  justify-content: space-evenly;
+  height: 100vh;
 `
 
 const PreferencesScreen = props => {
@@ -24,7 +20,9 @@ const PreferencesScreen = props => {
       <UserProfileCard />
       <EthnicLanguageSelection />
       <ReferenceLanguageSelection />
-      <Button>Continue</Button>
+      <Button border={true} width="auto" height="auto">
+        Continue
+      </Button>
     </Wrapper>
   )
 }

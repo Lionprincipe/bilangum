@@ -8,6 +8,7 @@ const Wrapper = styled.nav`
   padding: 0 4%;
   justify-content: space-between;
   width: 92%;
+  height: 100%;
 `
 const Nav = ({ children }) => {
   return <Wrapper>{children}</Wrapper>
