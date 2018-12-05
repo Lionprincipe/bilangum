@@ -9,7 +9,7 @@ const Wrapper = styled.ul`
 `
 const WordList = ({ wordList }) => {
   const listElement = wordList.map((el, index) => (
-    <WordCard key={index} word={el} />
+    <WordCard key={index} word={el} open={true} />
   ))
   return <Wrapper>{listElement}</Wrapper>
 }

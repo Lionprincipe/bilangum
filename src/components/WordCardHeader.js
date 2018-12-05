@@ -4,11 +4,9 @@ import styled from 'styled-components'
 import BtnTray from './BtnTray'
 
 const Wrapper = styled.div`
-  padding: 0.5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #eee;
   margin-bottom: 0.2em;
 `
 const WordTray = styled.div`
@@ -20,6 +18,7 @@ const LeftBtnList = [{ type: 'arrow', rotate: '90Deg' }]
 const rightBtnList = [
   { type: 'translate' },
   { type: 'eye' },
+  { type: 'plus' },
   { type: 'pencil' },
 ]
 

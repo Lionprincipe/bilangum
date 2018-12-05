@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
-  padding: 0.4em;
+  margin: 0.2em;
+  padding: 0.2em;
   height: ${props => (props.height ? props.height : 'auto')};
   width: ${props => (props.width ? props.width : 'auto')};
   color: black;

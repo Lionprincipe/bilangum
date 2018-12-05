@@ -6,8 +6,11 @@ import WordCardHeader from './WordCardHeader'
 import WordCardBody from './WordCardBody'
 import WordCardFooter from './WordCardFooter'
 const Wrapper = styled.li`
-  margin-bottom: 0.2em;
+  margin-bottom: 0.4em;
   list-style-type: none;
+  padding: 0.5em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 `
 
 const WordCard = ({ word: { word, ...others }, open }) => {
@@ -16,7 +19,7 @@ const WordCard = ({ word: { word, ...others }, open }) => {
       <WordCardHeader title={word} />
       {open && (
         <React.Fragment>
-          <WordCardBody />
+          <WordCardBody>{others}</WordCardBody>
           <WordCardFooter />
         </React.Fragment>
       )}
