@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Button from './Button'
-import Icon from './Icon'
+
+import BtnTray from './BtnTray'
 
 const Wrapper = styled.header`
   position: fixed;
@@ -23,13 +23,9 @@ const Wrapper = styled.header`
 const Header = ({ children }) => {
   return (
     <Wrapper>
-      <Button>
-        <Icon type="menu" />
-      </Button>
+      <BtnTray btnList={[{ type: 'menu' }]} />
       <div> {children}</div>
-      <Button>
-        <Icon type="profile" />
-      </Button>
+      <BtnTray btnList={[{ type: 'profile' }]} />
     </Wrapper>
   )
 }

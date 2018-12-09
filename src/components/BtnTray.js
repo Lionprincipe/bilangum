@@ -12,14 +12,9 @@ const Wrapper = styled.div`
 `
 
 const BtnTray = ({ btnList }) => {
-  const elList = btnList.map((el, index) => (
+  const elList = btnList.map(({ type, rotate, width, height }, index) => (
     <Button key={index}>
-      <Icon
-        type={el.type}
-        rotate={el.rotate}
-        width={el.width}
-        height={el.height}
-      />
+      <Icon type={type} rotate={rotate} width={width} height={height} />
     </Button>
   ))
 

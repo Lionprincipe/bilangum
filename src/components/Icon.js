@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { icons } from '../constants/svgPath'
+import { iconsPath } from '../constants/svgPath'
 
 const Wrapper = styled.div`
   -webkit-transform: ${props =>
     props.rotate ? `rotate(${props.rotate})` : 'rotate(0deg)'};
   -ms-transform: ${props =>
+    props.rotate ? `rotate(${props.rotate})` : 'rotate(0deg)'};
+  transform: ${props =>
     props.rotate ? `rotate(${props.rotate})` : 'rotate(0deg)'};
   transform: ${props =>
     props.rotate ? `rotate(${props.rotate})` : 'rotate(0deg)'};
@@ -20,7 +22,7 @@ const Icon = ({ type, width, height, rotate }) => {
         height={height || '24px'}
         viewBox="0 0 24 24"
       >
-        <path d={icons[type]} />
+        <path d={iconsPath[type]} />
       </svg>
     </Wrapper>
   )

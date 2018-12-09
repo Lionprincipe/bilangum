@@ -1,4 +1,4 @@
-export const icons = {
+export const iconsPath = {
   plus:
     'M22.615 11.494H12.506V1.385h-1.012v10.109H1.385v1.012h10.109v10.109h1.012V12.506h10.109v-1.012zm0 0',
   translate:

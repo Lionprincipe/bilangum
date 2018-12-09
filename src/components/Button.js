@@ -9,7 +9,6 @@ const StyledButton = styled.button`
   width: ${props => (props.width ? props.width : 'auto')};
   color: black;
   background: ${props => (props.color ? props.color : '#fff')};
-  color: black;
   border-radius: 4px;
   font-size: 1em;
   border: ${props => (props.border ? '.5px solid black' : 'none')};

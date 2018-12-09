@@ -29,12 +29,23 @@ storiesOf('WordCard', module)
   .add('miniview', () => (
     <WordCard word={{ type: 'noun', language: 'english', word: 'to be' }} />
   ))
-  .add('toggled', () => (
+  .add('toggled without translation', () => (
     <WordCard
       word={object('word', {
         type: 'noun',
         language: 'english',
         word: 'to be',
+      })}
+      open={boolean('open', true)}
+    />
+  ))
+  .add('toggled with translation', () => (
+    <WordCard
+      word={object('word', {
+        type: 'noun',
+        language: 'english',
+        word: 'to be',
+        translation: ['mbolo', 'mboloua', 'mbolwa'],
       })}
       open={boolean('open', true)}
     />

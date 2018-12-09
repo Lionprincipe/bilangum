@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { footerBtn } from '../constants/btnList'
 
-import Button from './Button'
-import Icon from './Icon'
-import Nav from './Nav'
+import BtnTray from './BtnTray'
 
 const StyledFooter = styled.footer`
   position: fixed;
@@ -12,23 +11,17 @@ const StyledFooter = styled.footer`
   bottom: 0;
   width: 100%;
   background: #fff;
-  height: 60px;
+  height: 3em;
   border-top: 2px solid #eee;
   z-index: 88000;
+  padding-top: 5px;
   margin: auto;
 `
-
-const footerBtn = () =>
-  ['home', 'search', 'tag', 'bell', 'settings'].map((el, index) => (
-    <Button key={index}>
-      <Icon type={el} />
-    </Button>
-  ))
 
 const Footer = props => {
   return (
     <StyledFooter>
-      <Nav>{footerBtn()}</Nav>
+      <BtnTray btnList={footerBtn} />
     </StyledFooter>
   )
 }
