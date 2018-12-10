@@ -6,6 +6,7 @@ import WordCardHeader from './WordCardHeader'
 import WordCardBody from './WordCardBody'
 import WordCardFooter from './WordCardFooter'
 import TranslateTray from './TranslateTray'
+
 const Wrapper = styled.li`
   margin-bottom: 0.4em;
   list-style-type: none;

@@ -15,6 +15,10 @@ import PreferencesScreen from '../screens/PreferencesScreen'
 import HomeScreen from '../screens/HomeScreen'
 import WordCard from '../components/WordCard'
 import Icon from '../components/Icon'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+
+import { inputName, words, preferedLanguages } from '../constants/app'
 
 storiesOf('App', module).add('default', () => <App />)
 
@@ -22,7 +26,13 @@ storiesOf('PreferencesScreen', module).add('default', () => (
   <PreferencesScreen />
 ))
 
-storiesOf('HomeScreen', module).add('default', () => <HomeScreen />)
+storiesOf('HomeScreen', module).add('default', () => (
+  <HomeScreen
+    inputName={inputName}
+    words={words}
+    preferedLanguages={preferedLanguages}
+  />
+))
 
 storiesOf('WordCard', module)
   .addDecorator(withKnobs)
@@ -54,6 +64,6 @@ storiesOf('WordCard', module)
 storiesOf('icon', module)
   .addDecorator(withKnobs)
   .add('default', () => <Icon type="arrow" />)
-  .add('with type', () => (
-    <Icon type={array('type', [('arrow', 'pencil', 'home', 'plus')])} />
-  ))
+
+storiesOf('Footer', module).add('default', () => <Footer type="arrow" />)
+storiesOf('Header', module).add('default', () => <Header type="arrow" />)

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import BtnTray from './BtnTray'
+import { wordHeaderLeftBtns, wordHeaderRightBtns } from '../constants/btnList'
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,20 +15,13 @@ const WordTray = styled.div`
   flex-grow: 1;
   font-size: 1.2em;
 `
-const LeftBtnList = [{ type: 'arrow', rotate: '90Deg' }]
-const rightBtnList = [
-  { type: 'translate' },
-  { type: 'eye' },
-  { type: 'plus' },
-  { type: 'pencil' },
-]
 
 const WordCardHeader = ({ title }) => {
   return (
     <Wrapper>
-      <BtnTray btnList={LeftBtnList} />
+      <BtnTray btnList={wordHeaderLeftBtns} />
       <WordTray> {title}</WordTray>
-      <BtnTray btnList={rightBtnList} />
+      <BtnTray btnList={wordHeaderRightBtns} />
     </Wrapper>
   )
 }

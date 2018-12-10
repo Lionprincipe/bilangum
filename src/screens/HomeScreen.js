@@ -13,26 +13,10 @@ const Main = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin: 20% 1em 10%;
+  margin: 3.5em 1em;
 `
 
-const HomeScreen = props => {
-  const preferedLanguages = { ethnic: 'afro', reference: 'english' }
-  const wordList = [
-    { type: 'noun', language: 'english', word: 'to be' },
-    { type: 'noun', language: 'english', word: 'hello' },
-    { type: 'noun', language: 'english', word: 'house' },
-    { type: 'noun', language: 'english', word: 'to do' },
-    { type: 'noun', language: 'english', word: 'fish' },
-    { type: 'noun', language: 'english', word: 'cat' },
-    { type: 'noun', language: 'english', word: 'to be' },
-    { type: 'noun', language: 'english', word: 'hello' },
-    { type: 'noun', language: 'english', word: 'house' },
-    { type: 'noun', language: 'english', word: 'to do' },
-    { type: 'noun', language: 'english', word: 'fish' },
-    { type: 'noun', language: 'english', word: 'cat' },
-  ]
-  const name = 'language'
+const HomeScreen = ({ words, inputName, preferedLanguages }) => {
   return (
     <React.Fragment>
       <Header />
@@ -40,15 +24,19 @@ const HomeScreen = props => {
         <SearchField />
         <ToggleSearchLanguage
           preferedLanguages={preferedLanguages}
-          name={name}
+          name={inputName}
         />
-        <WordList wordList={wordList} />
+        <WordList wordList={words} />
       </Main>
       <Footer />
     </React.Fragment>
   )
 }
 
-HomeScreen.propTypes = {}
+HomeScreen.propTypes = {
+  words: PropTypes.array,
+  preferedLanguages: PropTypes.object,
+  inputName: PropTypes.string,
+}
 
 export default HomeScreen

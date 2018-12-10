@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import RadioField from './RadioField'
 
-const ReferenceLanguageSelection = props => {
+const ReferenceLanguageSelection = ({ name, text }) => {
   return (
     <div>
       <RadioField name="referenceLanguage" text="English" />
@@ -11,6 +11,9 @@ const ReferenceLanguageSelection = props => {
   )
 }
 
-ReferenceLanguageSelection.propTypes = {}
+ReferenceLanguageSelection.propTypes = {
+  name: PropTypes.string,
+  text: PropTypes.string,
+}
 
 export default ReferenceLanguageSelection
