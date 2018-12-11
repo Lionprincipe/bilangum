@@ -16,9 +16,9 @@ const WordTray = styled.div`
   font-size: 1.2em;
 `
 
-const WordCardHeader = ({ title }) => {
+const WordCardHeader = ({ title, onClick }) => {
   return (
-    <Wrapper>
+    <Wrapper onClick={onClick}>
       <BtnTray btnList={wordHeaderLeftBtns} />
       <WordTray> {title}</WordTray>
       <BtnTray btnList={wordHeaderRightBtns} />
@@ -28,6 +28,7 @@ const WordCardHeader = ({ title }) => {
 
 WordCardHeader.propTypes = {
   title: PropTypes.string,
+  onClick: PropTypes.func,
 }
 
 export default WordCardHeader
