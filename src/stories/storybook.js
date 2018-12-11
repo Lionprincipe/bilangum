@@ -18,7 +18,7 @@ import Icon from '../components/Icon'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
-import { inputName, words, preferedLanguages } from '../constants/app'
+import { inputName, words, preferedLanguages } from '../constants/initialState'
 
 storiesOf('App', module).add('default', () => <App />)
 
