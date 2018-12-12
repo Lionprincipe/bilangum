@@ -1,4 +1,5 @@
 export const preferedLanguages = { ethnic: 'afro', reference: 'english' }
+
 export const words = [
   { type: 'verb', language: 'english', word: 'to be' },
   { type: 'noun', language: 'english', word: 'hello' },
