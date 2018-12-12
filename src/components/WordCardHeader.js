@@ -36,6 +36,7 @@ export default class WordCardHeader extends Component {
 
     const btnsRight = [
       { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
+      wordHeaderRightBtns[5],
     ]
     const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
     const onSubmit = inputValue => {
