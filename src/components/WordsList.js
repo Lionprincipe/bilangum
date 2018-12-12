@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import WordCard from './WordCard'
+import WordCardContainer from '../container/WordCardContainer'
 const Wrapper = styled.ul`
   padding: 0;
   width: 95%;
@@ -9,7 +9,7 @@ const Wrapper = styled.ul`
 `
 const WordList = ({ words }) => {
   const listElement = words.map((el, index) => (
-    <WordCard key={index} word={el} open={true} />
+    <WordCardContainer key={index} word={el} index={index} />
   ))
   return <Wrapper>{listElement}</Wrapper>
 }

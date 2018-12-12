@@ -10,13 +10,18 @@ const Wrapper = styled.div`
   padding: 0.4em 0;
 `
 
-const WordCardBody = ({ properties, children }) => {
+const WordCardBody = ({ properties, children, onUpdate }) => {
   const keys = Object.keys(properties)
 
   const elList =
     keys.length > 0 &&
     keys.map((el, index) => (
-      <Property key={index} name={el} value={properties[el]} />
+      <Property
+        key={index}
+        name={el}
+        value={properties[el]}
+        onUpdate={onUpdate}
+      />
     ))
 
   return (
@@ -34,6 +39,7 @@ WordCardBody.propTypes = {
     PropTypes.node,
   ]),
   properties: PropTypes.object,
+  onUpdate: PropTypes.func,
 }
 
 export default WordCardBody

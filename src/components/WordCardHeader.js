@@ -31,18 +31,27 @@ export default class WordCardHeader extends Component {
   }
 
   render() {
-    const { title, onClick } = this.props
+    const { title, onClick, onUpdate } = this.props
     const { edit } = this.state
 
     const btnsRight = [
       { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
     ]
     const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
+    const onSubmit = inputValue => {
+      this.handleEdit()
+      onUpdate('word', inputValue)
+    }
     return (
       <Wrapper>
         <BtnTray btnList={btnsLeft} />
         {edit ? (
-          <InputField name={'word'} placeholder={title} value={title} />
+          <InputField
+            name={'word'}
+            placeholder={title}
+            value={title}
+            onSubmit={onSubmit}
+          />
         ) : (
           <WordTray onClick={onClick}>{title}</WordTray>
         )}

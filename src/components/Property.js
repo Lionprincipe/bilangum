@@ -23,6 +23,7 @@ class Property extends Component {
   static propTypes = {
     name: PropTypes.string,
     value: PropTypes.PropTypes.string,
+    onUpdate: PropTypes.func,
   }
   state = {
     edit: false,
@@ -32,16 +33,21 @@ class Property extends Component {
       edit: !this.state.edit,
     })
   }
+
   render() {
     const { edit } = this.state
-    const { name, value } = this.props
+    const { name, value, onUpdate } = this.props
+    const onSubmit = inputValue => {
+      this.handleEdit()
+      onUpdate(name, inputValue)
+    }
     const btnList = [
       { ...PropertyBtns[edit ? 0 : 1], onClick: this.handleEdit },
     ]
     return (
       <Wrapper>
         {edit ? (
-          <InputField name={name} value={value} />
+          <InputField name={name} value={value} onSubmit={onSubmit} />
         ) : (
           <React.Fragment>
             <StyledProperty>{name}: </StyledProperty>

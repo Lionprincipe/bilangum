@@ -16,6 +16,7 @@ export default class InputField extends Component {
     name: PropTypes.string,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    onSubmit: PropTypes.func,
   }
 
   state = {
@@ -27,6 +28,7 @@ export default class InputField extends Component {
       inputValue: value,
     })
   }
+
   handleFocus = e => {
     const { value } = e.target
     this.setState({
@@ -34,6 +36,17 @@ export default class InputField extends Component {
     })
     e.target.select()
   }
+
+  checkForEnterButton = event => {
+    const { inputValue } = this.state
+    if (event.key === 'Enter' && inputValue) {
+      this.props.onSubmit(inputValue)
+      this.setState({
+        inputValue: '',
+      })
+    }
+  }
+
   render() {
     const { name, placeholder, value } = this.props
     const { inputValue } = this.state
@@ -44,6 +57,7 @@ export default class InputField extends Component {
         value={inputValue}
         onChange={this.handleChange}
         onFocus={this.handleFocus}
+        onKeyUp={this.checkForEnterButton}
       />
     )
   }
