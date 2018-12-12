@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
 import BtnTray from './BtnTray'
 import { wordHeaderLeftBtns, wordHeaderRightBtns } from '../constants/btnList'
+import InputField from './InputField'
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,19 +18,36 @@ const WordTray = styled.div`
   font-size: 1.2em;
 `
 
-const WordCardHeader = ({ title, onClick }) => {
-  return (
-    <Wrapper onClick={onClick}>
-      <BtnTray btnList={wordHeaderLeftBtns} />
-      <WordTray> {title}</WordTray>
-      <BtnTray btnList={wordHeaderRightBtns} />
-    </Wrapper>
-  )
-}
+export default class WordCardHeader extends Component {
+  static propTypes = {
+    title: PropTypes.string,
+    onClick: PropTypes.func,
+  }
 
-WordCardHeader.propTypes = {
-  title: PropTypes.string,
-  onClick: PropTypes.func,
-}
+  state = { edit: false }
 
-export default WordCardHeader
+  handleEdit = () => {
+    this.setState({ edit: !this.state.edit })
+  }
+
+  render() {
+    const { title, onClick } = this.props
+    const { edit } = this.state
+
+    const btnsRight = [
+      { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
+    ]
+    const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
+    return (
+      <Wrapper>
+        <BtnTray btnList={btnsLeft} />
+        {edit ? (
+          <InputField name={'word'} placeholder={title} value={title} />
+        ) : (
+          <WordTray onClick={onClick}>{title}</WordTray>
+        )}
+        <BtnTray btnList={btnsRight} />
+      </Wrapper>
+    )
+  }
+}
