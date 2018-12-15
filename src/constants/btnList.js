@@ -18,4 +18,5 @@ export const wordHeaderRightBtns = [
 export const PropertyBtns = [
   { type: 'plus', width: '.8em', height: '.8em', rotate: '46deg' },
   { type: 'pencil', width: '.8em', height: '.8em' },
+  { type: 'trash', width: '.8em', height: '.8em' },
 ]

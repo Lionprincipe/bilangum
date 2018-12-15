@@ -31,12 +31,12 @@ export default class WordCardHeader extends Component {
   }
 
   render() {
-    const { title, onClick, onUpdate } = this.props
+    const { title, onClick, onUpdate, onDelete } = this.props
     const { edit } = this.state
 
     const btnsRight = [
       { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
-      wordHeaderRightBtns[5],
+      { ...wordHeaderRightBtns[5], onClick: onDelete },
     ]
     const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
     const onSubmit = inputValue => {

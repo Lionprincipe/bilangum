@@ -36,13 +36,14 @@ class Property extends Component {
 
   render() {
     const { edit } = this.state
-    const { name, value, onUpdate } = this.props
+    const { name, value, onUpdate, onDelete } = this.props
     const onSubmit = inputValue => {
       this.handleEdit()
       onUpdate(name, inputValue)
     }
     const btnList = [
       { ...PropertyBtns[edit ? 0 : 1], onClick: this.handleEdit },
+      { ...PropertyBtns[2], onClick: () => onDelete(name) },
     ]
     return (
       <Wrapper>

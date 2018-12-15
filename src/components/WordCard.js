@@ -19,6 +19,8 @@ export default class WordCard extends Component {
   static propTypes = {
     word: PropTypes.object,
     onUpdate: PropTypes.func,
+    onDelete: PropTypes.func,
+    index: PropTypes.number,
   }
   state = {
     open: false,
@@ -30,7 +32,9 @@ export default class WordCard extends Component {
   }
   render() {
     const {
+      index,
       onUpdate,
+      onDelete,
       word: { word, translation, ...others },
     } = this.props
     return (
@@ -39,10 +43,15 @@ export default class WordCard extends Component {
           title={word}
           onClick={this.toggleOpen}
           onUpdate={onUpdate}
+          onDelete={onDelete}
         />
         {this.state.open && (
           <React.Fragment>
-            <WordCardBody properties={others} onUpdate={onUpdate}>
+            <WordCardBody
+              wordId={index}
+              properties={others}
+              onUpdate={onUpdate}
+            >
               {translation && <TranslateTray translationList={translation} />}
             </WordCardBody>
             <WordCardFooter />

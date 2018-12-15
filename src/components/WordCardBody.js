@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Property from './Property'
+
+import PropertyContainer from '../container/PropertyContainer'
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -10,17 +11,17 @@ const Wrapper = styled.div`
   padding: 0.4em 0;
 `
 
-const WordCardBody = ({ properties, children, onUpdate }) => {
+const WordCardBody = ({ properties, children, onUpdate, wordId }) => {
   const keys = Object.keys(properties)
-
   const elList =
     keys.length > 0 &&
     keys.map((el, index) => (
-      <Property
+      <PropertyContainer
         key={index}
         name={el}
         value={properties[el]}
         onUpdate={onUpdate}
+        wordId={wordId}
       />
     ))
 
@@ -40,6 +41,7 @@ WordCardBody.propTypes = {
   ]),
   properties: PropTypes.object,
   onUpdate: PropTypes.func,
+  wordId: PropTypes.number,
 }
 
 export default WordCardBody
