@@ -1,5 +1,6 @@
+import btnList from './btnList'
 export const preferedLanguages = { ethnic: 'afro', reference: 'english' }
-
+export const btns = btnList
 export const words = [
   { type: 'verb', language: 'english', word: 'to be' },
   { type: 'noun', language: 'english', word: 'hello' },

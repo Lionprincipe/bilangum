@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { PropertyBtns } from '../constants/btnList'
 import styled from 'styled-components'
-import BtnTray from './BtnTray'
 import InputField from './InputField'
+import BtnTrayContainer from '../container/BtnTrayContainer'
 
 const Wrapper = styled.div`
   margin: 0.2em;
@@ -54,7 +54,7 @@ class Property extends Component {
             <StyleValue>{value}</StyleValue>
           </React.Fragment>
         )}
-        <BtnTray btnList={btnList} />
+        <BtnTrayContainer btnList={['edit', 'delete']} />
       </Wrapper>
     )
   }

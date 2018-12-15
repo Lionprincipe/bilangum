@@ -1,5 +1,7 @@
 const btnsAttributsList = [
-  { name: 'homeBtn', icon: 'home' },
+  { name: 'menu', icon: 'menu' },
+  { name: 'home', icon: 'home' },
+  { name: 'user', icon: 'profile' },
   { name: 'search', icon: 'search' },
   { name: 'tag', icon: 'tag' },
   { name: 'bell', icon: 'bell' },
@@ -10,6 +12,7 @@ const btnsAttributsList = [
   { name: 'show', icon: 'eye' },
   { name: 'plus', icon: 'plus' },
   { name: 'delete', icon: 'trash' },
+  { name: 'edit', icon: 'pencil' },
   { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
 export default btnsAttributsList
