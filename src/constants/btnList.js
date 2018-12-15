@@ -7,22 +7,17 @@ const btnsAttributsList = [
   { name: 'bell', icon: 'bell' },
   { name: 'tranlate', icon: 'translate' },
   { name: 'settings', icon: 'settings' },
-  { name: 'toggleDown', icon: 'settings', rotate: '90deg' },
+  { name: 'toggleDown', icon: 'arrow', rotate: '270deg' },
   { name: 'toggleUp', icon: 'arrow', rotate: '90deg' },
   { name: 'show', icon: 'eye' },
   { name: 'plus', icon: 'plus' },
   { name: 'delete', icon: 'trash' },
   { name: 'edit', icon: 'pencil' },
+  { name: 'cancel', icon: 'plus', rotate: '46deg' },
   { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
 export default btnsAttributsList
-export const footerBtn = [
-  { type: 'home' },
-  { type: 'search' },
-  { type: 'tag' },
-  { type: 'bell' },
-  { type: 'settings' },
-]
+
 export const wordHeaderLeftBtns = [{ type: 'arrow', rotate: '90Deg' }]
 
 export const wordHeaderRightBtns = [

@@ -17,19 +17,16 @@ const Wrapper = styled.li`
 
 export default class WordCard extends Component {
   static propTypes = {
+    isOpen: PropTypes.bool,
     word: PropTypes.object,
     onUpdate: PropTypes.func,
+    toggleOpenMode: PropTypes.func,
   }
-  state = {
-    open: false,
-  }
-  toggleOpen = () => {
-    this.setState({
-      open: !this.state.open,
-    })
-  }
+
   render() {
     const {
+      isOpen,
+      toggleOpenMode,
       onUpdate,
       word: { word, translation, ...others },
     } = this.props
@@ -37,10 +34,11 @@ export default class WordCard extends Component {
       <Wrapper>
         <WordCardHeader
           title={word}
-          onClick={this.toggleOpen}
+          onClick={toggleOpenMode}
           onUpdate={onUpdate}
+          open={isOpen}
         />
-        {this.state.open && (
+        {isOpen && (
           <React.Fragment>
             <WordCardBody properties={others} onUpdate={onUpdate}>
               {translation && <TranslateTray translationList={translation} />}

@@ -15,4 +15,5 @@ export const words = [
   { type: 'noun', language: 'english', word: 'fish' },
   { type: 'noun', language: 'english', word: 'cat' },
 ]
+export const wordElStatusList = []
 export const inputName = 'language'

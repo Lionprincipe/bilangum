@@ -2,9 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import BtnTray from './BtnTray'
-import { wordHeaderLeftBtns, wordHeaderRightBtns } from '../constants/btnList'
 import InputField from './InputField'
+import BtnTrayContainer from '../container/BtnTrayContainer'
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,6 +21,7 @@ export default class WordCardHeader extends Component {
   static propTypes = {
     title: PropTypes.string,
     onClick: PropTypes.func,
+    open: PropTypes.bool,
   }
 
   state = { edit: false }
@@ -31,21 +31,18 @@ export default class WordCardHeader extends Component {
   }
 
   render() {
-    const { title, onClick, onUpdate } = this.props
+    const { title, onClick, onUpdate, open } = this.props
     const { edit } = this.state
+    const btnsRight = [edit ? 'cancel' : 'edit', 'delete']
 
-    const btnsRight = [
-      { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
-      wordHeaderRightBtns[5],
-    ]
-    const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
+    const btnsLeft = open ? ['toggleDown'] : ['toggleUp']
     const onSubmit = inputValue => {
       this.handleEdit()
       onUpdate('word', inputValue)
     }
     return (
       <Wrapper>
-        <BtnTray btnList={btnsLeft} />
+        <BtnTrayContainer btnList={btnsLeft} />
         {edit ? (
           <InputField
             name={'word'}
@@ -56,7 +53,7 @@ export default class WordCardHeader extends Component {
         ) : (
           <WordTray onClick={onClick}>{title}</WordTray>
         )}
-        <BtnTray btnList={btnsRight} />
+        <BtnTrayContainer btnList={btnsRight} />
       </Wrapper>
     )
   }

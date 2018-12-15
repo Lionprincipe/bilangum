@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { PropertyBtns } from '../constants/btnList'
 import styled from 'styled-components'
 import InputField from './InputField'
 import BtnTrayContainer from '../container/BtnTrayContainer'
@@ -41,9 +40,7 @@ class Property extends Component {
       this.handleEdit()
       onUpdate(name, inputValue)
     }
-    const btnList = [
-      { ...PropertyBtns[edit ? 0 : 1], onClick: this.handleEdit },
-    ]
+
     return (
       <Wrapper>
         {edit ? (
