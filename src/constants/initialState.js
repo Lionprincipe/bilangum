@@ -15,5 +15,6 @@ export const words = [
   { type: 'noun', language: 'english', word: 'fish' },
   { type: 'noun', language: 'english', word: 'cat' },
 ]
-export const wordElStatusList = []
+export const listOfWordElInEditMode = []
+export const listOfWordElInOpenMode = []
 export const inputName = 'language'

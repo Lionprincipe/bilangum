@@ -23,9 +23,9 @@ const Wrapper = styled.header`
 const Header = ({ children }) => {
   return (
     <Wrapper>
-      <BtnTrayContainer btnList={['menu']} />
+      <BtnTrayContainer btnList={[{ name: 'menu' }]} />
       <div> {children}</div>
-      <BtnTrayContainer btnList={['user']} />
+      <BtnTrayContainer btnList={[{ name: 'user' }]} />
     </Wrapper>
   )
 }

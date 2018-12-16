@@ -8,12 +8,12 @@ const mapPropsToState = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  const { index } = ownProps
+  const { wordId } = ownProps
   return {
     onUpdate: (name, value) =>
       dispatch(
         wordUpdate({
-          index,
+          wordId,
           name,
           value,
         })
@@ -21,7 +21,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     toggleOpenMode: () =>
       dispatch(
         toggleOpenWordCard({
-          wordId: index,
+          wordId,
         })
       ),
   }

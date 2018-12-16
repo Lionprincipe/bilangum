@@ -6,21 +6,55 @@ export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
       const { wordId } = payload
-      const { wordElStatusList } = state
-      const index = wordElStatusList.findIndex(el => el.id === wordId)
+      const { listOfWordElInOpenMode } = state
+      const index = listOfWordElInOpenMode.findIndex(
+        el => el && el.id === wordId
+      )
       return {
         ...state,
-        wordElStatusList:
+        listOfWordElInOpenMode:
           index > -1
             ? [
-                ...wordElStatusList.slice(0, index),
+                ...listOfWordElInOpenMode.slice(0, index),
                 {
-                  ...wordElStatusList[index],
-                  isOpen: !wordElStatusList[index].isOpen,
+                  ...listOfWordElInOpenMode[index],
+                  isOpen: !listOfWordElInOpenMode[index].isOpen,
                 },
-                ...wordElStatusList.slice(index + 1),
+                ...listOfWordElInOpenMode.slice(index + 1),
               ]
-            : [...wordElStatusList, { id: wordId, isOpen: true }],
+            : [...listOfWordElInOpenMode, { id: wordId, isOpen: true }],
+      }
+    }
+    case ACTIONS.TOGGLE_EDIT_MODE: {
+      const { wordId, name } = payload
+      console.log(wordId, name)
+      const { listOfWordElInEditMode } = state
+      const index = listOfWordElInEditMode.findIndex(
+        el => el.id === wordId && el.name === name
+      )
+
+      return {
+        ...state,
+        listOfWordElInEditMode:
+          index > -1
+            ? [
+                ...listOfWordElInEditMode.slice(0, index),
+                {
+                  ...listOfWordElInEditMode[index],
+                  id: wordId,
+                  name,
+                  status: !listOfWordElInEditMode[index].status,
+                },
+                ...listOfWordElInEditMode.slice(index + 1),
+              ]
+            : [
+                ...listOfWordElInEditMode,
+                {
+                  id: wordId,
+                  name,
+                  status: true,
+                },
+              ],
       }
     }
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -17,44 +17,47 @@ const WordTray = styled.div`
   font-size: 1.2em;
 `
 
-export default class WordCardHeader extends Component {
-  static propTypes = {
-    title: PropTypes.string,
-    onClick: PropTypes.func,
-    open: PropTypes.bool,
+const WordCardHeader = ({
+  title,
+  onClick,
+  onUpdate,
+  open,
+  isEditing,
+  toggleEdit,
+}) => {
+  const btnsRight = [
+    { name: isEditing ? 'cancel' : 'edit', onClick: toggleEdit },
+    { name: 'delete' },
+  ]
+
+  const btnsLeft = [{ name: open ? 'toggleDown' : 'toggleUp' }]
+  const onSubmit = inputValue => {
+    onUpdate('word', inputValue)
   }
-
-  state = { edit: false }
-
-  handleEdit = () => {
-    this.setState({ edit: !this.state.edit })
-  }
-
-  render() {
-    const { title, onClick, onUpdate, open } = this.props
-    const { edit } = this.state
-    const btnsRight = [edit ? 'cancel' : 'edit', 'delete']
-
-    const btnsLeft = open ? ['toggleDown'] : ['toggleUp']
-    const onSubmit = inputValue => {
-      this.handleEdit()
-      onUpdate('word', inputValue)
-    }
-    return (
-      <Wrapper>
-        <BtnTrayContainer btnList={btnsLeft} />
-        {edit ? (
-          <InputField
-            name={'word'}
-            placeholder={title}
-            value={title}
-            onSubmit={onSubmit}
-          />
-        ) : (
-          <WordTray onClick={onClick}>{title}</WordTray>
-        )}
-        <BtnTrayContainer btnList={btnsRight} />
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <BtnTrayContainer btnList={btnsLeft} />
+      {isEditing ? (
+        <InputField
+          name={'word'}
+          placeholder={title}
+          value={title}
+          onSubmit={onSubmit}
+        />
+      ) : (
+        <WordTray onClick={onClick}>{title}</WordTray>
+      )}
+      <BtnTrayContainer btnList={btnsRight} />
+    </Wrapper>
+  )
 }
+
+WordCardHeader.propTypes = {
+  title: PropTypes.string,
+  onClick: PropTypes.func,
+  toggleEdit: PropTypes.func,
+  open: PropTypes.bool,
+  isEditing: PropTypes.bool,
+}
+
+export default WordCardHeader
