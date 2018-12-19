@@ -59,7 +59,7 @@ export default function reducer(state = initialState, action = {}) {
     }
 
     case ACTIONS.WORD_UPDATE: {
-      const { index, name, value } = payload
+      const { wordId: index, name, value } = payload
       const { words } = state
       return {
         ...state,

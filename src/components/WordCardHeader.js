@@ -25,18 +25,16 @@ const WordCardHeader = ({
   isEditing,
   toggleEdit,
 }) => {
-  const btnsRight = [
-    { name: isEditing ? 'cancel' : 'edit', onClick: toggleEdit },
-    { name: 'delete' },
-  ]
-
-  const btnsLeft = [{ name: open ? 'toggleDown' : 'toggleUp' }]
   const onSubmit = inputValue => {
     onUpdate('word', inputValue)
   }
+
   return (
     <Wrapper>
-      <BtnTrayContainer btnList={btnsLeft} />
+      <BtnTrayContainer
+        name={'wordHeaderLeft'}
+        status={isEditing ? 'edit' : 'default'}
+      />
       {isEditing ? (
         <InputField
           name={'word'}
@@ -47,7 +45,10 @@ const WordCardHeader = ({
       ) : (
         <WordTray onClick={onClick}>{title}</WordTray>
       )}
-      <BtnTrayContainer btnList={btnsRight} />
+      <BtnTrayContainer
+        name={'wordHeaderRight'}
+        status={isEditing ? 'edit' : 'default'}
+      />
     </Wrapper>
   )
 }

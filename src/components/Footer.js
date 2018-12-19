@@ -20,13 +20,15 @@ const Footer = props => {
   return (
     <StyledFooter>
       <BtnTrayContainer
-        btnList={[
-          { name: 'home' },
-          { name: 'search' },
-          { name: 'tag' },
-          { name: 'bell' },
-          { name: 'settings' },
-        ]}
+        name={'appFooter'}
+        status={'default'}
+        // btnList={[
+        //   { name: 'home' },
+        //   { name: 'search' },
+        //   { name: 'tag' },
+        //   { name: 'bell' },
+        //   { name: 'settings' },
+        // ]}
       />
     </StyledFooter>
   )

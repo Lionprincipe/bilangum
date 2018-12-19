@@ -1,12 +1,23 @@
-export const btnSelector = (btns, btnList) =>
-  btnList.map(btn => {
-    const index = btns.findIndex(e => e.name === btn.name)
-    return index > -1 && { ...btns[index], ...btn }
-  })
+export const btnSelector = ({ elBtnsList }, { name, status }) => {
+  let result = []
+  const selectedBtns = name && elBtnsList.filter(el => name && name === el.name)
+  if (selectedBtns) {
+    const { normal, edit } = selectedBtns[0]
+    result = normal.map((el, index) =>
+      status === 'default' ? { ...el } : { ...el, ...edit[index] }
+    )
+  }
+  return result
+}
 
+export const btnAttributSelector = ({ buttonsAttributs }, ownProps) => {
+  const { name } = ownProps
+  const result = buttonsAttributs.filter(e => e.name === name)[0]
+  console.log(result, 'buttxon-final', name)
+  return { ...result, name: result && result.icon }
+}
 export const getWordElOpenStatus = (ownProps, state) => {
   const { listOfWordElInOpenMode } = state
-  console.log(listOfWordElInOpenMode)
   const { wordId } = ownProps
   const index = listOfWordElInOpenMode.findIndex(el => el && el.id === wordId)
   return index > -1 && listOfWordElInOpenMode[index].isOpen
