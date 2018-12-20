@@ -19,17 +19,7 @@ const StyledFooter = styled.footer`
 const Footer = props => {
   return (
     <StyledFooter>
-      <BtnTrayContainer
-        name={'appFooter'}
-        status={'default'}
-        // btnList={[
-        //   { name: 'home' },
-        //   { name: 'search' },
-        //   { name: 'tag' },
-        //   { name: 'bell' },
-        //   { name: 'settings' },
-        // ]}
-      />
+      <BtnTrayContainer name={'appFooter'} status={'default'} />
     </StyledFooter>
   )
 }

@@ -48,9 +48,7 @@ class Property extends Component {
             <StyleValue>{value}</StyleValue>
           </React.Fragment>
         )}
-        <BtnTrayContainer
-          btnList={[{ name: 'edit', onClick: toggleEdit }, { name: 'delete' }]}
-        />
+        <BtnTrayContainer name={'appWordProperty'} status={'default'} />
       </Wrapper>
     )
   }

@@ -1,10 +1,16 @@
-export const btnSelector = ({ elBtnsList }, { name, status }) => {
+export const btnSelector = ({ elBtnsList }, { name, status, ...others }) => {
   let result = []
   const selectedBtns = name && elBtnsList.filter(el => name && name === el.name)
   if (selectedBtns) {
     const { normal, edit } = selectedBtns[0]
     result = normal.map((el, index) =>
-      status === 'default' ? { ...el } : { ...el, ...edit[index] }
+      status === 'default' || !edit
+        ? { ...el, onClick: el.onClick && others[el.onClick] }
+        : {
+            ...el,
+            onClick: el.onClick && others[el.onClick],
+            ...(edit && edit[index]),
+          }
     )
   }
   return result

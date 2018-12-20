@@ -1,23 +1,30 @@
 export const preferedLanguages = { ethnic: 'afro', reference: 'english' }
 export const elBtnsList = [
   {
-    name: 'wordHeaderLeft',
-    normal: [{ name: 'toggleDown' }],
-    edit: [{ name: 'toggleUp' }],
-  },
-  {
-    name: 'wordHeaderRight',
-    normal: [{ name: 'edit' }, { name: 'delete' }],
-    edit: [{ name: 'cancel' }],
-  },
-  {
     name: 'appFooter',
     normal: [
       { name: 'home' },
+      { name: 'search' },
       { name: 'bookmarks' },
       { name: 'notification' },
       { name: 'settings' },
     ],
+  },
+  { name: 'appHeaderLeft', normal: [{ name: 'menu' }] },
+  { name: 'appWordProperty', normal: [{ name: 'edit' }] },
+  { name: 'appHeaderRight', normal: [{ name: 'user' }] },
+  {
+    name: 'wordHeaderLeft',
+    normal: [{ name: 'toggleDown', onClick: 'toggleOpen' }],
+    open: [{ name: 'toggleUp' }],
+  },
+  {
+    name: 'wordHeaderRight',
+    normal: [
+      { name: 'edit', onClick: 'toggleEdit' },
+      { name: 'delete', onClick: 'deleteWord' },
+    ],
+    edit: [{ name: 'cancel' }],
   },
   { name: 'appHeaderLeft', normal: [{ name: 'menu' }] },
   {

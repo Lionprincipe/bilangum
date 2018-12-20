@@ -24,6 +24,7 @@ const WordCardHeader = ({
   open,
   isEditing,
   toggleEdit,
+  onDelete,
 }) => {
   const onSubmit = inputValue => {
     onUpdate('word', inputValue)
@@ -34,6 +35,7 @@ const WordCardHeader = ({
       <BtnTrayContainer
         name={'wordHeaderLeft'}
         status={isEditing ? 'edit' : 'default'}
+        toggleOpen={onClick}
       />
       {isEditing ? (
         <InputField
@@ -48,6 +50,8 @@ const WordCardHeader = ({
       <BtnTrayContainer
         name={'wordHeaderRight'}
         status={isEditing ? 'edit' : 'default'}
+        toggleEdit={toggleEdit}
+        deleteWord={onDelete}
       />
     </Wrapper>
   )

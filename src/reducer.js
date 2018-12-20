@@ -70,6 +70,14 @@ export default function reducer(state = initialState, action = {}) {
         ],
       }
     }
+    case ACTIONS.DELETE_WORD: {
+      const { wordId: index } = payload
+      const { words } = state
+      return {
+        ...state,
+        words: [...words.slice(0, index), ...words.slice(index + 1)],
+      }
+    }
 
     default:
       return state
