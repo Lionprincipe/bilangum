@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { footerBtn } from '../constants/btnList'
 
-import BtnTray from './BtnTray'
+import BtnTrayContainer from '../container/BtnTrayContainer'
 
 const StyledFooter = styled.footer`
   position: fixed;
@@ -20,7 +19,7 @@ const StyledFooter = styled.footer`
 const Footer = props => {
   return (
     <StyledFooter>
-      <BtnTray btnList={footerBtn} />
+      <BtnTrayContainer name={'appFooter'} status={'default'} />
     </StyledFooter>
   )
 }

@@ -3,9 +3,69 @@ import ACTIONS from './actions'
 
 export default function reducer(state = initialState, action = {}) {
   const { words } = state
+  const { payload } = action
   switch (action.type) {
+    case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
+      const { wordId } = payload
+      const { listOfWordElInOpenMode } = state
+      const index = listOfWordElInOpenMode.findIndex(
+        el => el && el.id === wordId
+      )
+      return {
+        ...state,
+        listOfWordElInOpenMode:
+          index > -1
+            ? [
+                ...listOfWordElInOpenMode.slice(0, index),
+                {
+                  ...listOfWordElInOpenMode[index],
+                  isOpen: !listOfWordElInOpenMode[index].isOpen,
+                },
+                ...listOfWordElInOpenMode.slice(index + 1),
+              ]
+            : [
+                ...listOfWordElInOpenMode,
+                {
+                  id: wordId,
+                  isOpen: true,
+                },
+              ],
+      }
+    }
+    case ACTIONS.TOGGLE_EDIT_MODE: {
+      const { wordId, name } = payload
+      const { listOfWordElInEditMode } = state
+      const index = listOfWordElInEditMode.findIndex(
+        el => el.id === wordId && el.name === name
+      )
+
+      return {
+        ...state,
+        listOfWordElInEditMode:
+          index > -1
+            ? [
+                ...listOfWordElInEditMode.slice(0, index),
+                {
+                  ...listOfWordElInEditMode[index],
+                  id: wordId,
+                  name,
+                  status: !listOfWordElInEditMode[index].status,
+                },
+                ...listOfWordElInEditMode.slice(index + 1),
+              ]
+            : [
+                ...listOfWordElInEditMode,
+                {
+                  id: wordId,
+                  name,
+                  status: true,
+                },
+              ],
+      }
+    }
+
     case ACTIONS.WORD_UPDATE: {
-      const { index, name, value } = action.payload
+      const { wordId: index, name, value } = payload
       return {
         ...state,
         words: [
@@ -15,24 +75,19 @@ export default function reducer(state = initialState, action = {}) {
         ],
       }
     }
-    case ACTIONS.WORD_DELETE: {
-      const { index } = action.payload
+    case ACTIONS.DELETE_WORD: {
+      const { wordId: index } = payload
       return {
         ...state,
         words: [...words.slice(0, index), ...words.slice(index + 1)],
       }
     }
-    case ACTIONS.PROPERTY_DELETE: {
-      const { index, name } = action.payload
-      const { [name]: deleteProperty, ...newWord } = words[index]
-      return {
-        ...state,
-        words: [...words.slice(0, index), newWord, ...words.slice(index + 1)],
-      }
-    }
-    case ACTIONS.PROPERTY_ADD: {
-      const { index, name, value } = action.payload
-      const newWord = { ...words[index], [name]: [value] }
+    case ACTIONS.DELETE_WORD_PROPERTY: {
+      const { wordId: index, name } = payload
+      const word = words[index]
+      const newWord = Object.keys(word)
+        .filter(el => el !== name)
+        .reduce((acc, curr) => (acc = { ...acc, [curr]: word[curr] }), {})
       return {
         ...state,
         words: [...words.slice(0, index), newWord, ...words.slice(index + 1)],

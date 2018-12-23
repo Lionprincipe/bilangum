@@ -1,16 +1,9 @@
 import { connect } from 'react-redux'
 import WordCard from '../components/WordCard'
-import { wordUpdate, wordDelete } from '../actions'
+import { getWordElOpenStatus } from '../selectors'
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  const { index } = ownProps
-  return {
-    onUpdate: (name, value) => dispatch(wordUpdate({ index, name, value })),
-    onDelete: () => dispatch(wordDelete({ index })),
-  }
-}
+const mapPropsToState = (state, ownProps) => ({
+  isOpen: getWordElOpenStatus(ownProps, state),
+})
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(WordCard)
+export default connect(mapPropsToState)(WordCard)

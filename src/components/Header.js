@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import BtnTray from './BtnTray'
+import BtnTrayContainer from '../container/BtnTrayContainer'
 
 const Wrapper = styled.header`
   position: fixed;
@@ -23,9 +23,9 @@ const Wrapper = styled.header`
 const Header = ({ children }) => {
   return (
     <Wrapper>
-      <BtnTray btnList={[{ type: 'menu' }]} />
+      <BtnTrayContainer name={'appHeaderLeft'} status={'default'} />
       <div> {children}</div>
-      <BtnTray btnList={[{ type: 'profile' }]} />
+      <BtnTrayContainer name={'appHeaderRight'} status={'default'} />
     </Wrapper>
   )
 }

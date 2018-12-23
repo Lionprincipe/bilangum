@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Icon from './Icon'
+import IconContainer from '../container/IconContainer'
 import Button from './Button'
 
 const Wrapper = styled.div`
@@ -12,15 +12,20 @@ const Wrapper = styled.div`
 `
 
 const BtnTray = ({ btnList }) => {
-  const elList = btnList.map(
-    ({ type, rotate, width, height, onClick }, index) => (
+  const elList =
+    btnList &&
+    btnList.map(({ name, rotate, width, height, onClick }, index) => (
       <Button key={index} onClick={onClick}>
-        <Icon type={type} rotate={rotate} width={width} height={height} />
+        <IconContainer
+          name={name}
+          rotate={rotate}
+          width={width}
+          height={height}
+        />
       </Button>
-    )
-  )
+    ))
 
-  return <Wrapper>{elList}</Wrapper>
+  return <Wrapper> {elList} </Wrapper>
 }
 
 BtnTray.propTypes = {

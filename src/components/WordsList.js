@@ -8,10 +8,10 @@ const Wrapper = styled.ul`
   margin: 1em auto;
 `
 const WordList = ({ words }) => {
-  const listElement = words.map((el, index) => (
-    <WordCardContainer key={index} word={el} index={index} />
+  const listOfWordsEl = words.map((el, index) => (
+    <WordCardContainer key={index} word={el} wordId={index} />
   ))
-  return <Wrapper>{listElement}</Wrapper>
+  return <Wrapper>{listOfWordsEl}</Wrapper>
 }
 
 WordList.propTypes = {

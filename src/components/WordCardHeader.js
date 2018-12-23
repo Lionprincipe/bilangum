@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import BtnTray from './BtnTray'
-import { wordHeaderLeftBtns, wordHeaderRightBtns } from '../constants/btnList'
 import InputField from './InputField'
+import BtnTrayContainer from '../container/BtnTrayContainer'
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,46 +17,51 @@ const WordTray = styled.div`
   font-size: 1.2em;
 `
 
-export default class WordCardHeader extends Component {
-  static propTypes = {
-    title: PropTypes.string,
-    onClick: PropTypes.func,
+const WordCardHeader = ({
+  title,
+  onClick,
+  onUpdate,
+  open,
+  isEditing,
+  toggleEdit,
+  onDelete,
+}) => {
+  const onSubmit = inputValue => {
+    onUpdate('word', inputValue)
   }
-
-  state = { edit: false }
-
-  handleEdit = () => {
-    this.setState({ edit: !this.state.edit })
-  }
-
-  render() {
-    const { title, onClick, onUpdate, onDelete } = this.props
-    const { edit } = this.state
-
-    const btnsRight = [
-      { ...wordHeaderRightBtns[edit ? 3 : 4], onClick: this.handleEdit },
-      { ...wordHeaderRightBtns[5], onClick: onDelete },
-    ]
-    const btnsLeft = [{ ...wordHeaderLeftBtns[0], onClick: onClick }]
-    const onSubmit = inputValue => {
-      this.handleEdit()
-      onUpdate('word', inputValue)
-    }
-    return (
-      <Wrapper>
-        <BtnTray btnList={btnsLeft} />
-        {edit ? (
-          <InputField
-            name={'word'}
-            placeholder={title}
-            value={title}
-            onSubmit={onSubmit}
-          />
-        ) : (
-          <WordTray onClick={onClick}>{title}</WordTray>
-        )}
-        <BtnTray btnList={btnsRight} />
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <BtnTrayContainer
+        name={'wordHeaderLeft'}
+        status={open ? 'open' : 'default'}
+        toggleOpen={onClick}
+      />
+      {isEditing ? (
+        <InputField
+          name={'word'}
+          placeholder={title}
+          value={title}
+          onSubmit={onSubmit}
+        />
+      ) : (
+        <WordTray onClick={onClick}>{title}</WordTray>
+      )}
+      <BtnTrayContainer
+        name={'wordHeaderRight'}
+        status={isEditing ? 'edit' : 'default'}
+        toggleEdit={toggleEdit}
+        deleteWord={onDelete}
+      />
+    </Wrapper>
+  )
 }
+
+WordCardHeader.propTypes = {
+  title: PropTypes.string,
+  onClick: PropTypes.func,
+  toggleEdit: PropTypes.func,
+  open: PropTypes.bool,
+  isEditing: PropTypes.bool,
+}
+
+export default WordCardHeader

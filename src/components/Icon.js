@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     props.rotate ? `rotate(${props.rotate})` : 'rotate(0deg)'};
 `
 
-const Icon = ({ type, width, height, rotate }) => {
+const Icon = ({ name, width, height, rotate }) => {
   return (
     <Wrapper rotate={rotate}>
       <svg
@@ -22,14 +22,14 @@ const Icon = ({ type, width, height, rotate }) => {
         height={height || '24px'}
         viewBox="0 0 24 24"
       >
-        <path d={iconsPath[type]} />
+        <path d={iconsPath[name]} />
       </svg>
     </Wrapper>
   )
 }
 
 Icon.propTypes = {
-  type: PropTypes.string,
+  name: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
   rotate: PropTypes.string,

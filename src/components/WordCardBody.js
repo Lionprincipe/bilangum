@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
 import PropertyContainer from '../container/PropertyContainer'
 
 const Wrapper = styled.div`
@@ -11,7 +10,7 @@ const Wrapper = styled.div`
   padding: 0.4em 0;
 `
 
-const WordCardBody = ({ properties, children, onUpdate, wordId }) => {
+const WordCardBody = ({ wordId, properties, children, onUpdate }) => {
   const keys = Object.keys(properties)
   const elList =
     keys.length > 0 &&
@@ -39,9 +38,9 @@ WordCardBody.propTypes = {
     PropTypes.string,
     PropTypes.node,
   ]),
+  wordId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   properties: PropTypes.object,
   onUpdate: PropTypes.func,
-  wordId: PropTypes.number,
 }
 
 export default WordCardBody

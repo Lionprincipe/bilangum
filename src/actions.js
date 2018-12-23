@@ -1,12 +1,16 @@
 import { createAction } from 'redux-actions'
 const ACTIONS = {
   WORD_UPDATE: 'WORD_UPDATE',
-  WORD_DELETE: 'WORD_DELETE',
-  PROPERTY_DELETE: 'PROPERTY_DELETE',
+  DELETE_WORD: 'DELETE_WORD',
+  DELETE_WORD_PROPERTY: 'DELETE_WORD_PROPERTY',
+  TOGGLE_OPEN_WORD_CARD: 'TOGGLE_WORD_CARD',
+  TOGGLE_EDIT_MODE: 'TOGGLE_EDIT_MODE',
 }
 
 export const wordUpdate = createAction(ACTIONS.WORD_UPDATE)
-export const wordDelete = createAction(ACTIONS.WORD_DELETE)
-export const propertyDelete = createAction(ACTIONS.PROPERTY_DELETE)
+export const deleteWord = createAction(ACTIONS.DELETE_WORD)
+export const deleteWordProperty = createAction(ACTIONS.DELETE_WORD_PROPERTY)
+export const toggleOpenWordCard = createAction(ACTIONS.TOGGLE_OPEN_WORD_CARD)
+export const toggleEditMode = createAction(ACTIONS.TOGGLE_EDIT_MODE)
 
 export default ACTIONS
