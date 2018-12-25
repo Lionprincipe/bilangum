@@ -3,7 +3,7 @@ import Property from '../components/Property'
 import { toggleEditMode, deleteWordProperty, wordUpdate } from '../actions'
 import { getWordElEditStatus } from '../selectors'
 
-const mapPropsToState = (state, ownProps) => ({
+const mapStateToProps = (state, ownProps) => ({
   isEditing: getWordElEditStatus(ownProps, state),
 })
 
@@ -17,6 +17,6 @@ const mapDispatchToProps = (dispatch, { wordId, name }) => ({
 })
 
 export default connect(
-  mapPropsToState,
+  mapStateToProps,
   mapDispatchToProps
 )(Property)

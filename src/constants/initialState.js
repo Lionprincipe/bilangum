@@ -1,3 +1,10 @@
+export const newWordProps = [
+  'word',
+  'type',
+  'language',
+  'translation',
+  'definition',
+]
 export const preferedLanguages = {
   ethnic: 'afro',
   reference: 'english',

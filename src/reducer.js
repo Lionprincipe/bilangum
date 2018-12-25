@@ -8,93 +8,78 @@ export default function reducer(state = initialState, action = {}) {
     case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
       const { wordId } = payload
       const { listOfWordElInOpenMode } = state
-      const index = listOfWordElInOpenMode.findIndex(
-        el => el && el.id === wordId
-      )
       return {
         ...state,
-        listOfWordElInOpenMode:
-          index > -1
-            ? [
-                ...listOfWordElInOpenMode.slice(0, index),
-                {
-                  ...listOfWordElInOpenMode[index],
-                  isOpen: !listOfWordElInOpenMode[index].isOpen,
-                },
-                ...listOfWordElInOpenMode.slice(index + 1),
-              ]
-            : [
-                ...listOfWordElInOpenMode,
-                {
-                  id: wordId,
-                  isOpen: true,
-                },
-              ],
+        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordId),
       }
     }
     case ACTIONS.TOGGLE_EDIT_MODE: {
       const { wordId, name } = payload
       const { listOfWordElInEditMode } = state
-      const index = listOfWordElInEditMode.findIndex(
-        el => el.id === wordId && el.name === name
-      )
 
       return {
         ...state,
-        listOfWordElInEditMode:
-          index > -1
-            ? [
-                ...listOfWordElInEditMode.slice(0, index),
-                {
-                  ...listOfWordElInEditMode[index],
-                  id: wordId,
-                  name,
-                  status: !listOfWordElInEditMode[index].status,
-                },
-                ...listOfWordElInEditMode.slice(index + 1),
-              ]
-            : [
-                ...listOfWordElInEditMode,
-                {
-                  id: wordId,
-                  name,
-                  status: true,
-                },
-              ],
+        listOfWordElInEditMode: toggleStatus(
+          listOfWordElInEditMode,
+          wordId,
+          name
+        ),
       }
     }
 
+    case ACTIONS.ADD_WORD: {
+      const { newWord } = payload
+      console.log('ney', [...words, newWord])
+      return { ...state, words: [...words, newWord] }
+    }
     case ACTIONS.WORD_UPDATE: {
       const { wordId: index, name, value } = payload
-      return {
-        ...state,
-        words: [
-          ...words.slice(0, index),
-          { ...words[index], [name]: value },
-          ...words.slice(index + 1),
-        ],
-      }
+      const newWord = { ...words[index], [name]: value }
+      return { ...state, words: updateList(words, index, newWord) }
     }
+
     case ACTIONS.DELETE_WORD: {
       const { wordId: index } = payload
-      return {
-        ...state,
-        words: [...words.slice(0, index), ...words.slice(index + 1)],
-      }
+      return { ...state, words: updateList(words, index) }
     }
+
     case ACTIONS.DELETE_WORD_PROPERTY: {
       const { wordId: index, name } = payload
-      const word = words[index]
-      const newWord = Object.keys(word)
-        .filter(el => el !== name)
-        .reduce((acc, curr) => (acc = { ...acc, [curr]: word[curr] }), {})
+      const newWord = removeKeyInObject(words[index], name)
       return {
         ...state,
-        words: [...words.slice(0, index), newWord, ...words.slice(index + 1)],
+        words: updateList(words, index, newWord),
       }
     }
 
     default:
       return state
   }
+}
+
+function removeKeyInObject(object, key) {
+  return Object.keys(object)
+    .filter(el => el !== key)
+    .reduce((acc, curr) => (acc = { ...acc, [curr]: object[curr] }), {})
+}
+
+function updateList(list, index, newItem) {
+  return newItem
+    ? [...list.slice(0, index), newItem, ...list.slice(index + 1)]
+    : [...list.slice(0, index), ...list.slice(index + 1)]
+}
+
+function findWordIndexInList(list, id, name) {
+  return name
+    ? list.findIndex(el => el && el.id === id && el.name === name)
+    : list.findIndex(el => el && el.id === id)
+}
+function toggleStatus(list, id, name) {
+  const index = findWordIndexInList(list, id, name)
+  const newEntry = {
+    id,
+    name,
+    status: !(index > -1) || !list[index].status,
+  }
+  return updateList(list, index, newEntry)
 }

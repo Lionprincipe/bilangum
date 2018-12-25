@@ -17,6 +17,7 @@ export default class InputField extends Component {
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     placeholder: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     onSubmit: PropTypes.func,
+    onBlur: PropTypes.func,
   }
 
   state = {
@@ -39,12 +40,18 @@ export default class InputField extends Component {
 
   checkForEnterButton = event => {
     const { inputValue } = this.state
+    const { onSubmit } = this.props
     if (event.key === 'Enter' && inputValue) {
-      this.props.onSubmit(inputValue)
+      onSubmit && onSubmit(inputValue)
       this.setState({
         inputValue: '',
       })
     }
+  }
+  handleBlur = event => {
+    const { value } = event.target
+    const { onBlur } = this.props
+    value && onBlur && onBlur(value)
   }
 
   render() {
@@ -58,6 +65,7 @@ export default class InputField extends Component {
         onChange={this.handleChange}
         onFocus={this.handleFocus}
         onKeyUp={this.checkForEnterButton}
+        onBlur={this.handleBlur}
       />
     )
   }

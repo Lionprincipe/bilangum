@@ -6,6 +6,7 @@ import SearchField from '../components/SearchField'
 import Footer from '../components/Footer'
 import WordsListContainer from '../container/WordsListContainer'
 import ToggleSearchLanguagesContainer from '../container/ToggleSearchLanguagesContainer'
+import AddWordContainer from '../container/AddWordContainer'
 
 const Main = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const HomeScreen = () => {
       <Main>
         <SearchField />
         <ToggleSearchLanguagesContainer />
+        <AddWordContainer />
         <WordsListContainer />
       </Main>
       <Footer />

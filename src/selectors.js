@@ -1,41 +1,43 @@
-export const btnSelector = ({ elBtnsList }, { name, status, ...others }) => {
-  let result = []
-  const selectedBtns = name && elBtnsList.filter(el => name && name === el.name)
-  if (selectedBtns) {
-    const { normal, edit, open } = selectedBtns[0]
-    result = normal.map((el, index) =>
-      status === 'default'
-        ? { ...el, onClick: el.onClick && others[el.onClick] }
-        : {
-            ...el,
-            onClick: el.onClick && others[el.onClick],
-            ...(edit && edit[index]),
-            ...(open && open[index]),
-          }
-    )
-  }
-
-  return result
-}
-
-export const iconAttributsSelector = ({ buttonsAttributs }, ownProps) => {
-  const { name } = ownProps
-  const result = buttonsAttributs.filter(e => e.name === name)[0]
-  return { ...result, name: result && result.icon }
-}
-
-export const getWordElOpenStatus = (ownProps, state) => {
-  const { listOfWordElInOpenMode } = state
-  const { wordId } = ownProps
-  const index = listOfWordElInOpenMode.findIndex(el => el && el.id === wordId)
-  return index > -1 && listOfWordElInOpenMode[index].isOpen
-}
-
-export const getWordElEditStatus = (ownProps, state) => {
-  const { listOfWordElInEditMode } = state
-  const { wordId, name } = ownProps
-  const index = listOfWordElInEditMode.findIndex(
-    el => el && el.id === wordId && el.name === name
+export const composeBtnsList = (
+  { elBtnsList },
+  { name, status, ...others }
+) => {
+  const { normal, edit, open } = getTrayBtns(name, elBtnsList)
+  return (
+    normal &&
+    normal.map((el, index) => ({
+      ...el,
+      onClick: el.onClick && others[el.onClick],
+      ...(status === 'default' || (edit && edit[index])),
+      ...(status === 'default' || (open && open[index])),
+    }))
   )
+}
+
+export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
+  buttonsAttributs
+    .filter(e => e.name === name)
+    .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
+
+export const getWordElOpenStatus = ({ wordId }, { listOfWordElInOpenMode }) => {
+  const index = findWordIndexInList(listOfWordElInOpenMode, wordId)
+  return index > -1 && listOfWordElInOpenMode[index].status
+}
+
+export const getWordElEditStatus = (
+  { wordId, name },
+  { listOfWordElInEditMode }
+) => {
+  const index = findWordIndexInList(listOfWordElInEditMode, wordId, name)
   return index > -1 && listOfWordElInEditMode[index].status
+}
+
+function getTrayBtns(name, list) {
+  return name && list.filter(el => name && name === el.name)[0]
+}
+
+function findWordIndexInList(list, id, name) {
+  return name
+    ? list.findIndex(el => el && el.id === id && el.name === name)
+    : list.findIndex(el => el && el.id === id)
 }

@@ -17,7 +17,7 @@ const Wrapper = styled.li`
 const WordCard = ({ isOpen, wordId, word: { word, ...others } }) => {
   return (
     <Wrapper>
-      <WordCardHeaderContainer open={isOpen} wordId={wordId} />
+      <WordCardHeaderContainer open={isOpen} wordId={wordId} name={'word'} />
       {isOpen && (
         <React.Fragment>
           <WordCardBody wordId={wordId} properties={others} />
