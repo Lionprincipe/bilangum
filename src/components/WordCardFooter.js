@@ -5,11 +5,15 @@ const Wrapper = styled.div`
   font-size: 0.8em;
   color: #a8a8a8;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin: 0.4em;
 `
 const WordCardFooter = props => {
-  return <Wrapper>facebook createbe by on</Wrapper>
+  return (
+    <Wrapper>
+      <div>facebook createbe by on</div>
+    </Wrapper>
+  )
 }
 
 export default WordCardFooter

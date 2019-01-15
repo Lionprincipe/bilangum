@@ -1,3 +1,4 @@
+export const modal = []
 export const newWordProps = [
   'word',
   'type',
@@ -5,6 +6,7 @@ export const newWordProps = [
   'translation',
   'definition',
 ]
+export const newProperties = []
 export const preferedLanguages = {
   ethnic: 'afro',
   reference: 'english',
@@ -185,3 +187,5 @@ export const words = [
 export const listOfWordElInEditMode = []
 export const listOfWordElInOpenMode = []
 export const inputName = 'language'
+
+export const isAdding = false

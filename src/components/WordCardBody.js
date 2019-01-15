@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import PropertyContainer from '../container/PropertyContainer'
+import AddPropertyContainer from '../container/AddPropertyContainer'
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -28,6 +29,7 @@ const WordCardBody = ({ wordId, properties, children, onUpdate }) => {
     <Wrapper>
       {children}
       {elList}
+      <AddPropertyContainer wordId={wordId} />
     </Wrapper>
   )
 }

@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.2em;
+  text-transform: capitalize;
 `
 const WordTray = styled.div`
   padding: 0.5em;

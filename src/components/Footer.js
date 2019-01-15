@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
   background: #fff;
   height: 3em;
   border-top: 2px solid #eee;
-  z-index: 88000;
+  z-index: 8000;
   padding-top: 5px;
   margin: auto;
 `

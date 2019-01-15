@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import HomeScreen from '../screens/HomeScreen'
 import reducer from '../reducer'
+import HomeScreen from '../screens/HomeScreen'
 
 const store = createStore(
   reducer,

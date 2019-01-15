@@ -1,3 +1,11 @@
+export const selectAddPropertyNumber = ({ newProperties }, { wordId }) =>
+  newProperties && newProperties.filter(el => el === wordId).length
+
+export const modalIdSelector = state => {
+  const { modal } = state
+  return (modal && modal.length - 1) || 0
+}
+
 export const composeBtnsList = (
   { elBtnsList },
   { name, status, ...others }

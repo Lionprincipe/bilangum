@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import WordCardBody from './WordCardBody'
 import WordCardFooter from './WordCardFooter'
 import WordCardHeaderContainer from '../container/WordCardHeaderContainer'
+import WordCardBodyContainer from '../container/WordCardBodyContainer'
 
 const Wrapper = styled.li`
   margin-bottom: 0.4em;
@@ -20,7 +20,7 @@ const WordCard = ({ isOpen, wordId, word: { word, ...others } }) => {
       <WordCardHeaderContainer open={isOpen} wordId={wordId} name={'word'} />
       {isOpen && (
         <React.Fragment>
-          <WordCardBody wordId={wordId} properties={others} />
+          <WordCardBodyContainer wordId={wordId} properties={others} />
           <WordCardFooter />
         </React.Fragment>
       )}

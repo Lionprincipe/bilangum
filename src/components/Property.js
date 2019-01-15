@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   font-size: 0.8em;
+  text-transform: capitalize;
 `
 const StyledProperty = styled.em`
   color: #666;
@@ -25,11 +26,17 @@ const Property = ({
   isEditing,
   onSubmit,
   deleteMe,
+  placeholder,
 }) => {
   return (
     <Wrapper>
       {isEditing ? (
-        <InputField name={name} value={value} onSubmit={onSubmit} />
+        <InputField
+          name={name}
+          value={value}
+          onSubmit={onSubmit}
+          placeholder={placeholder}
+        />
       ) : (
         <React.Fragment>
           <StyledProperty>{name}: </StyledProperty>
