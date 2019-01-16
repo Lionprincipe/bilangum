@@ -87,6 +87,7 @@ function removeKeyInObject(object, key) {
 }
 
 function updateList(list, index, newItem) {
+  index = index > -1 ? index : list.length
   return newItem
     ? [...list.slice(0, index), newItem, ...list.slice(index + 1)]
     : [...list.slice(0, index), ...list.slice(index + 1)]
@@ -100,6 +101,7 @@ function findIndexInList(list, id, name) {
 
 function toggleStatus(list, id, name) {
   const index = findIndexInList(list, id, name),
-    status = !(index > -1) || !list[index].status
-  return updateList(list, index, { id, name, status })
+    status = !(index > -1) || !list[index].status,
+    newEntry = name ? { id, name, status } : { id, status }
+  return updateList(list, index, newEntry)
 }
