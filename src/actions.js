@@ -29,4 +29,5 @@ export const createWordProperty = (wordId, name, dispatch) => {
   wordId > -1 && dispatch(removeNewProperty({ wordId }))
 }
 
+export const add = (a, b) => a + b
 export default ACTIONS
