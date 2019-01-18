@@ -22,6 +22,7 @@ const WordTray = styled.div`
   flex-grow: 1;
   font-size: 1.2em;
 `
+
 const DotsTray = styled.ol`
   width: 100%;
   padding: 0;
@@ -40,8 +41,10 @@ const Dot = styled.li`
   border-radius: 50%;
   cursor: pointer;
 `
+
 export default class TranslateTray extends Component {
   static propTypes = { translationList: PropTypes.array }
+
   state = { currIndex: 0 }
 
   setStateHandler = (name, value) => {
@@ -86,6 +89,7 @@ export default class TranslateTray extends Component {
       </Wrapper>
     )
   }
+
   renderTranslationElement() {
     const { translationList } = this.props
     const { currIndex } = this.state
@@ -93,6 +97,7 @@ export default class TranslateTray extends Component {
       return <WordTray> {translationList[currIndex]}</WordTray>
     }
   }
+
   renderDotsEl() {
     const length = this.props.translationList.length || 0
     return length && <DotsTray>{this.renderDot(length)}</DotsTray>
