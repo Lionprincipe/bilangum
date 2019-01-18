@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import WordCardFooter from './WordCardFooter'
 import WordCardHeaderContainer from '../container/WordCardHeaderContainer'
 import WordCardBodyContainer from '../container/WordCardBodyContainer'
+import TranslateTray from './TranslateTray'
 
 const Wrapper = styled.li`
   margin-bottom: 0.4em;
@@ -14,10 +15,15 @@ const Wrapper = styled.li`
   border-radius: 4px;
 `
 
-const WordCard = ({ isOpen, wordId, word: { word, ...others } }) => {
+const WordCard = ({
+  isOpen,
+  wordId,
+  word: { word, tranlation, ...others },
+}) => {
   return (
     <Wrapper>
       <WordCardHeaderContainer open={isOpen} wordId={wordId} name={'word'} />
+      <TranslateTray translationList={['etre', 'be', 'sein']} />
       {isOpen && (
         <React.Fragment>
           <WordCardBodyContainer wordId={wordId} properties={others} />

@@ -13,6 +13,19 @@ export const preferedLanguages = {
 }
 export const elBtnsList = [
   {
+    name: 'translationLeft',
+    normal: [
+      {
+        name: 'left',
+        onClick: 'onClickLeft',
+      },
+    ],
+  },
+  {
+    name: 'translationRight',
+    normal: [{ name: 'right', onClick: 'onClickRight' }],
+  },
+  {
     name: 'appFooter',
     normal: [
       { name: 'home' },
@@ -52,74 +65,24 @@ export const elBtnsList = [
   },
 ]
 export const buttonsAttributs = [
-  {
-    name: 'menu',
-    icon: 'menu',
-  },
-  {
-    name: 'home',
-    icon: 'home',
-  },
-  {
-    name: 'user',
-    icon: 'profile',
-  },
-  {
-    name: 'search',
-    icon: 'search',
-  },
-  {
-    name: 'bookmarks',
-    icon: 'tag',
-  },
-  {
-    name: 'notification',
-    icon: 'bell',
-  },
-  {
-    name: 'tranlate',
-    icon: 'translate',
-  },
-  {
-    name: 'settings',
-    icon: 'settings',
-  },
-  {
-    name: 'toggleDown',
-    icon: 'arrow',
-    rotate: '270deg',
-  },
-  {
-    name: 'toggleUp',
-    icon: 'arrow',
-    rotate: '90deg',
-  },
-  {
-    name: 'show',
-    icon: 'eye',
-  },
-  {
-    name: 'plus',
-    icon: 'plus',
-  },
-  {
-    name: 'delete',
-    icon: 'trash',
-  },
-  {
-    name: 'edit',
-    icon: 'pencil',
-  },
-  {
-    name: 'cancel',
-    icon: 'plus',
-    rotate: '46deg',
-  },
-  {
-    name: 'close',
-    icon: 'plus',
-    rotate: '90deg',
-  },
+  { name: 'menu', icon: 'menu' },
+  { name: 'home', icon: 'home' },
+  { name: 'user', icon: 'profile' },
+  { name: 'search', icon: 'search' },
+  { name: 'bookmarks', icon: 'tag' },
+  { name: 'notification', icon: 'bell' },
+  { name: 'tranlate', icon: 'translate' },
+  { name: 'settings', icon: 'settings' },
+  { name: 'toggleDown', icon: 'arrow', rotate: '270deg' },
+  { name: 'left', icon: 'arrow', rotate: '180deg' },
+  { name: 'right', icon: 'arrow', rotate: '0deg' },
+  { name: 'toggleUp', icon: 'arrow', rotate: '90deg' },
+  { name: 'show', icon: 'eye' },
+  { name: 'plus', icon: 'plus' },
+  { name: 'delete', icon: 'trash' },
+  { name: 'edit', icon: 'pencil' },
+  { name: 'cancel', icon: 'plus', rotate: '46deg' },
+  { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
 
 export const words = [
