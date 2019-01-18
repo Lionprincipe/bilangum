@@ -18,15 +18,20 @@ const Wrapper = styled.li`
 const WordCard = ({
   isOpen,
   wordId,
-  word: { word, tranlation, ...others },
+  word: { word, translation, ...others },
 }) => {
+  console.log(translation, 'trans')
   return (
     <Wrapper>
       <WordCardHeaderContainer open={isOpen} wordId={wordId} name={'word'} />
-      <TranslateTray translationList={['etre', 'be', 'sein']} />
+
       {isOpen && (
         <React.Fragment>
-          <WordCardBodyContainer wordId={wordId} properties={others} />
+          <WordCardBodyContainer wordId={wordId} properties={others}>
+            {translation && translation.length > 0 && (
+              <TranslateTray translationList={translation} />
+            )}
+          </WordCardBodyContainer>
           <WordCardFooter />
         </React.Fragment>
       )}

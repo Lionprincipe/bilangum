@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-bottom: 0.2em;
-  border-top: solid #eee 0.5px;
+  border-bottom: solid #eee 0.5px;
 `
 const SubWrapper = styled.div`
   display: flex;
@@ -55,22 +55,29 @@ export default class TranslateTray extends Component {
     const { translationList } = this.props
     const { currIndex } = this.state
     const nextIndex =
-      translationList.length - 1 > currIndex ? this.state.currIndex + 1 : 0
+      translationList && translationList.length - 1 > currIndex
+        ? this.state.currIndex + 1
+        : 0
     this.setStateHandler('currIndex', nextIndex)
   }
 
   handlePrevious = () => {
-    this.state.currIndex > 0 &&
-      this.setStateHandler('currIndex', this.state.currIndex - 1)
     const { translationList } = this.props
     const { currIndex } = this.state
+    this.state.currIndex > 0 &&
+      this.setStateHandler('currIndex', this.state.currIndex - 1)
     const nextIndex =
-      currIndex > 0 ? this.state.currIndex - 1 : translationList.length - 1
+      currIndex > 0
+        ? this.state.currIndex - 1
+        : (translationList && translationList.length - 1) || 0
     this.setStateHandler('currIndex', nextIndex)
   }
 
   render() {
-    return (
+    console.log(this.props.logtranslationList)
+    const isTranslated =
+      this.props.translationList && this.props.translationList.length > 0
+    return isTranslated ? (
       <Wrapper>
         <BtnTrayContainer
           name={'translationLeft'}
@@ -87,7 +94,7 @@ export default class TranslateTray extends Component {
           onClickRight={this.handleNext}
         />
       </Wrapper>
-    )
+    ) : null
   }
 
   renderTranslationElement() {
@@ -99,7 +106,8 @@ export default class TranslateTray extends Component {
   }
 
   renderDotsEl() {
-    const length = this.props.translationList.length || 0
+    const { translationList } = this.props
+    const length = (translationList && translationList.length) || 0
     return length && <DotsTray>{this.renderDot(length)}</DotsTray>
   }
 
