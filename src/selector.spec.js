@@ -78,7 +78,7 @@ describe('selector', () => {
       }
       expect(selectors.composeBtnsList(state, ownProps)).toEqual([
         { name: 'edit', onClick: console.log },
-        { name: 'delete', onClick: undefined },
+        { name: 'delete' },
       ])
     })
   })
