@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import BtnTrayContainer from '../container/BtnTrayContainer'
 import Modal from './Modal'
 import WordCardContainer from '../container/WordCardContainer'
+import { updateList } from '../utils'
 
 const Wrapper = styled.div`
   display: flex;
@@ -45,7 +46,10 @@ const Dot = styled.li`
 `
 
 export default class TranslateTray extends Component {
-  static propTypes = { translationList: PropTypes.array }
+  static propTypes = {
+    translationList: PropTypes.array,
+    onSave: PropTypes.func,
+  }
 
   state = { currIndex: 0, expendCurrent: false }
 
@@ -53,12 +57,16 @@ export default class TranslateTray extends Component {
     this.setState({ [name]: value })
   }
 
+  setCurrIndex = index => {
+    this.setStateHandler('currIndex', index)
+  }
+
   handleNext = () => {
     const { translationList } = this.props
     const { currIndex } = this.state
     const nextIndex =
-      translationList && translationList.length - 1 > currIndex
-        ? this.state.currIndex + 1
+      translationList && translationList.length > currIndex + 1
+        ? currIndex + 1
         : 0
     this.setStateHandler('currIndex', nextIndex)
   }
@@ -66,18 +74,28 @@ export default class TranslateTray extends Component {
   handlePrevious = () => {
     const { translationList } = this.props
     const { currIndex } = this.state
-    this.state.currIndex > 0 &&
-      this.setStateHandler('currIndex', this.state.currIndex - 1)
     const nextIndex =
       currIndex > 0
-        ? this.state.currIndex - 1
+        ? currIndex - 1
         : (translationList && translationList.length - 1) || 0
-    this.setStateHandler('currIndex', nextIndex)
+    this.setCurrIndex(nextIndex)
   }
+
   toggleShowSelectedHandler = () => {
     const { expendCurrent } = this.state
-    this.setState({ expendCurrent: !expendCurrent })
+    this.setStateHandler('expendCurrent', !expendCurrent)
   }
+
+  deleteTranslationHandler = (event, index) => {
+    event.stopPropagation()
+    console.log('iam in')
+    const { translationList, onSave } = this.props
+    const newList = updateList(translationList, index)
+    const newCurrIndex = newList && newList.length > index + 1 ? index + 1 : 0
+    typeof newList !== 'undefined' && onSave(newList)
+    this.setCurrIndex(newCurrIndex)
+  }
+
   render() {
     const { currIndex, expendCurrent } = this.state
     const isTranslated =
@@ -112,13 +130,21 @@ export default class TranslateTray extends Component {
     const { currIndex } = this.state
     if (translationList) {
       return (
-        <WordTray onClick={this.toggleShowSelectedHandler}>
-          {translationList[currIndex]}
-        </WordTray>
+        <React.Fragment>
+          <WordTray onClick={this.toggleShowSelectedHandler}>
+            {translationList[currIndex]}
+            <BtnTrayContainer
+              status={'default'}
+              name={'translationOpt'}
+              onClickDeleteTranslation={event =>
+                this.deleteTranslationHandler(event, currIndex)
+              }
+            />
+          </WordTray>
+        </React.Fragment>
       )
     }
   }
-  renderShowTranslation(selected) {}
 
   renderDotsEl() {
     const { translationList } = this.props
@@ -130,7 +156,11 @@ export default class TranslateTray extends Component {
     return (
       length &&
       [...Array(length)].map((_, index) => (
-        <Dot key={index} color={`${index === this.state.currIndex}`} />
+        <Dot
+          key={index}
+          color={`${index === this.state.currIndex}`}
+          onClick={() => this.setCurrIndex(index)}
+        />
       ))
     )
   }

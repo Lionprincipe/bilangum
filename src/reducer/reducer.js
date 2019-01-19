@@ -1,5 +1,6 @@
 import * as initialState from '../constants/initialState'
 import ACTIONS from '../actions'
+import { updateList, findIndexInList } from '../utils'
 
 export default function reducer(state = initialState, action = {}) {
   const {
@@ -84,19 +85,6 @@ function removeKeyInObject(object, key) {
   return Object.keys(object)
     .filter(el => el !== key)
     .reduce((acc, curr) => (acc = { ...acc, [curr]: object[curr] }), {})
-}
-
-function updateList(list, index, newItem) {
-  index = index > -1 ? index : list.length
-  return newItem
-    ? [...list.slice(0, index), newItem, ...list.slice(index + 1)]
-    : [...list.slice(0, index), ...list.slice(index + 1)]
-}
-
-function findIndexInList(list, id, name) {
-  return name
-    ? list.findIndex(el => el && el.id === id && el.name === name)
-    : list.findIndex(el => el && el.id === id)
 }
 
 function toggleStatus(list, id, name) {

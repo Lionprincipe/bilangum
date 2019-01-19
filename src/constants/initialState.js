@@ -13,6 +13,10 @@ export const preferedLanguages = {
 }
 export const elBtnsList = [
   {
+    name: 'translationOpt',
+    normal: [{ name: 'delete', onClick: 'onClickDeleteTranslation' }],
+  },
+  {
     name: 'translationLeft',
     normal: [
       {
@@ -87,7 +91,6 @@ export const buttonsAttributs = [
 ]
 
 export const words = [
-  { type: 'verb', language: 'english', word: 'to be', translation: ['être'] },
   {
     type: 'noun',
     language: 'english',
