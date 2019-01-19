@@ -21,6 +21,7 @@ const Dialog = styled.div`
   max-width: 520px;
   cursor: default;
   z-index: 22000;
+  background: whitesmoke;
 `
 
 const Content = styled.div`

@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import BtnTrayContainer from '../container/BtnTrayContainer'
+import Modal from './Modal'
+import WordCardContainer from '../container/WordCardContainer'
 
 const Wrapper = styled.div`
   display: flex;
@@ -45,7 +47,7 @@ const Dot = styled.li`
 export default class TranslateTray extends Component {
   static propTypes = { translationList: PropTypes.array }
 
-  state = { currIndex: 0 }
+  state = { currIndex: 0, expendCurrent: false }
 
   setStateHandler = (name, value) => {
     this.setState({ [name]: value })
@@ -72,9 +74,12 @@ export default class TranslateTray extends Component {
         : (translationList && translationList.length - 1) || 0
     this.setStateHandler('currIndex', nextIndex)
   }
-
+  toggleShowSelectedHandler = () => {
+    const { expendCurrent } = this.state
+    this.setState({ expendCurrent: !expendCurrent })
+  }
   render() {
-    console.log(this.props.logtranslationList)
+    const { currIndex, expendCurrent } = this.state
     const isTranslated =
       this.props.translationList && this.props.translationList.length > 0
     return isTranslated ? (
@@ -93,6 +98,11 @@ export default class TranslateTray extends Component {
           status={'default'}
           onClickRight={this.handleNext}
         />
+        {expendCurrent && (
+          <Modal onClose={this.toggleShowSelectedHandler}>
+            <WordCardContainer isOpen={true} wordId={currIndex} />
+          </Modal>
+        )}
       </Wrapper>
     ) : null
   }
@@ -101,9 +111,14 @@ export default class TranslateTray extends Component {
     const { translationList } = this.props
     const { currIndex } = this.state
     if (translationList) {
-      return <WordTray> {translationList[currIndex]}</WordTray>
+      return (
+        <WordTray onClick={this.toggleShowSelectedHandler}>
+          {translationList[currIndex]}
+        </WordTray>
+      )
     }
   }
+  renderShowTranslation(selected) {}
 
   renderDotsEl() {
     const { translationList } = this.props

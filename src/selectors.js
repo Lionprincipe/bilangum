@@ -1,6 +1,9 @@
 export const selectAddPropertyNumber = ({ newProperties }, { wordId }) =>
   newProperties && newProperties.filter(el => el === wordId).length
 
+export const selectCurrentWord = ({ words }, { wordId, word }) =>
+  word || (wordId && words[wordId])
+
 export const modalIdSelector = state => {
   const { modal } = state
   return (modal && modal.length - 1) || 0
@@ -26,9 +29,16 @@ export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
     .filter(e => e.name === name)
     .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
 
-export const getWordElOpenStatus = ({ wordId }, { listOfWordElInOpenMode }) => {
+export const getWordElOpenStatus = (
+  { wordId, isOpen },
+  { listOfWordElInOpenMode }
+) => {
   const index = findWordIndexInList(listOfWordElInOpenMode, wordId)
-  return index > -1 && listOfWordElInOpenMode[index].status
+  if (typeof isOpen !== 'undefined') {
+    return isOpen
+  } else {
+    return index > -1 && listOfWordElInOpenMode[index].status
+  }
 }
 
 export const getWordElEditStatus = (ownProps, state) => {

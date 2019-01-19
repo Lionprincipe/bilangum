@@ -53,6 +53,7 @@ export const elBtnsList = [
   {
     name: 'wordHeaderRight',
     normal: [
+      { name: 'translate', onClick: 'clickTranslate' },
       { name: 'edit', onClick: 'toggleEdit' },
       { name: 'delete', onClick: 'deleteWord' },
     ],
