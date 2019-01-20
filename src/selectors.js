@@ -1,4 +1,15 @@
-import { findIndexInList } from './utils'
+import { findIndexInList, updateList } from './utils'
+
+export const translationAddSelector = (state, ownProps) => {
+  const originalWord = selectCurrentWord(state, ownProps)
+  const { translation, word, ...others } = originalWord
+  const wordCopy = {
+    ...others,
+    translation: (translation && updateList(translation, -1, word)) || [],
+    language: 'afro',
+  }
+  return { wordCopy, originalWord }
+}
 export const selectAddPropertyNumber = ({ newProperties }, { wordId }) =>
   newProperties && newProperties.filter(el => el === wordId).length
 

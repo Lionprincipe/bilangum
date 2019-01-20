@@ -1,4 +1,5 @@
 import { createAction } from 'redux-actions'
+import { updateList } from './utils'
 const ACTIONS = {
   WORD_UPDATE: 'WORD_UPDATE',
   ADD_WORD: 'ADD_WORD',
@@ -30,6 +31,11 @@ export const createWordProperty = (wordId, name, dispatch) => {
 export const updateTranslation = (wordId, newList, dispatch) => {
   newList &&
     dispatch(wordUpdate({ wordId, name: 'translation', value: newList }))
+}
+export const saveNewTranslation = (newWord, list, wordId, dispatch) => {
+  newWord && dispatch(addWord({ newWord }))
+  wordId > -1 &&
+    updateTranslation(wordId, updateList(list, -1, newWord['word']), dispatch)
 }
 
 export default ACTIONS

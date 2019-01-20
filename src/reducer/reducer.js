@@ -50,7 +50,8 @@ export default function reducer(state = initialState, action = {}) {
     }
 
     case ACTIONS.ADD_WORD: {
-      return { ...state, words: [...words, payload.newWord] }
+      const { newWord } = payload
+      return { ...state, words: [...words, newWord && newWord] }
     }
 
     case ACTIONS.WORD_UPDATE: {
