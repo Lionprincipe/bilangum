@@ -28,7 +28,6 @@ export const createWordProperty = (wordId, name, dispatch) => {
   wordId > -1 && dispatch(removeNewProperty({ wordId }))
 }
 export const updateTranslation = (wordId, newList, dispatch) => {
-  console.log(newList, wordId, 'this is what i got')
   newList &&
     dispatch(wordUpdate({ wordId, name: 'translation', value: newList }))
 }

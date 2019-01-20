@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import WordCardFooter from './WordCardFooter'
 import WordCardHeaderContainer from '../container/WordCardHeaderContainer'
 import WordCardBodyContainer from '../container/WordCardBodyContainer'
-import TranslateTrayContainer from '../container/TranslateTrayContainer'
+import TranslationCardContainer from '../container/TranslationCardContainer'
 
 const Wrapper = styled.li`
   margin-bottom: 0.4em;
@@ -28,7 +28,7 @@ const WordCard = ({
         <React.Fragment>
           <WordCardBodyContainer wordId={wordId} properties={others}>
             {translation && translation.length > 0 && (
-              <TranslateTrayContainer
+              <TranslationCardContainer
                 wordId={wordId}
                 translationList={translation}
               />

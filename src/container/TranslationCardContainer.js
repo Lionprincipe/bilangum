@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import AddProperty from '../components/TranslateTray'
+import TranslationCard from '../components/TranslationCard'
 import { updateTranslation } from '../actions'
 
 const mapDispatchToProps = (dispatch, { wordId }) => ({
@@ -9,4 +9,4 @@ const mapDispatchToProps = (dispatch, { wordId }) => ({
 export default connect(
   null,
   mapDispatchToProps
-)(AddProperty)
+)(TranslationCard)
