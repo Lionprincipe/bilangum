@@ -7,7 +7,7 @@ import WordCardHeaderContainer from '../container/WordCardHeaderContainer'
 import WordCardBodyContainer from '../container/WordCardBodyContainer'
 import TranslationCardContainer from '../container/TranslationCardContainer'
 
-const Wrapper = styled.li`
+const Wrapper = styled('li')`
   margin-bottom: 0.4em;
   list-style-type: none;
   padding: 0.5em;
