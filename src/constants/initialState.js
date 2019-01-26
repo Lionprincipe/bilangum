@@ -89,8 +89,8 @@ export const buttonsAttributs = [
   { name: 'cancel', icon: 'plus', rotate: '46deg' },
   { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
-
-export const words = [
+export const words = []
+export const wordss = [
   {
     type: 'noun',
     language: 'english',

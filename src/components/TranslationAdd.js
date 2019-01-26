@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import InputField from './InputField'
+import AutocompleteContainer from '../container/AutocompleteContainer'
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
   const text = `Add a  translation for :${word}`
   return (
     <Wrapper>
-      <InputField
+      <AutocompleteContainer
         name={name}
         value={''}
         placeholder={text}

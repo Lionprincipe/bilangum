@@ -1,5 +1,10 @@
 import { findIndexInList, updateList } from './utils'
 
+export const suggestionsSelector = state => {
+  const { words } = state
+  return words.map(({ word }) => word)
+}
+
 export const translationAddSelector = (state, ownProps) => {
   const originalWord = selectCurrentWord(state, ownProps)
   const { translation, word, ...others } = originalWord

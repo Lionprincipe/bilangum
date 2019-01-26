@@ -23,11 +23,14 @@ export default class InputField extends Component {
   state = {
     inputValue: '',
   }
+
   handleChange = e => {
     const { value } = e.target
+    const { onChange } = this.props
     this.setState({
       inputValue: value,
     })
+    onChange && onChange(e)
   }
 
   handleFocus = e => {
@@ -48,6 +51,13 @@ export default class InputField extends Component {
       })
     }
   }
+
+  handleKeyUp = event => {
+    const { onKeyUp } = this.props
+    this.checkForEnterButton(event)
+    onKeyUp && onKeyUp(event)
+  }
+
   handleBlur = event => {
     const { value } = event.target
     const { onBlur } = this.props
@@ -60,12 +70,14 @@ export default class InputField extends Component {
     return (
       <StyledInput
         name={name}
+        type="text"
         placeholder={placeholder || value}
-        value={inputValue}
+        value={value || inputValue}
         onChange={this.handleChange}
         onFocus={this.handleFocus}
-        onKeyUp={this.checkForEnterButton}
+        onKeyUp={this.handleKeyUp}
         onBlur={this.handleBlur}
+        autoComplete="off"
       />
     )
   }
