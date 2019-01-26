@@ -6,11 +6,11 @@ import { selectAddPropertyNumber } from '../selectors'
 const mapStateToProps = (state, ownProps) => ({
   nbField: selectAddPropertyNumber(state, ownProps),
 })
-const mapDispatchToProps = (dispatch, { wordId }) => ({
+const mapDispatchToProps = (dispatch, { wordIndex }) => ({
   onClick: () =>
     dispatch(
       addNewProperty({
-        wordId,
+        wordIndex,
       })
     ),
 })

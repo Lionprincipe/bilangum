@@ -3,12 +3,12 @@ import * as selectors from './selectors'
 describe('selector', () => {
   describe('getWordElEditStatus', () => {
     it('absence in the list', () => {
-      const ownProps = { wordId: 1, name: 'type' }
+      const ownProps = { wordIndex: 1, name: 'type' }
       const state = { listOfWordElInEditMode: [] }
       expect(selectors.getWordElEditStatus(ownProps, state)).toBe(false)
     })
     it('select property edit status', () => {
-      const ownProps = { wordId: 1, name: 'type' }
+      const ownProps = { wordIndex: 1, name: 'type' }
       const state = {
         listOfWordElInEditMode: [
           { id: 1, status: true, name: 'type' },
@@ -20,12 +20,12 @@ describe('selector', () => {
   })
   describe('getWordElOpenStatus', () => {
     it('not in the list', () => {
-      const ownProps = { wordId: 1 }
+      const ownProps = { wordIndex: 1 }
       const state = { listOfWordElInOpenMode: [] }
       expect(selectors.getWordElOpenStatus(ownProps, state)).toBe(false)
     })
     it('select property edit status', () => {
-      const ownProps = { wordId: 1 }
+      const ownProps = { wordIndex: 1 }
       const state = {
         listOfWordElInOpenMode: [
           { id: 1, status: true },

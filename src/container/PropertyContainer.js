@@ -7,12 +7,12 @@ const mapStateToProps = (state, ownProps) => ({
   isEditing: getWordElEditStatus(ownProps, state),
 })
 
-const mapDispatchToProps = (dispatch, { wordId, name }) => ({
-  toggleEdit: () => dispatch(toggleEditMode({ wordId, name })),
-  deleteMe: () => dispatch(deleteWordProperty({ wordId, name })),
+const mapDispatchToProps = (dispatch, { wordIndex, name }) => ({
+  toggleEdit: () => dispatch(toggleEditMode({ wordIndex, name })),
+  deleteMe: () => dispatch(deleteWordProperty({ wordIndex, name })),
   onSubmit: value => {
-    dispatch(wordUpdate({ wordId, name, value }))
-    dispatch(toggleEditMode({ wordId, name }))
+    dispatch(wordUpdate({ wordIndex, name, value }))
+    dispatch(toggleEditMode({ wordIndex, name }))
   },
 })
 

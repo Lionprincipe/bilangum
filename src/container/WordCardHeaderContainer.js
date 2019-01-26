@@ -10,18 +10,18 @@ import { getWordElEditStatus } from '../selectors'
 
 const mapPropsToState = (state, ownProps) => ({
   name: 'word',
-  title: state.words[ownProps.wordId].word,
+  title: state.words[ownProps.wordIndex].word,
   isEditing: getWordElEditStatus(ownProps, state),
 })
 
-const mapDispatchToProps = (dispatch, { wordId, name }) => ({
-  toggleEdit: () => dispatch(toggleEditMode({ wordId, name })),
-  onClick: () => dispatch(toggleOpenWordCard({ wordId })),
-  onDelete: () => dispatch(deleteWord({ wordId })),
+const mapDispatchToProps = (dispatch, { wordIndex, name }) => ({
+  toggleEdit: () => dispatch(toggleEditMode({ wordIndex, name })),
+  onClick: () => dispatch(toggleOpenWordCard({ wordIndex })),
+  onDelete: () => dispatch(deleteWord({ wordIndex })),
   onUpdate: (name, value) =>
     dispatch(
       wordUpdate({
-        wordId,
+        wordIndex,
         name,
         value,
       })

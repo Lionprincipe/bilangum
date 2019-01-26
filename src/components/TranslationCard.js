@@ -108,7 +108,7 @@ export default class TranslateTray extends Component {
           <TranslationView
             isOpen={expendCurrent}
             onClose={this.toggleShowSelectedHandler}
-            wordId={currIndex}
+            wordIndex={currIndex}
           />
         </Wrapper>
       )

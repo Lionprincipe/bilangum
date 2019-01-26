@@ -8,9 +8,9 @@ const mapStateToProps = (state, ownProps) => ({
   placeholder: 'property',
 })
 
-const mapDispatchToProps = (dispatch, { wordId }) => ({
-  deleteMe: () => dispatch(removeNewProperty({ wordId })),
-  onSubmit: name => createWordProperty(wordId, name, dispatch),
+const mapDispatchToProps = (dispatch, { wordIndex }) => ({
+  deleteMe: () => dispatch(removeNewProperty({ wordIndex })),
+  onSubmit: name => createWordProperty(wordIndex, name, dispatch),
 })
 
 export default connect(

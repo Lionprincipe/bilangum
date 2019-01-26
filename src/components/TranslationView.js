@@ -10,13 +10,13 @@ const Wrapper = styled.ul`
   margin: 1em auto;
 `
 
-const TranslationView = ({ wordId, isOpen, onClose }) => {
+const TranslationView = ({ wordIndex, isOpen, onClose }) => {
   return (
     isOpen && (
       <React.Fragment>
         <Modal onClose={onClose}>
           <Wrapper>
-            <WordCardContainer isOpen={true} wordId={wordId} />
+            <WordCardContainer isOpen={true} wordIndex={wordIndex} />
           </Wrapper>
         </Modal>
       </React.Fragment>
@@ -25,7 +25,7 @@ const TranslationView = ({ wordId, isOpen, onClose }) => {
 }
 
 TranslationView.propTypes = {
-  wordId: PropTypes.number,
+  wordIndex: PropTypes.number,
   onClose: PropTypes.func,
 }
 

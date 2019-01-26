@@ -8,9 +8,9 @@ const mapStateToProps = (state, ownProps) => ({
   name: 'translation',
   suggestions: suggestionsSelector(state, ownProps),
 })
-const mapDispatchToProps = (dispatch, { wordId }) => ({
+const mapDispatchToProps = (dispatch, { wordIndex }) => ({
   onSave: (newWord, list) =>
-    saveNewTranslation(newWord, list, wordId, dispatch),
+    saveNewTranslation(newWord, list, wordIndex, dispatch),
 })
 
 export default connect(

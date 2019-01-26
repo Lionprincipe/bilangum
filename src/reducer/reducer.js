@@ -14,31 +14,31 @@ export default function reducer(state = initialState, action = {}) {
 
   switch (action.type) {
     case ACTIONS.ADD_NEW_PROPERTY: {
-      return { ...state, newProperties: [...newProperties, payload.wordId] }
+      return { ...state, newProperties: [...newProperties, payload.wordIndex] }
     }
 
     case ACTIONS.REMOVE_NEW_PROPERTY: {
       const { newProperties: prevList } = state
-      const index = prevList.findIndex(el => el === payload.wordId)
+      const index = prevList.findIndex(el => el === payload.wordIndex)
       const newProperties = index > -1 ? updateList(prevList, index) : prevList
       return { ...state, newProperties }
     }
 
     case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
-      const { wordId } = payload
+      const { wordIndex } = payload
       return {
         ...state,
-        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordId),
+        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordIndex),
       }
     }
 
     case ACTIONS.TOGGLE_EDIT_MODE: {
-      const { wordId, name } = payload
+      const { wordIndex, name } = payload
       return {
         ...state,
         listOfWordElInEditMode: toggleStatus(
           listOfWordElInEditMode,
-          wordId,
+          wordIndex,
           name
         ),
       }
@@ -55,24 +55,24 @@ export default function reducer(state = initialState, action = {}) {
     }
 
     case ACTIONS.WORD_UPDATE: {
-      const { wordId: index, name, value } = payload
+      const { wordIndex: index, name, value } = payload
       const newWord = { ...words[index], [name]: value }
       return { ...state, words: updateList(words, index, newWord) }
     }
 
     case ACTIONS.DELETE_WORD: {
-      const { wordId: index } = payload
+      const { wordIndex: index } = payload
       return { ...state, words: updateList(words, index) }
     }
 
     case ACTIONS.DELETE_WORD_PROPERTY: {
-      const { wordId: index, name } = payload
+      const { wordIndex: index, name } = payload
       const newWord = removeKeyInObject(words[index], name)
       return { ...state, words: updateList(words, index, newWord) }
     }
 
     case ACTIONS.ADD_WORD_PROPERTY: {
-      const { wordId: index, name, value } = payload
+      const { wordIndex: index, name, value } = payload
       const newWord = { ...words[index], [name]: value || '' }
       return { ...state, words: updateList(words, index, newWord) }
     }

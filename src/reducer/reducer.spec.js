@@ -40,7 +40,7 @@ describe('reducer', () => {
       const action = {
         type: ACTIONS.WORD_UPDATE,
         payload: {
-          wordId: 1,
+          wordIndex: 1,
           name: 'language',
           value: 'french',
         },
@@ -56,7 +56,7 @@ describe('reducer', () => {
   // DELETE_WORD: 'DELETE_WORD',
   describe(ACTIONS.DELETE_WORD, () => {
     it('delete a word', () => {
-      const action = { type: ACTIONS.DELETE_WORD, payload: { wordId: 1 } }
+      const action = { type: ACTIONS.DELETE_WORD, payload: { wordIndex: 1 } }
       expect(reducer(state, action)).toEqual({
         words: [{ word: 'word', type: 'noun', language: 'english' }],
       })
@@ -67,7 +67,7 @@ describe('reducer', () => {
     it('delete a word property', () => {
       const action = {
         type: ACTIONS.DELETE_WORD_PROPERTY,
-        payload: { wordId: 0, name: 'type' },
+        payload: { wordIndex: 0, name: 'type' },
       }
 
       expect(reducer(state, action)).toEqual({
@@ -84,7 +84,7 @@ describe('reducer', () => {
     it('add a property to a word ', () => {
       const action = {
         type: ACTIONS.ADD_WORD_PROPERTY,
-        payload: { wordId: 0, name: 'propplus', value: 'valueplus' },
+        payload: { wordIndex: 0, name: 'propplus', value: 'valueplus' },
       }
       expect(reducer(state, action)).toEqual({
         words: [
@@ -111,7 +111,7 @@ describe('reducer', () => {
       }
       const action = {
         type: ACTIONS.TOGGLE_OPEN_WORD_CARD,
-        payload: { wordId: 0 },
+        payload: { wordIndex: 0 },
       }
       expect(reducer(state, action)).toEqual({
         ...state,
@@ -135,7 +135,7 @@ describe('reducer', () => {
       }
       const action = {
         type: ACTIONS.TOGGLE_EDIT_MODE,
-        payload: { wordId: 1, name: 'type' },
+        payload: { wordIndex: 1, name: 'type' },
       }
       expect(reducer(state, action)).toEqual({
         ...state,
@@ -150,7 +150,10 @@ describe('reducer', () => {
   //           ADD_NEW_PROPERTY: 'ADD_NEW_PROPERTY',
   describe(ACTIONS.ADD_NEW_PROPERTY, () => {
     it('show a new propety input in a  specific wordcard', () => {
-      const action = { type: ACTIONS.ADD_NEW_PROPERTY, payload: { wordId: 0 } }
+      const action = {
+        type: ACTIONS.ADD_NEW_PROPERTY,
+        payload: { wordIndex: 0 },
+      }
       state = { ...state, newProperties: [1, 1, 2, 3, 1] }
 
       expect(reducer(state, action)).toEqual({
@@ -164,7 +167,7 @@ describe('reducer', () => {
     it('hide a new propety input in a  specific wordcard', () => {
       const action = {
         type: ACTIONS.REMOVE_NEW_PROPERTY,
-        payload: { wordId: 0 },
+        payload: { wordIndex: 0 },
       }
       state = { ...state, newProperties: [1, 1, 2, 3, 1, 0] }
 

@@ -1,13 +1,14 @@
 import { connect } from 'react-redux'
 import AddWord from '../components/AddWord'
-import { addWord, toggleIsAdding } from '../actions'
+import { toggleIsAdding, createWord } from '../actions'
 
 const mapStateToProps = state => ({
   newWordProps: state.newWordProps,
   isAdding: state.isAdding,
 })
+
 const mapDispatchToProps = dispatch => ({
-  onSave: newWord => dispatch(addWord({ newWord })),
+  onSave: newWord => createWord(newWord, dispatch),
   toggleOpen: () => dispatch(toggleIsAdding()),
 })
 

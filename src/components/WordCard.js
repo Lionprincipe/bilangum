@@ -17,17 +17,21 @@ const Wrapper = styled('li')`
 
 const WordCard = ({
   isOpen,
-  wordId,
+  wordIndex,
   word: { word, translation, ...others },
 }) => {
   return (
     <Wrapper>
-      <WordCardHeaderContainer open={isOpen} wordId={wordId} name={'word'} />
+      <WordCardHeaderContainer
+        open={isOpen}
+        wordIndex={wordIndex}
+        name={'word'}
+      />
 
       {isOpen && (
         <React.Fragment>
-          <WordCardBodyContainer wordId={wordId} properties={others}>
-            <Translations wordId={wordId} list={translation} />
+          <WordCardBodyContainer wordIndex={wordIndex} properties={others}>
+            <Translations wordIndex={wordIndex} list={translation} />
           </WordCardBodyContainer>
           <WordCardFooter />
         </React.Fragment>
@@ -41,7 +45,7 @@ WordCard.propTypes = {
   word: PropTypes.object,
   onUpdate: PropTypes.func,
   toggleOpenMode: PropTypes.func,
-  wordId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  wordIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 }
 
 export default WordCard

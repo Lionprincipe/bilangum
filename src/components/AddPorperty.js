@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import ButtonAdd from './ButtonAdd'
 import NewPropertyContainer from '../container/NewPropertyContainer'
 
-const AddPorperty = ({ nbField, onClick, wordId }) => {
+const AddPorperty = ({ nbField, onClick, wordIndex }) => {
   const inputs =
     !!nbField &&
     [...Array(nbField)].map((_, index) => (
       <NewPropertyContainer
-        wordId={wordId}
+        wordIndex={wordIndex}
         key={index}
         name={`newProperty${index}`}
       />

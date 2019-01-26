@@ -15,11 +15,11 @@ export const translationAddSelector = (state, ownProps) => {
   }
   return { wordCopy, originalWord }
 }
-export const selectAddPropertyNumber = ({ newProperties }, { wordId }) =>
-  newProperties && newProperties.filter(el => el === wordId).length
+export const selectAddPropertyNumber = ({ newProperties }, { wordIndex }) =>
+  newProperties && newProperties.filter(el => el === wordIndex).length
 
-export const selectCurrentWord = ({ words }, { wordId, word }) =>
-  word || (wordId >= 0 && words[wordId])
+export const selectCurrentWord = ({ words }, { wordIndex, word }) =>
+  word || (wordIndex >= 0 && words[wordIndex])
 
 export const modalIdSelector = state => {
   const { modal } = state
@@ -47,10 +47,10 @@ export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
     .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
 
 export const getWordElOpenStatus = (
-  { wordId, isOpen },
+  { wordIndex, isOpen },
   { listOfWordElInOpenMode }
 ) => {
-  const index = findIndexInList(listOfWordElInOpenMode, wordId)
+  const index = findIndexInList(listOfWordElInOpenMode, wordIndex)
   if (typeof isOpen !== 'undefined') {
     return isOpen
   } else {
@@ -59,9 +59,9 @@ export const getWordElOpenStatus = (
 }
 
 export const getWordElEditStatus = (ownProps, state) => {
-  const { wordId, name } = ownProps
+  const { wordIndex, name } = ownProps
   const { listOfWordElInEditMode } = state
-  const index = findIndexInList(listOfWordElInEditMode, wordId, name)
+  const index = findIndexInList(listOfWordElInEditMode, wordIndex, name)
   return index > -1 && listOfWordElInEditMode[index].status
 }
 

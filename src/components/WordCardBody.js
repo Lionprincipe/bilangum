@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   padding: 0.4em 0;
 `
 
-const WordCardBody = ({ wordId, properties, children, onUpdate }) => {
+const WordCardBody = ({ wordIndex, properties, children, onUpdate }) => {
   const keys = Object.keys(properties)
   const elList =
     keys.length > 0 &&
@@ -21,7 +21,7 @@ const WordCardBody = ({ wordId, properties, children, onUpdate }) => {
         name={el}
         value={properties[el]}
         onUpdate={onUpdate}
-        wordId={wordId}
+        wordIndex={wordIndex}
       />
     ))
 
@@ -29,7 +29,7 @@ const WordCardBody = ({ wordId, properties, children, onUpdate }) => {
     <Wrapper>
       {children}
       {elList}
-      <AddPropertyContainer wordId={wordId} />
+      <AddPropertyContainer wordIndex={wordIndex} />
     </Wrapper>
   )
 }
@@ -40,7 +40,7 @@ WordCardBody.propTypes = {
     PropTypes.string,
     PropTypes.node,
   ]),
-  wordId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  wordIndex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   properties: PropTypes.object,
   onUpdate: PropTypes.func,
 }

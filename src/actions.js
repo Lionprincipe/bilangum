@@ -1,4 +1,5 @@
 import { createAction } from 'redux-actions'
+import uuidV4 from 'uuid/v4'
 import { updateList } from './utils'
 const ACTIONS = {
   WORD_UPDATE: 'WORD_UPDATE',
@@ -24,18 +25,30 @@ export const toggleIsAdding = createAction(ACTIONS.TOGGLE_IS_ADDING)
 export const addNewProperty = createAction(ACTIONS.ADD_NEW_PROPERTY)
 export const removeNewProperty = createAction(ACTIONS.REMOVE_NEW_PROPERTY)
 
-export const createWordProperty = (wordId, name, dispatch) => {
-  wordId > -1 && name && dispatch(addWordProperty({ wordId, name }))
-  wordId > -1 && dispatch(removeNewProperty({ wordId }))
+export const createWordProperty = (wordIndex, name, dispatch) => {
+  wordIndex > -1 && name && dispatch(addWordProperty({ wordIndex, name }))
+  wordIndex > -1 && dispatch(removeNewProperty({ wordIndex }))
 }
-export const updateTranslation = (wordId, newList, dispatch) => {
+export const createWord = (newWord, dispatch) => {
+  if (newWord) {
+    newWord = { wordId: uuidV4(), ...newWord }
+    dispatch(addWord({ newWord }))
+  }
+}
+
+export const updateTranslation = (wordIndex, newList, dispatch) => {
   newList &&
-    dispatch(wordUpdate({ wordId, name: 'translation', value: newList }))
+    dispatch(wordUpdate({ wordIndex, name: 'translation', value: newList }))
 }
-export const saveNewTranslation = (newWord, list, wordId, dispatch) => {
+
+export const saveNewTranslation = (newWord, list, wordIndex, dispatch) => {
   newWord && dispatch(addWord({ newWord }))
-  wordId > -1 &&
-    updateTranslation(wordId, updateList(list, -1, newWord['word']), dispatch)
+  wordIndex > -1 &&
+    updateTranslation(
+      wordIndex,
+      updateList(list, -1, newWord['word']),
+      dispatch
+    )
 }
 
 export default ACTIONS
