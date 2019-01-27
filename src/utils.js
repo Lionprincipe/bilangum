@@ -1,4 +1,5 @@
 export function updateList(list, index, newItem) {
+  console.log(list, 'list', index, newItem, 'item')
   index = index > -1 ? index : list.length
   return newItem
     ? [...list.slice(0, index), newItem, ...list.slice(index + 1)]

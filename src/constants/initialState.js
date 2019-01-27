@@ -1,3 +1,4 @@
+export const languages = []
 export const modal = []
 export const newWordProps = [
   'word',
@@ -90,47 +91,6 @@ export const buttonsAttributs = [
   { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
 export const words = []
-export const wordss = [
-  {
-    type: 'noun',
-    language: 'english',
-    word: 'hello',
-    translation: [
-      'salut',
-      'bonjour',
-      'salut',
-      'bonjour',
-      'salut',
-      'bonjour',
-      'salut',
-      'bonjour',
-      'salut',
-      'bonjour',
-      'salut',
-      'bonjour',
-    ],
-  },
-  { type: 'noun', language: 'english', word: 'house' },
-  { type: 'verb', language: 'english', word: 'to do' },
-  { type: 'noun', language: 'english', word: 'fish' },
-  { type: 'noun', language: 'english', word: 'cat' },
-  { type: 'verb', language: 'english', word: 'to be' },
-  {
-    type: 'noun',
-    language: 'english',
-    word: 'hello',
-    translation: ['bonjour', 'salut'],
-  },
-  {
-    type: 'noun',
-    language: 'english',
-    word: 'house',
-    translation: ['maison', 'appartement', 'case'],
-  },
-  { type: 'verb', language: 'english', word: 'to do', translation: ['faire'] },
-  { type: 'noun', language: 'english', word: 'fish', translation: ['poisson'] },
-  { type: 'noun', language: 'english', word: 'cat', translation: ['chat'] },
-]
 export const listOfWordElInEditMode = []
 export const listOfWordElInOpenMode = []
 export const inputName = 'language'

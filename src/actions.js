@@ -29,6 +29,7 @@ export const createWordProperty = (wordIndex, name, dispatch) => {
   wordIndex > -1 && name && dispatch(addWordProperty({ wordIndex, name }))
   wordIndex > -1 && dispatch(removeNewProperty({ wordIndex }))
 }
+
 export const createWord = (newWord, dispatch) => {
   if (newWord) {
     newWord = { wordId: uuidV4(), ...newWord }
@@ -42,13 +43,11 @@ export const updateTranslation = (wordIndex, newList, dispatch) => {
 }
 
 export const saveNewTranslation = (newWord, list, wordIndex, dispatch) => {
+  const newWordId = uuidV4()
+  newWord = { wordId: newWordId, ...newWord }
   newWord && dispatch(addWord({ newWord }))
   wordIndex > -1 &&
-    updateTranslation(
-      wordIndex,
-      updateList(list, -1, newWord['word']),
-      dispatch
-    )
+    updateTranslation(wordIndex, updateList(list, -1, newWordId), dispatch)
 }
 
 export default ACTIONS

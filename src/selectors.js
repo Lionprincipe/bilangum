@@ -1,5 +1,17 @@
 import { findIndexInList, updateList } from './utils'
 
+export const wordIndexFromWordIdSelector = ({ words }, { wordId }) => {
+  return words.findIndex(({ wordId: id }) => id === wordId)
+}
+
+export const translationListSelector = ({ words }, { translationList }) => {
+  if (words && words.length > 0) {
+    return words.filter(
+      ({ wordId }) => wordId && translationList.some(el => el === wordId)
+    )
+  }
+}
+
 export const suggestionsSelector = state => {
   const { words } = state
   return words.map(({ word }) => word)
@@ -7,14 +19,16 @@ export const suggestionsSelector = state => {
 
 export const translationAddSelector = (state, ownProps) => {
   const originalWord = selectCurrentWord(state, ownProps)
-  const { translation, word, ...others } = originalWord
+  const { translation, wordId, word, ...others } = originalWord
   const wordCopy = {
     ...others,
-    translation: (translation && updateList(translation, -1, word)) || [],
+    translation: updateList(translation || [], -1, wordId) || [],
     language: 'afro',
   }
+  console.log(wordCopy)
   return { wordCopy, originalWord }
 }
+
 export const selectAddPropertyNumber = ({ newProperties }, { wordIndex }) =>
   newProperties && newProperties.filter(el => el === wordIndex).length
 

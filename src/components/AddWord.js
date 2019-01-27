@@ -21,6 +21,10 @@ export default class AddWord extends Component {
     onSave: PropTypes.func,
   }
   state = {}
+  handleClosing = () => {
+    this.setState({})
+    this.props.toggleOpen()
+  }
 
   handleInput = name => value => {
     this.setState({ [name]: value })
@@ -30,14 +34,13 @@ export default class AddWord extends Component {
     event.preventDefault()
     const { word } = this.state
     word && this.props.onSave(this.state)
-    word && this.setState({})
-    this.props.toggleOpen()
+    this.handleClosing()
   }
 
   render() {
     const { isAdding, toggleOpen } = this.props
     return isAdding ? (
-      <Modal onClose={toggleOpen}>
+      <Modal onClose={this.handleClosing}>
         <Wrapper onSubmit={this.handleSubmit}>
           {this.createElements()}
           <Button onClick={this.handleSubmit}>Submit</Button>

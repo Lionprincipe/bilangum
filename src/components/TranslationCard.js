@@ -5,7 +5,7 @@ import BtnTrayContainer from '../container/BtnTrayContainer'
 import { updateList } from '../utils'
 import Translation from './Translation'
 import TranslationDots from './TranslationDots'
-import TranslationView from './TranslationView'
+import TranslateViewContainer from '../container/TranslateViewContainer'
 
 const Wrapper = styled.div`
   display: flex;
@@ -76,10 +76,14 @@ export default class TranslateTray extends Component {
 
   render() {
     const { currIndex, expendCurrent } = this.state
-    const { translationList } = this.props
+    const { translationList, translationWordList } = this.props
     const isTranslated =
       this.props.translationList && translationList.length > 0
-    const currText = translationList[currIndex]
+    const currId = translationList[currIndex]
+    const currText = translationWordList.filter(
+      ({ wordId }) => wordId === currId
+    )[0].word
+
     const count = (translationList && translationList.length) || 0
 
     return (
@@ -105,10 +109,10 @@ export default class TranslateTray extends Component {
             name={'translationRight'}
             onClickRight={this.handleNext}
           />
-          <TranslationView
+          <TranslateViewContainer
             isOpen={expendCurrent}
             onClose={this.toggleShowSelectedHandler}
-            wordIndex={currIndex}
+            wordId={currId}
           />
         </Wrapper>
       )
