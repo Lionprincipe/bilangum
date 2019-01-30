@@ -9,7 +9,7 @@ const ToggleSearchLanguage = ({
   return (
     <div>
       <RadioField text={reference} name={name} />
-      <RadioField text={ethnic} name={name} />
+      <RadioField text={ethnic||'ero'} name={name} />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import reducer from '../reducer/reducer'
 import HomeScreen from '../screens/HomeScreen'
+import PreferencesScreen from '../screens/PreferencesScreen'
 
 const store = createStore(
   reducer,
@@ -14,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <HomeScreen />
+        <PreferencesScreen />
       </Provider>
     )
   }

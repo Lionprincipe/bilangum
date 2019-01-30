@@ -19,6 +19,8 @@ const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
       <AutocompleteContainer
         name={name}
         value={''}
+        collection={'words'}
+        attributs={['word']}
         placeholder={text}
         onSubmit={value =>
           onSave({ ...wordCopy, word: value }, translation || [])

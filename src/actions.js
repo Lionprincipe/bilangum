@@ -12,6 +12,8 @@ const ACTIONS = {
   ADD_NEW_PROPERTY: 'ADD_NEW_PROPERTY',
   REMOVE_NEW_PROPERTY: 'REMOVE_NEW_PROPERTY',
   TOGGLE_IS_ADDING: 'TOGGLE_IS_ADDING',
+  SET_REFERENCE_LANGUAGE: 'SET_REFERENCE_LANGUAGE',
+  SET_ETHNIC_LANGUAGE: 'SET_ETHNIC_LANGUAGE',
 }
 
 export const addWord = createAction(ACTIONS.ADD_WORD)
@@ -24,6 +26,8 @@ export const toggleEditMode = createAction(ACTIONS.TOGGLE_EDIT_MODE)
 export const toggleIsAdding = createAction(ACTIONS.TOGGLE_IS_ADDING)
 export const addNewProperty = createAction(ACTIONS.ADD_NEW_PROPERTY)
 export const removeNewProperty = createAction(ACTIONS.REMOVE_NEW_PROPERTY)
+export const setReferenceLanguage = createAction(ACTIONS.SET_REFERENCE_LANGUAGE)
+export const setEthnicLanguage = createAction(ACTIONS.SET_ETHNIC_LANGUAGE)
 
 export const createWordProperty = (wordIndex, name, dispatch) => {
   wordIndex > -1 && name && dispatch(addWordProperty({ wordIndex, name }))

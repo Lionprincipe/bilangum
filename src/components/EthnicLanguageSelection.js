@@ -1,10 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import SearchField from './SearchField'
+import AutocompleteContainer from '../container/AutocompleteContainer'
 
-const EthnicLanguageSelection = ({ placeholder }) => {
-  return <SearchField placeholder="african language" />
+const EthnicLanguageSelection = ({
+  ethnicLanguage,
+  name,
+  placeholder,
+  onSubmit,
+}) => {
+  return (
+    <AutocompleteContainer
+      collection={'languages'}
+      attributs={['name']}
+      name={name}
+      value={ethnicLanguage}
+      placeholder={placeholder}
+      onSubmit={onSubmit}
+    />
+  )
 }
 
 EthnicLanguageSelection.propTypes = {

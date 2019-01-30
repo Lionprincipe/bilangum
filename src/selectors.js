@@ -12,9 +12,13 @@ export const translationListSelector = ({ words }, { translationList }) => {
   }
 }
 
-export const suggestionsSelector = state => {
-  const { words } = state
-  return words.map(({ word }) => word)
+export const suggestionsSelector = (state, { collection, attributs }) => {
+  const list = state[collection]
+  const suggestions = list.map(el =>
+    attributs.reduce((acc, curr) => (acc = el[curr]), '')
+  )
+  console.log(list, 'list', suggestions, 'sugg', collection, attributs)
+  return suggestions
 }
 
 export const translationAddSelector = (state, ownProps) => {

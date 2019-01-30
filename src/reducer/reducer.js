@@ -77,6 +77,15 @@ export default function reducer(state = initialState, action = {}) {
       return { ...state, words: updateList(words, index, newWord) }
     }
 
+    case ACTIONS.SET_REFERENCE_LANGUAGE: {
+      const { referenceLanguage } = payload
+      return { ...state, referenceLanguage }
+    }
+    case ACTIONS.SET_ETHNIC_LANGUAGE: {
+      const { ethnicLanguage } = payload
+      return { ...state, ethnicLanguage }
+    }
+
     default:
       return state
   }

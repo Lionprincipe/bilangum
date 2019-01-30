@@ -1,4 +1,10 @@
-export const languages = []
+export const languages = [
+  { name: 'yipunu' },
+  { name: 'nzebi' },
+  { name: 'wolof' },
+]
+export const referenceLanguage = ''
+export const ethnicLanguage = ''
 export const modal = []
 export const newWordProps = [
   'word',
