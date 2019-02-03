@@ -16,6 +16,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <PreferencesScreen />
+        <HomeScreen />
       </Provider>
     )
   }

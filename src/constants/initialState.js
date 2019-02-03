@@ -1,10 +1,17 @@
-export const languages = [
-  { name: 'yipunu' },
-  { name: 'nzebi' },
-  { name: 'wolof' },
-]
-export const referenceLanguage = ''
-export const ethnicLanguage = ''
+import uuid4 from 'uuid/v4'
+import langData from '../datas/languages.json'
+import wordsData from '../datas/words.json'
+export const languages = parseLangagagesData(langData).filter(
+  ({ ethnic }) => !!ethnic
+)
+
+export const referenceLanguages = parseLangagagesData(langData).filter(
+  ({ ethnic, language }) => !ethnic && !!language
+)
+
+export const referenceLanguage = {}
+export const ethnicLanguage = {}
+export const searchLanguage = {}
 export const modal = []
 export const newWordProps = [
   'word',
@@ -96,9 +103,27 @@ export const buttonsAttributs = [
   { name: 'cancel', icon: 'plus', rotate: '46deg' },
   { name: 'close', icon: 'plus', rotate: '90deg' },
 ]
-export const words = []
+export const words = parseWordsData(wordsData, [
+  ...referenceLanguages,
+  ...languages,
+])
 export const listOfWordElInEditMode = []
 export const listOfWordElInOpenMode = []
 export const inputName = 'language'
 
 export const isAdding = false
+
+function parseLangagagesData(languages) {
+  return languages.map(language => ({ ...language, languageId: uuid4() }))
+}
+
+function parseWordsData(words, languages) {
+  return words.map(({ spelling, language, ...others }) => ({
+    ...others,
+    language: languages
+      .filter(({ language: name }) => name === language)
+      .reduce((acc, curr) => (acc = { ...acc, ...curr }), {}),
+    word: spelling,
+    wordId: uuid4(),
+  }))
+}

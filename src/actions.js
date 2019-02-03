@@ -14,6 +14,8 @@ const ACTIONS = {
   TOGGLE_IS_ADDING: 'TOGGLE_IS_ADDING',
   SET_REFERENCE_LANGUAGE: 'SET_REFERENCE_LANGUAGE',
   SET_ETHNIC_LANGUAGE: 'SET_ETHNIC_LANGUAGE',
+  SET_SEARCH_LANGUAGE: 'SET_SEARCH_LANGUAGUE',
+  UPDATE_EXISTANTE_TRANSLATION: 'UPDATE_EXISTANTE_TRANSLATION',
 }
 
 export const addWord = createAction(ACTIONS.ADD_WORD)
@@ -28,6 +30,10 @@ export const addNewProperty = createAction(ACTIONS.ADD_NEW_PROPERTY)
 export const removeNewProperty = createAction(ACTIONS.REMOVE_NEW_PROPERTY)
 export const setReferenceLanguage = createAction(ACTIONS.SET_REFERENCE_LANGUAGE)
 export const setEthnicLanguage = createAction(ACTIONS.SET_ETHNIC_LANGUAGE)
+export const setSeachLanguage = createAction(ACTIONS.SET_SEARCH_LANGUAGE)
+export const updateExistanteTransalation = createAction(
+  ACTIONS.UPDATE_EXISTANTE_TRANSLATION
+)
 
 export const createWordProperty = (wordIndex, name, dispatch) => {
   wordIndex > -1 && name && dispatch(addWordProperty({ wordIndex, name }))
@@ -43,15 +49,32 @@ export const createWord = (newWord, dispatch) => {
 
 export const updateTranslation = (wordIndex, newList, dispatch) => {
   newList &&
-    dispatch(wordUpdate({ wordIndex, name: 'translation', value: newList }))
+    dispatch(wordUpdate({ wordIndex, name: 'translations', value: newList }))
 }
 
-export const saveNewTranslation = (newWord, list, wordIndex, dispatch) => {
-  const newWordId = uuidV4()
-  newWord = { wordId: newWordId, ...newWord }
-  newWord && dispatch(addWord({ newWord }))
-  wordIndex > -1 &&
-    updateTranslation(wordIndex, updateList(list, -1, newWordId), dispatch)
+export const saveNewTranslation = (
+  newWord,
+  value,
+  list,
+  wordIndex,
+  dispatch
+) => {
+  if (typeof value === 'string') {
+    const newWordId = uuidV4()
+    newWord = { wordId: newWordId, ...newWord }
+    newWord && dispatch(addWord({ newWord }))
+    wordIndex > -1 &&
+      updateTranslation(
+        wordIndex,
+        updateList(list, -1, { wordId: newWordId, word: value }),
+        dispatch
+      )
+  } else {
+    value && dispatch(updateExistanteTransalation({ value, wordIndex }))
+    wordIndex > -1 &&
+      value &&
+      updateTranslation(wordIndex, updateList(list, -1, value), dispatch)
+  }
 }
 
 export default ACTIONS

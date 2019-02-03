@@ -1,0 +1,597 @@
+[
+  {
+    "spelling": "être",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "avoir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "faire",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "dire",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "pouvoir",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "tout",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "aller",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "voir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "homme",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "mari",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "vouloir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "femme",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "venir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "grand",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "french"
+  },
+  {
+    "spelling": "devoir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "jour",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "prendre",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "petit",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "french"
+  },
+  {
+    "spelling": "mer",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "trouver",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "donner",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "temps",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "même",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "french"
+  },
+  {
+    "spelling": "falloir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "parler",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "main",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "chose",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "mettre",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "vie",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "french"
+  },
+  {
+    "spelling": "savoir",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "french"
+  },
+  {
+    "spelling": "be",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "have",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "do",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "tell",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "can",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "all",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "go",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "see",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "man",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "husband",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "want",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "woman",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "come",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "big",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "english"
+  },
+  {
+    "spelling": "must",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "day",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "take",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "small",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "english"
+  },
+  {
+    "spelling": "sea",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "find",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "give",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "time",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "same",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "english"
+  },
+  {
+    "spelling": "should",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "speak",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "hand",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "thing",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "put",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "english"
+  },
+  {
+    "spelling": "life",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "know",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "english"
+  },
+  {
+    "spelling": "u be",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u ne",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u var",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u tsingul",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u bentsa",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "biotsu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u wenda",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u laba",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "mutu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "mulumi",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u ronda",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "mujetu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u ruja",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u sakma",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "ilumbu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "ubunga",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u jeji",
+    "translations": [],
+    "description": "text",
+    "type": "adjective",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "mubu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u vega",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "wisi",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u vose",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "dikake",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "bime",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "mognu",
+    "translations": [],
+    "description": "text",
+    "type": "noun",
+    "language": "yipunu"
+  },
+  {
+    "spelling": "u djaba",
+    "translations": [],
+    "description": "text",
+    "type": "verb",
+    "language": "yipunu"
+  }
+]

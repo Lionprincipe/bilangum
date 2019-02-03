@@ -1,0 +1,5894 @@
+[
+  {
+    "language": "french",
+    "geographicZone": "france"
+  },
+  {
+    "language": "english",
+    "geographicZone": "england"
+  },
+  {
+    "language": "deutsch",
+    "geographicZone": "deutschland"
+  },
+  {
+    "ethnic": "Baggaras",
+    "groupEthnic": "",
+    "language": "arabe tchadien",
+    "geographicZone": "Soudan, Tchad"
+  },
+  {
+    "ethnic": "Baggaras",
+    "groupEthnic": "",
+    "language": "arabe tchadien",
+    "geographicZone": "Soudan, Tchad"
+  },
+  {
+    "ethnic": "Babanki",
+    "groupEthnic": "Bamileke",
+    "language": "babanki",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Babungo",
+    "groupEthnic": "Bamileke",
+    "language": "babungo",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Badiaranké",
+    "groupEthnic": "Tenda",
+    "language": "badiaranké",
+    "geographicZone": "Sénégal, Guinée, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Badjia",
+    "groupEthnic": "Beti",
+    "language": "badjia",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafaw",
+    "groupEthnic": "Sawa",
+    "language": "bafaw-balong",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Balong",
+    "groupEthnic": "Sawa",
+    "language": "bafaw-balong",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafia",
+    "groupEthnic": "Bantous",
+    "language": "bafia",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafut",
+    "groupEthnic": "Bamileke",
+    "language": "bafut",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Baga",
+    "groupEthnic": "",
+    "language": "baga, soussou",
+    "geographicZone": "Guinée, Guinée-Bissau, Sierra Leone"
+  },
+  {
+    "ethnic": "Baïnouk",
+    "groupEthnic": "",
+    "language": "baïnouk",
+    "geographicZone": "Sénégal (Casamance), Gambie"
+  },
+  {
+    "ethnic": "Baka",
+    "groupEthnic": "Pygmée",
+    "language": "baka",
+    "geographicZone": "Cameroun, Gabon"
+  },
+  {
+    "ethnic": "Baka",
+    "groupEthnic": "",
+    "language": "baka",
+    "geographicZone": "Soudan du Sud, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bakossi",
+    "groupEthnic": "Bantou",
+    "language": "bakossi",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Bakundu",
+    "groupEthnic": "Oroko",
+    "language": "bakundu",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bakwé",
+    "groupEthnic": "Krou",
+    "language": "bakwé",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Balante",
+    "groupEthnic": "",
+    "language": "balante",
+    "geographicZone": "Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Balom",
+    "groupEthnic": "",
+    "language": "balom",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bambara",
+    "groupEthnic": "Mandingues",
+    "language": "bambara",
+    "geographicZone": "Mali, Mauritanie, Guinée, Sénégal"
+  },
+  {
+    "ethnic": "Bamiléké",
+    "groupEthnic": "Semi-Bantous",
+    "language": "bamiléké",
+    "geographicZone": "Ouest Cameroun"
+  },
+  {
+    "ethnic": "Bamoun",
+    "groupEthnic": "Semi-Bantous",
+    "language": "bamoun",
+    "geographicZone": "Ouest Cameroun"
+  },
+  {
+    "ethnic": "Bandi",
+    "groupEthnic": "",
+    "language": "bandi",
+    "geographicZone": "Liberia, Guinée"
+  },
+  {
+    "ethnic": "Bankon",
+    "groupEthnic": "Bamileke",
+    "language": "bankon",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bantou",
+    "groupEthnic": "Bantou",
+    "language": "bantoues",
+    "geographicZone": "Centre, Est et Sud de l'Afrique"
+  },
+  {
+    "ethnic": "Balumbu",
+    "groupEthnic": "MerièBantou",
+    "language": "Bantu",
+    "geographicZone": "Gabon, République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Baoulé",
+    "groupEthnic": "Akans",
+    "language": "Baoulé",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Baribas",
+    "groupEthnic": "Yoruba",
+    "language": "bariba",
+    "geographicZone": "Bénin, Togo, Nigeria"
+  },
+  {
+    "ethnic": "Barma",
+    "groupEthnic": "",
+    "language": "barma",
+    "geographicZone": "Tchad, Nigeria"
+  },
+  {
+    "ethnic": "Bassa",
+    "groupEthnic": "Bantous",
+    "language": "bassa",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bata",
+    "groupEthnic": "",
+    "language": "bata",
+    "geographicZone": "Nigeria, Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Batschenga",
+    "groupEthnic": "Beti",
+    "language": "batshenga",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bayot",
+    "groupEthnic": "Diolas",
+    "language": "bayot",
+    "geographicZone": "Sénégal, Gambie, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Bobilis",
+    "groupEthnic": "",
+    "language": "bebil",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Beja",
+    "groupEthnic": "",
+    "language": "beja",
+    "geographicZone": "est Soudan, Érythrée"
+  },
+  {
+    "ethnic": "Beng",
+    "groupEthnic": "Mandingues",
+    "language": "beng",
+    "geographicZone": "Côte d'Ivoire, Burkina Faso"
+  },
+  {
+    "ethnic": "Benga",
+    "groupEthnic": "Bantou",
+    "language": "benga",
+    "geographicZone": "Gabon, Guinée équatoriale"
+  },
+  {
+    "ethnic": "Berta",
+    "groupEthnic": "",
+    "language": "berta",
+    "geographicZone": "Éthiopie, Soudan"
+  },
+  {
+    "ethnic": "Bété",
+    "groupEthnic": "",
+    "language": "bété",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Bijago",
+    "groupEthnic": "",
+    "language": "bijago",
+    "geographicZone": "Guinée-Bissau"
+  },
+  {
+    "ethnic": "Biras",
+    "groupEthnic": "",
+    "language": "bira, bera",
+    "geographicZone": "Ouganda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Birifor",
+    "groupEthnic": "Lobi",
+    "language": "birifor",
+    "geographicZone": "Burkina Faso, Ghana, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Birom",
+    "groupEthnic": "",
+    "language": "birom",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Bisa",
+    "groupEthnic": "Mandingues",
+    "language": "bisa",
+    "geographicZone": "Burkina Faso, Ghana"
+  },
+  {
+    "ethnic": "Bodiman",
+    "groupEthnic": "Sawa",
+    "language": "bodiman",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bomitaba",
+    "groupEthnic": "Ngala",
+    "language": "bomitaba",
+    "geographicZone": "République du Congo, République démocratique du Congo, République centrafricaine"
+  },
+  {
+    "ethnic": "Bobo",
+    "groupEthnic": "",
+    "language": "bomu",
+    "geographicZone": "Burkina Faso, Mali"
+  },
+  {
+    "ethnic": "Bongo",
+    "groupEthnic": "",
+    "language": "bongo",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Bonkeng",
+    "groupEthnic": "Sawa",
+    "language": "bonkeng",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Boranas",
+    "groupEthnic": "",
+    "language": "borana",
+    "geographicZone": "Kenya, Éthiopie, Somalie"
+  },
+  {
+    "ethnic": "Boundjou",
+    "groupEthnic": "Beti",
+    "language": "boundjou",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bozo",
+    "groupEthnic": "Mandingues",
+    "language": "bozo",
+    "geographicZone": "Mali, Niger"
+  },
+  {
+    "ethnic": "Bubis",
+    "groupEthnic": "",
+    "language": "bubi",
+    "geographicZone": "Guinée équatoriale (île de Bioko)"
+  },
+  {
+    "ethnic": "Budu",
+    "groupEthnic": "Bantou",
+    "language": "budu",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bullom",
+    "groupEthnic": "",
+    "language": "bullom",
+    "geographicZone": "Sierra Leone"
+  },
+  {
+    "ethnic": "Boulous",
+    "groupEthnic": "Bantou",
+    "language": "bulu",
+    "geographicZone": "Sud de la République démocratique du Congo, sud du Cameroun"
+  },
+  {
+    "ethnic": "Busa",
+    "groupEthnic": "Mandingues",
+    "language": "busa",
+    "geographicZone": "Nigeria, Bénin"
+  },
+  {
+    "ethnic": "Bushong",
+    "groupEthnic": "Bantou",
+    "language": "bushong",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Buyu",
+    "groupEthnic": "Bantou",
+    "language": "buyu",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batammariba",
+    "groupEthnic": "Yoruba",
+    "language": "ditammari",
+    "geographicZone": "Bénin, Togo"
+  },
+  {
+    "ethnic": "Bandjoun",
+    "groupEthnic": "Bamilékés",
+    "language": "Ghomala’",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Banu Hassan",
+    "groupEthnic": "",
+    "language": "Hassaniyya",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Banu Maqtil",
+    "groupEthnic": "",
+    "language": "Hassaniyya",
+    "geographicZone": "Sahara occidental, Mauritanie"
+  },
+  {
+    "ethnic": "Banyang",
+    "groupEthnic": "Bamileke",
+    "language": "kenyang",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafuliru",
+    "groupEthnic": "Bantous",
+    "language": "kifuliru",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bambagani",
+    "groupEthnic": "Bantou",
+    "language": "Kimbagani",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bavira",
+    "groupEthnic": "Bantous",
+    "language": "Kivira",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bikélé",
+    "groupEthnic": "",
+    "language": "kol",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bangala",
+    "groupEthnic": "Bantou",
+    "language": "lingala",
+    "geographicZone": "Gabon, République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bobangi",
+    "groupEthnic": "Bantou",
+    "language": "lingala",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bali",
+    "groupEthnic": "Bamileke",
+    "language": "mungaka",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Batawanas ou Tawanas ou BaTawana",
+    "groupEthnic": "Bantou",
+    "language": "tawana",
+    "geographicZone": "Botswana"
+  },
+  {
+    "ethnic": "Banen",
+    "groupEthnic": "Bantou",
+    "language": "tunen",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bavili",
+    "groupEthnic": "Bantou",
+    "language": "vili",
+    "geographicZone": "République du Congo, Gabon"
+  },
+  {
+    "ethnic": "Bamendou/Baléfock",
+    "groupEthnic": "Bamiléké",
+    "language": "Yemba",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bangwa",
+    "groupEthnic": "Bamilékés",
+    "language": "yemba",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Babenzi",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Babinga",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République du Congo, République centrafricaine, Cameroun, Gabon, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Babukur",
+    "groupEthnic": "Zandés",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Babuye",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Babwa",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Babwisi",
+    "groupEthnic": "ÉchiraBantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Badjabi",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Bafangs",
+    "groupEthnic": "Bamileke",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafo",
+    "groupEthnic": "Bamileke",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bafours",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mauritanie, Sahara occidental"
+  },
+  {
+    "ethnic": "Baham",
+    "groupEthnic": "Bamileke",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bailundu",
+    "groupEthnic": "Ovimbundus",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Bakete",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bakunda",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bakutu",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bakweri",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Bali",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Balwawa",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bambala",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bambâmba",
+    "groupEthnic": "TékéBantou",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bambenga",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bambole",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bamessing",
+    "groupEthnic": "Bamileke",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Banda",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République centrafricaine, Cameroun, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bandassa",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bandia",
+    "groupEthnic": "Zandés",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bandial",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Bandjabi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Bangangulu",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Banian",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Bankanu",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bantous somaliens",
+    "groupEthnic": "Semi-Bantous",
+    "language": "",
+    "geographicZone": "Somalie"
+  },
+  {
+    "ethnic": "Banyamulenge",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Burundi, Rwanda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Banyarwanda",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Banyun ou Baïnouks",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée-Bissau, Casamance (Sénégal), Gambie"
+  },
+  {
+    "ethnic": "Banzébi",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bapendé",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Barambo",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Barawa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Bargu",
+    "groupEthnic": "Yoruba",
+    "language": "",
+    "geographicZone": "Bénin, Burkina Faso, Togo, Nigeria"
+  },
+  {
+    "ethnic": "Bari",
+    "groupEthnic": "Nilotiques",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Barimba",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Bashi",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bashobwa",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Basikasingo",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Basinji",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bassa",
+    "groupEthnic": "Kru",
+    "language": "",
+    "geographicZone": "Liberia"
+  },
+  {
+    "ethnic": "Bassari",
+    "groupEthnic": "Tenda",
+    "language": "",
+    "geographicZone": "Sénégal, Guinée"
+  },
+  {
+    "ethnic": "Basongo",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Basters de Rehoboth",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Basundi",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batabwa",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batégué Alima",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Batéké",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Gabon, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batéké Fumu",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batéké Lali ou Balali",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Batéké Sise",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Batsangui",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "République du Congo, Gabon"
+  },
+  {
+    "ethnic": "Batsiagui",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Batsitségue",
+    "groupEthnic": "Téké",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Batwa",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, Ouganda"
+  },
+  {
+    "ethnic": "Bawoyo",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bayaka",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bazimba",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bédik",
+    "groupEthnic": "Tenda",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Bédouin",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sahara, Moyen-Orient"
+  },
+  {
+    "ethnic": "Bekui",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Bella",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso, Niger"
+  },
+  {
+    "ethnic": "Bemba",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Bembe",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, Tanzanie"
+  },
+  {
+    "ethnic": "Beembe",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bena",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie, Zambie"
+  },
+  {
+    "ethnic": "Béna Kalundwé",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Bena Kanioka",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bengé",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Berbères",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Beti",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "sud Cameroun"
+  },
+  {
+    "ethnic": "Betsi, Fang, Pahouin",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Betsileo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Betsimisaraka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Bezanozano",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Bicharieh",
+    "groupEthnic": "Beja",
+    "language": "",
+    "geographicZone": "Nord Soudan"
+  },
+  {
+    "ethnic": "Biombo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bisa",
+    "groupEthnic": "Bembas",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Bochimans ou Bosjesmans",
+    "groupEthnic": "khoi-San",
+    "language": "",
+    "geographicZone": "Afrique du Sud, Botswana, Namibie"
+  },
+  {
+    "ethnic": "Bokis ou Bokyi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Bolemba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Bolia",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Boma",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bomwali",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Boni",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Somalie, Kenya"
+  },
+  {
+    "ethnic": "Bororo ou Wodaabe",
+    "groupEthnic": "Hamités, sous groupe Fulani",
+    "language": "",
+    "geographicZone": "sud Niger, nord du Nigeria, nord-est du Cameroun, sud-ouest du Tchad, ouest République centrafricaine"
+  },
+  {
+    "ethnic": "Boudas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Boudoumas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Niger, Nigeria, Tchad"
+  },
+  {
+    "ethnic": "Boyéla",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Boyo",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bozaka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar ?"
+  },
+  {
+    "ethnic": "Branes",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Brong",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Ghana, Côte d'Ivoire, Burkina Faso"
+  },
+  {
+    "ethnic": "Buganda",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Budza",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bungomou",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Bunu",
+    "groupEthnic": "Yorubas",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Bura",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Bushmen",
+    "groupEthnic": "Khoi-San",
+    "language": "",
+    "geographicZone": "Afrique du Sud, Namibie, Botswana"
+  },
+  {
+    "ethnic": "Busoga",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Bwa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso, Mali"
+  },
+  {
+    "ethnic": "Bwaka",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Bwende",
+    "groupEthnic": "Bantou",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "C[modifier | modifier le code]",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Ethnie",
+    "groupEthnic": "groupe ethnique",
+    "language": "langue",
+    "geographicZone": "zone géographique"
+  },
+  {
+    "ethnic": "Cafres",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Chewas",
+    "groupEthnic": "",
+    "language": "chichewa",
+    "geographicZone": "Malawi, Mozambique, Zambie"
+  },
+  {
+    "ethnic": "Chaga",
+    "groupEthnic": "",
+    "language": "chaga",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Chagossiens",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "archipel des Chagos(Maurice)"
+  },
+  {
+    "ethnic": "Chambas",
+    "groupEthnic": "",
+    "language": "samba daka, samba leko",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Cham-Mwana",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Chaouis",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Chara",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Charra",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Chenouis",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Chewas",
+    "groupEthnic": "",
+    "language": "Chichewa",
+    "geographicZone": "Malawi"
+  },
+  {
+    "ethnic": "Chleuhs",
+    "groupEthnic": "berbère",
+    "language": "Chleuh (en arabe) ou tachelhit",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Chopi",
+    "groupEthnic": "",
+    "language": "chopi",
+    "geographicZone": "Mozambique"
+  },
+  {
+    "ethnic": "Chuka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Chinois de La Réunion ou Sinwa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Coloureds",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Coniaguis",
+    "groupEthnic": "",
+    "language": "coniagui",
+    "geographicZone": "Guinée, Sénégal"
+  },
+  {
+    "ethnic": "Créoles",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Daba",
+    "groupEthnic": "",
+    "language": "daba",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Dadjo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tchad, Soudan du Sud"
+  },
+  {
+    "ethnic": "Dagari",
+    "groupEthnic": "",
+    "language": "dagaare",
+    "geographicZone": "Burkina Faso, Ghana, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Dagombas",
+    "groupEthnic": "",
+    "language": "dagbani",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Dakkakari ou Lela",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso, Niger, Nigeria, Bénin"
+  },
+  {
+    "ethnic": "Dakpa",
+    "groupEthnic": "Banda",
+    "language": "dialecte du banda",
+    "geographicZone": "République centrafricaine"
+  },
+  {
+    "ethnic": "Dama",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Damara",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Dan",
+    "groupEthnic": "Mandingues",
+    "language": "dan",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Dassanetchs",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie, Kenya, Soudan"
+  },
+  {
+    "ethnic": "Daza",
+    "groupEthnic": "Toubou",
+    "language": "",
+    "geographicZone": "Niger, Tchad, Soudan"
+  },
+  {
+    "ethnic": "Dendi",
+    "groupEthnic": "",
+    "language": "dendi",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Denkyira",
+    "groupEthnic": "Akans",
+    "language": "",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Diakhanké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée, Sénégal"
+  },
+  {
+    "ethnic": "Diawara",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mali, Mauritanie"
+  },
+  {
+    "ethnic": "Didas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Didinga",
+    "groupEthnic": "",
+    "language": "didinga",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Dinka",
+    "groupEthnic": "Nilotiques",
+    "language": "langues nuer-dinka",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Diolas",
+    "groupEthnic": "",
+    "language": "diola",
+    "geographicZone": "Gambie, Sénégal, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Dioula",
+    "groupEthnic": "Mandingues",
+    "language": "dioula",
+    "geographicZone": "Afrique de l'Ouest"
+  },
+  {
+    "ethnic": "Djanti",
+    "groupEthnic": "",
+    "language": "djanti",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Djem",
+    "groupEthnic": "",
+    "language": "njyem",
+    "geographicZone": "Cameroun, République du Congo, Guinée équatoriale, Gabon"
+  },
+  {
+    "ethnic": "Djimi",
+    "groupEthnic": "",
+    "language": "djimi",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Djimini",
+    "groupEthnic": "",
+    "language": "djimini",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Doé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Dogon",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso, Mali"
+  },
+  {
+    "ethnic": "Dondos",
+    "groupEthnic": "Kongos",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Dondo-Kamba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Dorzé",
+    "groupEthnic": "",
+    "language": "dorzé",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Douala",
+    "groupEthnic": "Bantous",
+    "language": "douala",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Dourou",
+    "groupEthnic": "",
+    "language": "dourou",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Dowayo",
+    "groupEthnic": "",
+    "language": "dowayo",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Draoui",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Duma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Zimbabwe"
+  },
+  {
+    "ethnic": "Duupa",
+    "groupEthnic": "",
+    "language": "duupa",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Dzimou",
+    "groupEthnic": "",
+    "language": "koonzime",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Dzing",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Ethnie",
+    "groupEthnic": "groupe ethnique",
+    "language": "langue",
+    "geographicZone": "zone géographique"
+  },
+  {
+    "ethnic": "Ebira",
+    "groupEthnic": "",
+    "language": "ebira",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Ébrié",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Échira",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Edo",
+    "groupEthnic": "",
+    "language": "edo",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Efe",
+    "groupEthnic": "Pygmée",
+    "language": "efe",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Efik",
+    "groupEthnic": "Ibibios",
+    "language": "efik",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Efutu",
+    "groupEthnic": "",
+    "language": "efutu",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Ehotilé",
+    "groupEthnic": "Akans",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Ejagham",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Eket",
+    "groupEthnic": "Ibibios",
+    "language": "eket",
+    "geographicZone": "sud-est Nigeria"
+  },
+  {
+    "ethnic": "Ekonda",
+    "groupEthnic": "Mongos",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Elgeyo",
+    "groupEthnic": "Kalenjin",
+    "language": "elgeyo",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Embu",
+    "groupEthnic": "",
+    "language": "kiembu",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Enenga",
+    "groupEthnic": "Myènè",
+    "language": "myènè",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Enya",
+    "groupEthnic": "Bantous",
+    "language": "enya",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Esan",
+    "groupEthnic": "Edo",
+    "language": "esan",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Etenga",
+    "groupEthnic": "Beti",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Étons",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Eviya",
+    "groupEthnic": "Meriè",
+    "language": "Bantu",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Evuzok",
+    "groupEthnic": "",
+    "language": "evuzok",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Ewe",
+    "groupEthnic": "",
+    "language": "ewe",
+    "geographicZone": "Togo, Bénin, Ghana"
+  },
+  {
+    "ethnic": "Ewondo",
+    "groupEthnic": "Bantous, Beti-Pahouin",
+    "language": "ewondo",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Falasha",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Fali",
+    "groupEthnic": "",
+    "language": "fali",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Fang",
+    "groupEthnic": "Fang",
+    "language": "fang",
+    "geographicZone": "Cameroun, Gabon, Guinée équatoriale, République du Congo, Centrafrique, São Tomé-et-Principe"
+  },
+  {
+    "ethnic": "Fanti",
+    "groupEthnic": "Akan",
+    "language": "fanti",
+    "geographicZone": "Côte d'Ivoire, sud Ghana"
+  },
+  {
+    "ethnic": "Fingo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Fipa",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie, Zambie"
+  },
+  {
+    "ethnic": "Floup",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Fon",
+    "groupEthnic": "",
+    "language": "fon-gbe",
+    "geographicZone": "Bénin, Nigeria, Togo"
+  },
+  {
+    "ethnic": "Forros",
+    "groupEthnic": "",
+    "language": "forro",
+    "geographicZone": "Sao Tomé-et-Principe"
+  },
+  {
+    "ethnic": "Foulankriabé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Fours",
+    "groupEthnic": "",
+    "language": "four",
+    "geographicZone": "Soudan, Tchad, Égypte"
+  },
+  {
+    "ethnic": "Frafra",
+    "groupEthnic": "",
+    "language": "gurenne",
+    "geographicZone": "Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Ga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Gabbra",
+    "groupEthnic": "Oromos",
+    "language": "borana",
+    "geographicZone": "Kenya, Éthiopie"
+  },
+  {
+    "ethnic": "Gagou",
+    "groupEthnic": "Mandingues",
+    "language": "gagou",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Galoa",
+    "groupEthnic": "Myènè",
+    "language": "galoa",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Gamo",
+    "groupEthnic": "",
+    "language": "gamo",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Gan",
+    "groupEthnic": "Lobi",
+    "language": "kaansa",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Ganda",
+    "groupEthnic": "Bantous",
+    "language": "luganda",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Gbagyi",
+    "groupEthnic": "",
+    "language": "gbagyi",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Gbaya",
+    "groupEthnic": "",
+    "language": "gbaya",
+    "geographicZone": "République centrafricaine, centre-nord Cameroun"
+  },
+  {
+    "ethnic": "Gbé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Gbete",
+    "groupEthnic": "Mboum",
+    "language": "gbete",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Gbi",
+    "groupEthnic": "",
+    "language": "gbi",
+    "geographicZone": "Liberia"
+  },
+  {
+    "ethnic": "Gbloh",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Gbundi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Liberia"
+  },
+  {
+    "ethnic": "Gedeo",
+    "groupEthnic": "",
+    "language": "gedeo",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Gelebda",
+    "groupEthnic": "",
+    "language": "glavda",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Gemjek",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Gen",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin, sud-est Togo"
+  },
+  {
+    "ethnic": "Giriama",
+    "groupEthnic": "",
+    "language": "giriama",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Gisu",
+    "groupEthnic": "Bantous",
+    "language": "malaasa",
+    "geographicZone": "Ouganda, Kenya"
+  },
+  {
+    "ethnic": "Gnaoua",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Goba",
+    "groupEthnic": "Shonas",
+    "language": "",
+    "geographicZone": "Zambie, Zimbabwe"
+  },
+  {
+    "ethnic": "Godié",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Goemai",
+    "groupEthnic": "",
+    "language": "goemai",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Gogo",
+    "groupEthnic": "Bantous",
+    "language": "gogo",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Gola",
+    "groupEthnic": "",
+    "language": "gola",
+    "geographicZone": "Liberia, Sierra Leone"
+  },
+  {
+    "ethnic": "Gouin",
+    "groupEthnic": "",
+    "language": "cerma",
+    "geographicZone": "Burkina Faso, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Goula",
+    "groupEthnic": "",
+    "language": "goula",
+    "geographicZone": "République centrafricaine"
+  },
+  {
+    "ethnic": "Goun",
+    "groupEthnic": "",
+    "language": "goun-gbe",
+    "geographicZone": "Bénin, Nigeria"
+  },
+  {
+    "ethnic": "Gourmantché",
+    "groupEthnic": "",
+    "language": "gourmantché",
+    "geographicZone": "Burkina Faso, Togo, Bénin, Niger"
+  },
+  {
+    "ethnic": "Gouros",
+    "groupEthnic": "Mandingues",
+    "language": "gouro",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Grebo",
+    "groupEthnic": "",
+    "language": "grebo",
+    "geographicZone": "Liberia, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Griqua",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Gros Blancs",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Groussi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Gude",
+    "groupEthnic": "",
+    "language": "gude",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Guéré",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Guidar",
+    "groupEthnic": "",
+    "language": "guidar",
+    "geographicZone": "nord Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Guin",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "sud Togo"
+  },
+  {
+    "ethnic": "Guiziga",
+    "groupEthnic": "Kirdi",
+    "language": "guiziga du Nord, guiziga du Sud",
+    "geographicZone": "Cameroun, Tchad, Nigeria"
+  },
+  {
+    "ethnic": "Gur (ou Molé-Dagbane ou Voltaïques)",
+    "groupEthnic": "",
+    "language": "langues gur",
+    "geographicZone": "Ghana, Burkina Faso, Togo, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Gurages",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Gurunsi ou Gourounsi",
+    "groupEthnic": "",
+    "language": "Gurunsibranche du Gur",
+    "geographicZone": "Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Gusii",
+    "groupEthnic": "Bantous",
+    "language": "gusii",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Gwa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire, Ghana"
+  },
+  {
+    "ethnic": "Gwari",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Hadimu",
+    "groupEthnic": "Shirazi",
+    "language": "",
+    "geographicZone": "Zanzibar"
+  },
+  {
+    "ethnic": "Hadiya",
+    "groupEthnic": "",
+    "language": "hadiya",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Hadjaraï",
+    "groupEthnic": "Hadjaraï",
+    "language": "",
+    "geographicZone": "Tchad"
+  },
+  {
+    "ethnic": "Hadza",
+    "groupEthnic": "Nilotiques",
+    "language": "hadza",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Hamers",
+    "groupEthnic": "",
+    "language": "hamer-banna",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Hangala",
+    "groupEthnic": "Kongo",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Haoussas",
+    "groupEthnic": "haoussa",
+    "language": "",
+    "geographicZone": "Bénin, Niger, Nigeria"
+  },
+  {
+    "ethnic": "Harari",
+    "groupEthnic": "",
+    "language": "harari",
+    "geographicZone": "nord Éthiopie"
+  },
+  {
+    "ethnic": "Haratin",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du nord-ouest"
+  },
+  {
+    "ethnic": "Havu",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Haya",
+    "groupEthnic": "Bantous",
+    "language": "haya",
+    "geographicZone": "Tanzanie, Ouganda"
+  },
+  {
+    "ethnic": "Hehe",
+    "groupEthnic": "Bantous",
+    "language": "hehe",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Hembas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Héréros",
+    "groupEthnic": "Bantous",
+    "language": "héréro",
+    "geographicZone": "Angola, Botswana, Namibie"
+  },
+  {
+    "ethnic": "Hidé",
+    "groupEthnic": "",
+    "language": "hidé",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Hima",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, Ouganda"
+  },
+  {
+    "ethnic": "Himba",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Himra",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Holo",
+    "groupEthnic": "",
+    "language": "holo",
+    "geographicZone": "Angola, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Holoholo",
+    "groupEthnic": "",
+    "language": "holoholo",
+    "geographicZone": "République démocratique du Congo, Tanzanie"
+  },
+  {
+    "ethnic": "Huambo",
+    "groupEthnic": "Ovimbundus",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Huana",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Humbu, Houmbou ou Bawoumbou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo, Gabon"
+  },
+  {
+    "ethnic": "Hunde",
+    "groupEthnic": "Bantous",
+    "language": "hunde",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Hungana",
+    "groupEthnic": "",
+    "language": "kihungana",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Hurutshe",
+    "groupEthnic": "Tswana",
+    "language": "sehurutshe",
+    "geographicZone": "Botswana, Afrique du Sud"
+  },
+  {
+    "ethnic": "Hutus",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Rwanda, Burundi, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ibibios",
+    "groupEthnic": "",
+    "language": "ibibio",
+    "geographicZone": "Nigeria, Ghana, Cameroun, Guinée équatoriale"
+  },
+  {
+    "ethnic": "Idomas",
+    "groupEthnic": "",
+    "language": "idoma",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Ifogha",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Niger"
+  },
+  {
+    "ethnic": "Igalas",
+    "groupEthnic": "",
+    "language": "igala",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Igbos",
+    "groupEthnic": "",
+    "language": "igbo",
+    "geographicZone": "Bénin, Nigeria"
+  },
+  {
+    "ethnic": "Ikenga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Ila",
+    "groupEthnic": "Bantous",
+    "language": "ila",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Ijaws",
+    "groupEthnic": "",
+    "language": "langues ijoïdes",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Imraguen",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mauritanie"
+  },
+  {
+    "ethnic": "Iraqw",
+    "groupEthnic": "Nilotiques",
+    "language": "iraqw",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Ishan",
+    "groupEthnic": "Edos",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Isokos",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Issas",
+    "groupEthnic": "Kouchite",
+    "language": "somali",
+    "geographicZone": "Djibouti, Éthiopie, Somalie"
+  },
+  {
+    "ethnic": "Isubi",
+    "groupEthnic": "",
+    "language": "isubi",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Ivéa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Jalonké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée, Sénégal, Sierra Leone"
+  },
+  {
+    "ethnic": "Jarawa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Jbala",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Jen",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Diolas",
+    "groupEthnic": "",
+    "language": "diola",
+    "geographicZone": "Gambie, Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Jimma",
+    "groupEthnic": "Oromos",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Jukun",
+    "groupEthnic": "",
+    "language": "langues jukunoïdes",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Kabiyé",
+    "groupEthnic": "",
+    "language": "kabiyé",
+    "geographicZone": "Togo, Bénin, Ghana"
+  },
+  {
+    "ethnic": "Kabyles",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Kaffas",
+    "groupEthnic": "",
+    "language": "kaffa",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Kaguru",
+    "groupEthnic": "Bantous",
+    "language": "kaguru",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Kaka",
+    "groupEthnic": "Gbaya",
+    "language": "kako",
+    "geographicZone": "Cameroun, République centrafricaine"
+  },
+  {
+    "ethnic": "Kakongo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Kakwa",
+    "groupEthnic": "",
+    "language": "kakwa",
+    "geographicZone": "Ouganda, Soudan du Sud, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kalabari",
+    "groupEthnic": "Ijaw",
+    "language": "kalabari",
+    "geographicZone": "Nigeria, Ghana"
+  },
+  {
+    "ethnic": "Kalangas",
+    "groupEthnic": "Shonas",
+    "language": "kalanga",
+    "geographicZone": "Botswana, Zimbabwe, Mozambique"
+  },
+  {
+    "ethnic": "Kalenjin",
+    "groupEthnic": "Nilotiques",
+    "language": "langues kalenjin",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Kalundwe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kamba",
+    "groupEthnic": "Kongos",
+    "language": "",
+    "geographicZone": "Angola, République démocratique du Congo, République du Congo"
+  },
+  {
+    "ethnic": "Kamba",
+    "groupEthnic": "Bantous",
+    "language": "kikamba",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Kamberi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Kambatta",
+    "groupEthnic": "",
+    "language": "kambatta",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Kami",
+    "groupEthnic": "Zaramo",
+    "language": "kami",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Kanuris",
+    "groupEthnic": "",
+    "language": "kanuri",
+    "geographicZone": "Cameroun, Niger, Nigeria, Tchad"
+  },
+  {
+    "ethnic": "Kanyok",
+    "groupEthnic": "Bantous",
+    "language": "kanyok",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kaonde",
+    "groupEthnic": "Bantous",
+    "language": "chikaonde",
+    "geographicZone": "Zambie, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kapsiki",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Karo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Karamojong",
+    "groupEthnic": "Nilotiques",
+    "language": "karimojong",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Karanes",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar, La Réunion"
+  },
+  {
+    "ethnic": "Karone",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Kasséna",
+    "groupEthnic": "Gurunsis",
+    "language": "kassem",
+    "geographicZone": "Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Kavango",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Namibie, Angola, Botswana"
+  },
+  {
+    "ethnic": "Kéra",
+    "groupEthnic": "",
+    "language": "kéra",
+    "geographicZone": "Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Kete",
+    "groupEthnic": "",
+    "language": "kete",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kgalagadi",
+    "groupEthnic": "Bantous",
+    "language": "kgalagadi",
+    "geographicZone": "Botswana"
+  },
+  {
+    "ethnic": "Kgatla",
+    "groupEthnic": "Tswanas",
+    "language": "kgatla",
+    "geographicZone": "Botswana"
+  },
+  {
+    "ethnic": "Khassonké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mali, Sénégal, Mauritanie, Gambie"
+  },
+  {
+    "ethnic": "Khoïkhoï",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Khojas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Kiffians",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sahara"
+  },
+  {
+    "ethnic": "Kiga",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Kikuyus",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Kilengi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Kim",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tchad"
+  },
+  {
+    "ethnic": "Kimbu",
+    "groupEthnic": "Bantous",
+    "language": "kimbu",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Kinga",
+    "groupEthnic": "Bantous",
+    "language": "kinga",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Kipsigi",
+    "groupEthnic": "Kalenjin",
+    "language": "kipsikis",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Kipungu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Kirdi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "centre et nord Cameroun"
+  },
+  {
+    "ethnic": "Kissi",
+    "groupEthnic": "Mandingues",
+    "language": "kissi",
+    "geographicZone": "Guinée, Sierra Leone, Liberia"
+  },
+  {
+    "ethnic": "Kom",
+    "groupEthnic": "Tikar",
+    "language": "kom",
+    "geographicZone": "Cameroun, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Koma",
+    "groupEthnic": "",
+    "language": "konni",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Kombe",
+    "groupEthnic": "",
+    "language": "kombe",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Komo",
+    "groupEthnic": "Bantous",
+    "language": "komo",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kongo",
+    "groupEthnic": "Kongo",
+    "language": "kikongo",
+    "geographicZone": "Angola, République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Konjo",
+    "groupEthnic": "Nande",
+    "language": "konjo",
+    "geographicZone": "Ouganda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Konkomba",
+    "groupEthnic": "",
+    "language": "konkomba",
+    "geographicZone": "Ghana, Togo"
+  },
+  {
+    "ethnic": "Kono",
+    "groupEthnic": "",
+    "language": "kono",
+    "geographicZone": "Liberia, est Sierra Leone"
+  },
+  {
+    "ethnic": "Konongo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, Tanzanie"
+  },
+  {
+    "ethnic": "Konsos",
+    "groupEthnic": "",
+    "language": "konso",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Kota",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Gabon, République du Congo"
+  },
+  {
+    "ethnic": "Kotakotas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Kotoko",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Koulango",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Kouloughlis",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Libye, Tunisie"
+  },
+  {
+    "ethnic": "Kounta",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mauritanie"
+  },
+  {
+    "ethnic": "Kouranko",
+    "groupEthnic": "Mandingues",
+    "language": "koranko",
+    "geographicZone": "Sierra Leone, Guinée, Liberia"
+  },
+  {
+    "ethnic": "Kourteï",
+    "groupEthnic": "Songhaï",
+    "language": "",
+    "geographicZone": "Niger"
+  },
+  {
+    "ethnic": "Koyaka",
+    "groupEthnic": "Mandingues",
+    "language": "koyaka",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Kouyous",
+    "groupEthnic": "",
+    "language": "koyo",
+    "geographicZone": "Gabon, République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kpe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "sud Cameroun"
+  },
+  {
+    "ethnic": "Kpelle",
+    "groupEthnic": "Mandingues",
+    "language": "kpelle",
+    "geographicZone": "Liberia, Guinée"
+  },
+  {
+    "ethnic": "Kpessi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Krachi",
+    "groupEthnic": "",
+    "language": "krachi",
+    "geographicZone": "Ghana, Togo"
+  },
+  {
+    "ethnic": "Krahns",
+    "groupEthnic": "",
+    "language": "krahn",
+    "geographicZone": "Liberia"
+  },
+  {
+    "ethnic": "Kréda",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tchad"
+  },
+  {
+    "ethnic": "Kreish",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République centrafricaine, Soudan"
+  },
+  {
+    "ethnic": "Krio",
+    "groupEthnic": "",
+    "language": "krio",
+    "geographicZone": "Sierra Leone"
+  },
+  {
+    "ethnic": "Krobo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire, Ghana"
+  },
+  {
+    "ethnic": "Kru",
+    "groupEthnic": "",
+    "language": "kru",
+    "geographicZone": "Côte d'Ivoire, Ghana, Liberia"
+  },
+  {
+    "ethnic": "Kuanyama",
+    "groupEthnic": "Ambos",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Kuba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kugni",
+    "groupEthnic": "Kongo",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Kuku",
+    "groupEthnic": "",
+    "language": "kuku",
+    "geographicZone": "Ouganda, République démocratique du Congo, Soudan du Sud"
+  },
+  {
+    "ethnic": "Kulere",
+    "groupEthnic": "",
+    "language": "kulere",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Kumdu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Kung (Bushmen)",
+    "groupEthnic": "Bochimans",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Kuria",
+    "groupEthnic": "Bantous",
+    "language": "kuria",
+    "geographicZone": "Tanzanie, Kenya"
+  },
+  {
+    "ethnic": "Kurumba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Kusasi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Kusu",
+    "groupEthnic": "Bantous",
+    "language": "kusu",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kutu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Kouyous",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Kwahu",
+    "groupEthnic": "Akan",
+    "language": "",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Kwale",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Kwanga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Kwele",
+    "groupEthnic": "",
+    "language": "bekwel",
+    "geographicZone": "Gabon, République du Congo, Cameroun"
+  },
+  {
+    "ethnic": "Kwere",
+    "groupEthnic": "",
+    "language": "kwere",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Kwese",
+    "groupEthnic": "Bantous",
+    "language": "kwese",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Laka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tchad, CamerounRépublique centrafricaine"
+  },
+  {
+    "ethnic": "Lali",
+    "groupEthnic": "Kongos",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, République du Congo, Angola"
+  },
+  {
+    "ethnic": "Lamba",
+    "groupEthnic": "Bantous",
+    "language": "lamba",
+    "geographicZone": "République démocratique du Congo, Zambie"
+  },
+  {
+    "ethnic": "Lamba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Togo"
+  },
+  {
+    "ethnic": "Landoma",
+    "groupEthnic": "",
+    "language": "landoma",
+    "geographicZone": "Guinée, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Lagoon",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Lango",
+    "groupEthnic": "Nilote occidental",
+    "language": "lango",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Laobé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Laouien",
+    "groupEthnic": "Akans",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Lari",
+    "groupEthnic": "Kongo",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Lébous",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Lega",
+    "groupEthnic": "Bantous",
+    "language": "kilega",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Leele",
+    "groupEthnic": "Bantous",
+    "language": "leele",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lemande",
+    "groupEthnic": "",
+    "language": "nomaande",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Lemba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud, Malawi, Zimbabwe"
+  },
+  {
+    "ethnic": "Lendu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lengola",
+    "groupEthnic": "",
+    "language": "lengola",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lese",
+    "groupEthnic": "",
+    "language": "lese",
+    "geographicZone": "République démocratique du Congo, Ouganda"
+  },
+  {
+    "ethnic": "Ligbi",
+    "groupEthnic": "",
+    "language": "ligbi",
+    "geographicZone": "Ghana, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Limba",
+    "groupEthnic": "Bantous",
+    "language": "malimba",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Limba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sierra Leone"
+  },
+  {
+    "ethnic": "Limpopo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Lobala",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lobi",
+    "groupEthnic": "",
+    "language": "lobiri",
+    "geographicZone": "Burkina Faso, Côte d'Ivoire, Ghana"
+  },
+  {
+    "ethnic": "Logba",
+    "groupEthnic": "",
+    "language": "logba",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Logoli",
+    "groupEthnic": "Bantous",
+    "language": "bantoues",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Loï",
+    "groupEthnic": "",
+    "language": "loï",
+    "geographicZone": "République du Congo, République démocratique du Congo, Gabon"
+  },
+  {
+    "ethnic": "Loko",
+    "groupEthnic": "",
+    "language": "bantoues",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Lokoya",
+    "groupEthnic": "",
+    "language": "lokoya",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Loma",
+    "groupEthnic": "mandingue",
+    "language": "Loma ou Toma",
+    "geographicZone": "Guinée, Liberia"
+  },
+  {
+    "ethnic": "Lombo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lomwe",
+    "groupEthnic": "Bantous",
+    "language": "lomwe",
+    "geographicZone": "Malawi, Tanzanie, Mozambique"
+  },
+  {
+    "ethnic": "Londa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Longarim",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Longuda",
+    "groupEthnic": "",
+    "language": "longuda",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Losso",
+    "groupEthnic": "",
+    "language": "Nawdm",
+    "geographicZone": "Togo, Ghana"
+  },
+  {
+    "ethnic": "Lotuko",
+    "groupEthnic": "",
+    "language": "otuho",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Lovedu",
+    "groupEthnic": "Bantous",
+    "language": "lovedu",
+    "geographicZone": "Afrique du Sud, Namibie"
+  },
+  {
+    "ethnic": "Lozi",
+    "groupEthnic": "Bantous",
+    "language": "lozi",
+    "geographicZone": "Zambie, Namibie, Botswana, Zimbabwe"
+  },
+  {
+    "ethnic": "Luanda",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "sud Cameroun"
+  },
+  {
+    "ethnic": "Luba",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Luchazi",
+    "groupEthnic": "Bantous",
+    "language": "luchazi",
+    "geographicZone": "Angola, Zambie"
+  },
+  {
+    "ethnic": "Luéna (ou Lwena)",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Lugbara",
+    "groupEthnic": "",
+    "language": "lugbara",
+    "geographicZone": "Soudan du Sud, Ouganda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Luguru",
+    "groupEthnic": "Bantous",
+    "language": "luguru",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Luhya",
+    "groupEthnic": "Bantous",
+    "language": "bantoues",
+    "geographicZone": "Kenya, Ouganda"
+  },
+  {
+    "ethnic": "Lulua",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lumbu, Loumbou ou Baloumbou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Lundas",
+    "groupEthnic": "Bantous",
+    "language": "lunda",
+    "geographicZone": "Angola, Zambie, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Lundus",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Luntu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Luo(groupe)",
+    "groupEthnic": "Nilotiques",
+    "language": "nilotes occidentales",
+    "geographicZone": "Kenya, Ouganda, Soudan, Tanzanie, Éthiopie, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Luo",
+    "groupEthnic": "Nilotiques",
+    "language": "nilotes occidentales(luo)",
+    "geographicZone": "Kenya, Tanzanie"
+  },
+  {
+    "ethnic": "Lurangu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Luvale",
+    "groupEthnic": "Bantous",
+    "language": "luvale",
+    "geographicZone": "Angola, Zambie"
+  },
+  {
+    "ethnic": "Lwalwa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Maasaï",
+    "groupEthnic": "Nilotiques",
+    "language": "maa",
+    "geographicZone": "Kenya, Tanzanie"
+  },
+  {
+    "ethnic": "Mada",
+    "groupEthnic": "« Kirdis »",
+    "language": "mada",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Magharsa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Mahafaly",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Mahongwé",
+    "groupEthnic": "Kotas",
+    "language": "mahongwé",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Mahou",
+    "groupEthnic": "Malinké",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Madi",
+    "groupEthnic": "",
+    "language": "madi",
+    "geographicZone": "Ouganda, Soudan du Sud"
+  },
+  {
+    "ethnic": "Mafa",
+    "groupEthnic": "",
+    "language": "mafa",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Maka",
+    "groupEthnic": "Bantous",
+    "language": "maka",
+    "geographicZone": "Cameroun, Guinée équatoriale, Gabon"
+  },
+  {
+    "ethnic": "Makina",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Makonde",
+    "groupEthnic": "Bantous",
+    "language": "makonde",
+    "geographicZone": "Tanzanie, Mozambique"
+  },
+  {
+    "ethnic": "Makua",
+    "groupEthnic": "Bantous",
+    "language": "makua",
+    "geographicZone": "Tanzanie, Malawi, Mozambique, République du Congo"
+  },
+  {
+    "ethnic": "Malbar",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Male",
+    "groupEthnic": "",
+    "language": "male",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Malinké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire, Guinée, Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Mama",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Mambay",
+    "groupEthnic": "",
+    "language": "mambay",
+    "geographicZone": "Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Mambila",
+    "groupEthnic": "",
+    "language": "mambila",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Mambwe",
+    "groupEthnic": "Bantous",
+    "language": "mambwe-lungu",
+    "geographicZone": "Tanzanie, Zambie"
+  },
+  {
+    "ethnic": "Mamvu",
+    "groupEthnic": "",
+    "language": "mamvu",
+    "geographicZone": "République démocratique du Congo, Mozambique"
+  },
+  {
+    "ethnic": "Mandja",
+    "groupEthnic": "",
+    "language": "manza",
+    "geographicZone": "République centrafricaine, Cameroun"
+  },
+  {
+    "ethnic": "Mancagne",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Mandara",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mandari",
+    "groupEthnic": "",
+    "language": "mandari",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Mandingues",
+    "groupEthnic": "",
+    "language": "mandingue",
+    "geographicZone": "Côte d'Ivoire, Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Manehas",
+    "groupEthnic": "Bantous",
+    "language": "dialecte du bakaka",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Manganja",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Malawi, Tanzanie"
+  },
+  {
+    "ethnic": "Mangbetu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mangoro",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Manguissa",
+    "groupEthnic": "Beti",
+    "language": "manguissa",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Manjaque",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Mano",
+    "groupEthnic": "",
+    "language": "mano",
+    "geographicZone": "Liberia, Guinée-Bissau, Guinée"
+  },
+  {
+    "ethnic": "Manyanga",
+    "groupEthnic": "Kongo",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Manyéma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Kenya, Tanzanie"
+  },
+  {
+    "ethnic": "Maouri",
+    "groupEthnic": "Haoussa",
+    "language": "",
+    "geographicZone": "Niger"
+  },
+  {
+    "ethnic": "Marakwet",
+    "groupEthnic": "Kalenjin",
+    "language": "markweta",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Maravis",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mozambique, Malawi, Zambie"
+  },
+  {
+    "ethnic": "Marka",
+    "groupEthnic": "",
+    "language": "marka",
+    "geographicZone": "Burkina Faso, Mali"
+  },
+  {
+    "ethnic": "Masaesyles",
+    "groupEthnic": "peuple numide",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Masalit",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tchad"
+  },
+  {
+    "ethnic": "Masmouda",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Massa",
+    "groupEthnic": "",
+    "language": "massa",
+    "geographicZone": "Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Massango",
+    "groupEthnic": "Bantous",
+    "language": "isangu",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Massyle",
+    "groupEthnic": "peuple numide",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Matakam",
+    "groupEthnic": "« Kirdis »",
+    "language": "",
+    "geographicZone": "Cameroun, Nigéria"
+  },
+  {
+    "ethnic": "Matengo",
+    "groupEthnic": "Bantous",
+    "language": "matengo",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Matmata",
+    "groupEthnic": "berbère",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Maures",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mauritanie"
+  },
+  {
+    "ethnic": "Mbala",
+    "groupEthnic": "Bantous",
+    "language": "kimbala",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbanza",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbeere",
+    "groupEthnic": "Bantous",
+    "language": "mbeere",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Mbembe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Mbete",
+    "groupEthnic": "",
+    "language": "mbete",
+    "geographicZone": "République du Congo, Gabon"
+  },
+  {
+    "ethnic": "Mbéti",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Mbgani",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbiré",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Zimbabwe"
+  },
+  {
+    "ethnic": "Mbo",
+    "groupEthnic": "Bantous",
+    "language": "mbo",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mbo",
+    "groupEthnic": "",
+    "language": "mbo",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbochi",
+    "groupEthnic": "Bantous",
+    "language": "mbochi",
+    "geographicZone": "République du Congo, République démocratique du Congo, Gabon"
+  },
+  {
+    "ethnic": "Mboko",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Mbole",
+    "groupEthnic": "Bantous",
+    "language": "mbole",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mboma",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbondzo",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Mboum",
+    "groupEthnic": "",
+    "language": "mboum",
+    "geographicZone": "Cameroun, Tchad, République centrafricaine"
+  },
+  {
+    "ethnic": "Mbugu",
+    "groupEthnic": "",
+    "language": "mbugu",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Mbukushus",
+    "groupEthnic": "",
+    "language": "mbukushu",
+    "geographicZone": "Botswana, Angola, Namibie"
+  },
+  {
+    "ethnic": "Mbula",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Mbundu",
+    "groupEthnic": "Bantous",
+    "language": "kimbundu",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Mbunga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Mbunza",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbuti",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mbuun",
+    "groupEthnic": "",
+    "language": "mbuun",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Medzan",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Meimbè",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Méké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Mendé",
+    "groupEthnic": "Mandingues",
+    "language": "mendé",
+    "geographicZone": "Guinée, Liberia, Sierra Leone"
+  },
+  {
+    "ethnic": "Mérinas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Meru",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Kenya, Tanzanie"
+  },
+  {
+    "ethnic": "Meta",
+    "groupEthnic": "Bamilékés",
+    "language": "meta’",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Metoko",
+    "groupEthnic": "Bantous",
+    "language": "metoko",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mfinu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mfumte",
+    "groupEthnic": "",
+    "language": "mfumte",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mijikenda",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Kenya, Somalie, Tanzanie"
+  },
+  {
+    "ethnic": "Mikéngé ou N'Kéngé",
+    "groupEthnic": "Kongo",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Mina",
+    "groupEthnic": "Ewes",
+    "language": "mina",
+    "geographicZone": "Togo, Bénin"
+  },
+  {
+    "ethnic": "Mituku",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République Démocratique du Congo - Province Orientale - District de la Tshopo - Territoire d'Ubundu"
+  },
+  {
+    "ethnic": "Minianka",
+    "groupEthnic": "",
+    "language": "mamara",
+    "geographicZone": "Côte d'Ivoire, Mali"
+  },
+  {
+    "ethnic": "Minungu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mitsogo",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Moba",
+    "groupEthnic": "",
+    "language": "moba",
+    "geographicZone": "Togo, Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Mokanke",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Mona",
+    "groupEthnic": "Mandingues",
+    "language": "mona",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Mondari",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Mongo",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Monjombo",
+    "groupEthnic": "",
+    "language": "monjombo",
+    "geographicZone": "République du Congo, République démocratique du Congo, République centrafricaine"
+  },
+  {
+    "ethnic": "Mono",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin ?"
+  },
+  {
+    "ethnic": "Montol",
+    "groupEthnic": "",
+    "language": "montol",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Mopindzi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Morisques",
+    "groupEthnic": "",
+    "language": "Parlers arabes non-Hilaliens",
+    "geographicZone": "Algérie, Maroc, Tunisie, Libye, Mali"
+  },
+  {
+    "ethnic": "Mossis",
+    "groupEthnic": "",
+    "language": "moré",
+    "geographicZone": "Bénin, Burkina Faso, Côte d'Ivoire, Ghana, Togo"
+  },
+  {
+    "ethnic": "Motembo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Mouamenam",
+    "groupEthnic": "Bantous",
+    "language": "dialecte de l'akoose",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mouktélé",
+    "groupEthnic": "« Kirdis »",
+    "language": "mouktélé",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Moundang",
+    "groupEthnic": "",
+    "language": "moundang",
+    "geographicZone": "Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Mousgoum",
+    "groupEthnic": "Soudanais",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Moussey",
+    "groupEthnic": "Soudanais",
+    "language": "moussey",
+    "geographicZone": "Tchad, Cameroun"
+  },
+  {
+    "ethnic": "Mouyeng",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mozabites",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Mpiemo",
+    "groupEthnic": "",
+    "language": "mpiemo",
+    "geographicZone": "Cameroun, République centrafricaine"
+  },
+  {
+    "ethnic": "Mpongwè",
+    "groupEthnic": "Myènè",
+    "language": "myènè",
+    "geographicZone": "sud Cameroun, Gabon"
+  },
+  {
+    "ethnic": "Mrazig",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tunisie"
+  },
+  {
+    "ethnic": "Msalala",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Mumuila",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Mumuye",
+    "groupEthnic": "",
+    "language": "mumuye",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Mundu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan, Ouganda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Murle",
+    "groupEthnic": "",
+    "language": "murle",
+    "geographicZone": "Soudan du Sud, Éthiopie, Kenya"
+  },
+  {
+    "ethnic": "Mursi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Mvaï",
+    "groupEthnic": "Fangs",
+    "language": "mvaï",
+    "geographicZone": "Cameroun, Gabon, Guinée équatoriale"
+  },
+  {
+    "ethnic": "Mvele",
+    "groupEthnic": "Beti",
+    "language": "bebele",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Mwaghavul",
+    "groupEthnic": "",
+    "language": "mwaghavul",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Mwéra",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie, Malawi, Mozambique"
+  },
+  {
+    "ethnic": "Myènè",
+    "groupEthnic": "Bantous",
+    "language": "myènè",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Nafana",
+    "groupEthnic": "",
+    "language": "nafaanra",
+    "geographicZone": "Ghana, Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Nagots",
+    "groupEthnic": "Yorubas",
+    "language": "",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Nalu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Namaqua",
+    "groupEthnic": "Khoïkhoï",
+    "language": "nama",
+    "geographicZone": "Afrique du Sud, Namibie et Botswana"
+  },
+  {
+    "ethnic": "Nande",
+    "groupEthnic": "Bantous",
+    "language": "kinande, swahili",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Nandi",
+    "groupEthnic": "Kalenjin",
+    "language": "nandi",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Naudeba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Togo, Ghana"
+  },
+  {
+    "ethnic": "Ndébélés",
+    "groupEthnic": "Nguni",
+    "language": "sindebele",
+    "geographicZone": "Afrique du Sud, Zimbabwe"
+  },
+  {
+    "ethnic": "Ndembu",
+    "groupEthnic": "Bantous",
+    "language": "ndembu",
+    "geographicZone": "République démocratique du Congo, Angola, Zambie"
+  },
+  {
+    "ethnic": "Ndengese",
+    "groupEthnic": "Mongos",
+    "language": "bondengese",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ndob",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Ndogo",
+    "groupEthnic": "",
+    "language": "ndogo",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Ndowe",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Guinée équatoriale, Cameroun, Gabon"
+  },
+  {
+    "ethnic": "Ndumu",
+    "groupEthnic": "",
+    "language": "ndumu",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Ndut",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Ndzebi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon, République du Congo"
+  },
+  {
+    "ethnic": "Ndzimou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "sud Cameroun"
+  },
+  {
+    "ethnic": "Néyo",
+    "groupEthnic": "Kru",
+    "language": "Néyo ou néwolé",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Ngandu",
+    "groupEthnic": "",
+    "language": "langue bantoue",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngangela",
+    "groupEthnic": "Bantous",
+    "language": "ngangela",
+    "geographicZone": "Angola, Zambie"
+  },
+  {
+    "ethnic": "Ngaré ou Ngati",
+    "groupEthnic": "Ngala",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Ngata",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngbaka",
+    "groupEthnic": "",
+    "language": "langues ngbaka",
+    "geographicZone": "République centrafricaine, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngbandi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République centrafricaine, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngeende",
+    "groupEthnic": "Kubas",
+    "language": "langue bantoue",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngemba",
+    "groupEthnic": "Bamilékés",
+    "language": "ngemba",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Ngiril",
+    "groupEthnic": "Mbochi",
+    "language": "",
+    "geographicZone": "Gabon, République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngoli",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngombe",
+    "groupEthnic": "Bantous",
+    "language": "ngombe",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngonde",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Malawi, Zambie, Tanzanie"
+  },
+  {
+    "ethnic": "Ngongo",
+    "groupEthnic": "",
+    "language": "ngongo",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ngoni",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Malawi, Mozambique, Tanzanie, Zambie"
+  },
+  {
+    "ethnic": "Ngoumba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Ngowé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Ngulu",
+    "groupEthnic": "Bantous",
+    "language": "ngulu",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Nguni",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Ngwa",
+    "groupEthnic": "Igbos",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Ngwatos",
+    "groupEthnic": "Tswanas",
+    "language": "sengwato",
+    "geographicZone": "Botswana, Afrique du Sud"
+  },
+  {
+    "ethnic": "Niloten",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan, Ouganda, Kenya, Tanzanie, extrême-ouest de l'Éthiopie"
+  },
+  {
+    "ethnic": "Niominka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Njamus",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique de l'Est"
+  },
+  {
+    "ethnic": "Njembe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Njemp",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Nkanu",
+    "groupEthnic": "",
+    "language": "kinkanu",
+    "geographicZone": "République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Nkanu",
+    "groupEthnic": "Igbo",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Nkole",
+    "groupEthnic": "Bantous",
+    "language": "runyankole",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Nkomi",
+    "groupEthnic": "Myènè",
+    "language": "myènè",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Nkoya",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Nkundu",
+    "groupEthnic": "",
+    "language": "nkundu",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Nkutshu",
+    "groupEthnic": "",
+    "language": "nkutshu",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "None",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Noubas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Nsapo-Nsapo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Nsenga",
+    "groupEthnic": "",
+    "language": "nsenga",
+    "geographicZone": "Zambie, Mozambique, Zimbabwe"
+  },
+  {
+    "ethnic": "Nso",
+    "groupEthnic": "Tikar",
+    "language": "nso",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Nsungli",
+    "groupEthnic": "Tikar",
+    "language": "",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Ntomba",
+    "groupEthnic": "",
+    "language": "ntomba",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Ntumu",
+    "groupEthnic": "Fangs",
+    "language": "ntumu",
+    "geographicZone": "Cameroun, Gabon, Guinée équatoriale"
+  },
+  {
+    "ethnic": "Nubas ou Noubas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Soudan"
+  },
+  {
+    "ethnic": "Nuer",
+    "groupEthnic": "Nilotiques",
+    "language": "nuer",
+    "geographicZone": "Soudan, Éthiopie"
+  },
+  {
+    "ethnic": "Nungu",
+    "groupEthnic": "",
+    "language": "nungu",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Nunu",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, République du Congo"
+  },
+  {
+    "ethnic": "Nunuma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Nupe",
+    "groupEthnic": "",
+    "language": "nupe",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Nyabwa",
+    "groupEthnic": "",
+    "language": "nyabwa",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Nyai",
+    "groupEthnic": "Shonas",
+    "language": "",
+    "geographicZone": "Zimbabwe"
+  },
+  {
+    "ethnic": "Nyakyusa",
+    "groupEthnic": "Bantous",
+    "language": "nyakyusa-ngonde",
+    "geographicZone": "Malawi, Tanzanie, Zambie"
+  },
+  {
+    "ethnic": "Nyamwézi",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Nyaneka",
+    "groupEthnic": "Bantous",
+    "language": "nyaneka",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Nyanga",
+    "groupEthnic": "Bantous",
+    "language": "nyanga",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Nyangatom",
+    "groupEthnic": "Nilotiques",
+    "language": "nyangatom",
+    "geographicZone": "Éthiopie, Soudan du Sud, Ouganda"
+  },
+  {
+    "ethnic": "Nyanja",
+    "groupEthnic": "Chewas",
+    "language": "",
+    "geographicZone": "Malawi, Zambie, Zimbabwe, Mozambique"
+  },
+  {
+    "ethnic": "Nyassa",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Nyaturu",
+    "groupEthnic": "Bantous",
+    "language": "nyaturu",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Nyemba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Nyiginya",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Rwanda"
+  },
+  {
+    "ethnic": "Nyoro",
+    "groupEthnic": "Bantous",
+    "language": "nyoro",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Nzakara",
+    "groupEthnic": "",
+    "language": "nzakara",
+    "geographicZone": "République centrafricaine, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Nzaman",
+    "groupEthnic": "Fangs",
+    "language": "nzaman",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Nzebi",
+    "groupEthnic": "",
+    "language": "nzebi",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Obamba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon (est)"
+  },
+  {
+    "ethnic": "Ogoni",
+    "groupEthnic": "",
+    "language": "langues ogoni",
+    "geographicZone": "Nigeria (sud)"
+  },
+  {
+    "ethnic": "Ogowé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Okak",
+    "groupEthnic": "Fangs",
+    "language": "okak",
+    "geographicZone": "Cameroun, Guinée équatoriale, Gabon"
+  },
+  {
+    "ethnic": "Okandé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon (nord-est)"
+  },
+  {
+    "ethnic": "Okiek",
+    "groupEthnic": "",
+    "language": "okiek",
+    "geographicZone": "Kenya, Tanzanie"
+  },
+  {
+    "ethnic": "Onitsha",
+    "groupEthnic": "Igbos",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Onhaki",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Archipel des Bijagos, Guinée-Bissau"
+  },
+  {
+    "ethnic": "Oorlams",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Orma",
+    "groupEthnic": "Oromos",
+    "language": "orma",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Oromos",
+    "groupEthnic": "",
+    "language": "oromo",
+    "geographicZone": "Éthiopie et Kenya (région Oromia)"
+  },
+  {
+    "ethnic": "Oron",
+    "groupEthnic": "",
+    "language": "oron",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Orungu",
+    "groupEthnic": "Myènè",
+    "language": "myènè",
+    "geographicZone": "Gabon (ouest)"
+  },
+  {
+    "ethnic": "Ossananga",
+    "groupEthnic": "Beti",
+    "language": "tuki",
+    "geographicZone": "Cameroun(Centre)"
+  },
+  {
+    "ethnic": "Oulad Delim",
+    "groupEthnic": "Hassane",
+    "language": "",
+    "geographicZone": "Sahara occidental (sud)"
+  },
+  {
+    "ethnic": "Ouldémé",
+    "groupEthnic": "Kirdis",
+    "language": "Ouldémé",
+    "geographicZone": "Cameroun, Nigéria"
+  },
+  {
+    "ethnic": "Ouled Sidi Yahia",
+    "groupEthnic": "berbèreZénète",
+    "language": "",
+    "geographicZone": "Algérie, Maroc et Tunisie"
+  },
+  {
+    "ethnic": "Ouerghemma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tunisie (sud-est)"
+  },
+  {
+    "ethnic": "Ovambos",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Ovimbundus",
+    "groupEthnic": "",
+    "language": "Umbundu",
+    "geographicZone": "Angola (centre et ouest)"
+  },
+  {
+    "ethnic": "Oyo",
+    "groupEthnic": "Yorubas",
+    "language": "",
+    "geographicZone": "Nigeria, Angola"
+  },
+  {
+    "ethnic": "Pahouin",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon, Guinée équatoriale, République du Congo"
+  },
+  {
+    "ethnic": "Papel",
+    "groupEthnic": "",
+    "language": "papel",
+    "geographicZone": "Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Paragourma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Pare",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Pende",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Pédis",
+    "groupEthnic": "Basotho",
+    "language": "sotho du Nord",
+    "geographicZone": "Afrique du Sud, Swaziland"
+  },
+  {
+    "ethnic": "Pelasla",
+    "groupEthnic": "Kirdi",
+    "language": "",
+    "geographicZone": "Cameroun et Nigéria (Monts Mandara)"
+  },
+  {
+    "ethnic": "Pere",
+    "groupEthnic": "Bantous",
+    "language": "?",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Petits Blancs",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Peuls",
+    "groupEthnic": "",
+    "language": "peul",
+    "geographicZone": "Bénin, Burkina Faso, Cameroun, Côte d'Ivoire, Guinée, Mali, Mauritanie, Niger, Nigeria, République centrafricaine, Sénégal, Soudan, Tchad"
+  },
+  {
+    "ethnic": "Pindi",
+    "groupEthnic": "",
+    "language": "pindi",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Podokwo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun et Nigéria (Monts Mandara)"
+  },
+  {
+    "ethnic": "Pogoro",
+    "groupEthnic": "Bantous",
+    "language": "pogoro",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Pokomo",
+    "groupEthnic": "",
+    "language": "pokomo",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Pove",
+    "groupEthnic": "Bantous",
+    "language": "pove",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Punu",
+    "groupEthnic": "Bantous",
+    "language": "yipunu",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Pyaang",
+    "groupEthnic": "Kubas",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Pygmée",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "Burundi, Gabon, République centrafricaine, République démocratique du Congo, Rwanda"
+  },
+  {
+    "ethnic": "Rangi",
+    "groupEthnic": "Bantous",
+    "language": "rangi",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Reguibat",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Sahara"
+  },
+  {
+    "ethnic": "Rendille",
+    "groupEthnic": "",
+    "language": "rendille",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Rifains",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Rimaibé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": ""
+  },
+  {
+    "ethnic": "Rounga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République centrafricaine"
+  },
+  {
+    "ethnic": "Rukuba",
+    "groupEthnic": "",
+    "language": "rukuba",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Safwa",
+    "groupEthnic": "Bantous",
+    "language": "safwa",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Sagaras",
+    "groupEthnic": "Zaramos",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Saho",
+    "groupEthnic": "",
+    "language": "saho",
+    "geographicZone": "Érythrée, Éthiopie"
+  },
+  {
+    "ethnic": "Saka",
+    "groupEthnic": "",
+    "language": "langue bantoue",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Sakalaves",
+    "groupEthnic": "",
+    "language": "sakalava",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Sakata",
+    "groupEthnic": "Bantous",
+    "language": "sakata",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Salampasu",
+    "groupEthnic": "Bantous",
+    "language": "salampasu",
+    "geographicZone": "République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Samburu",
+    "groupEthnic": "Nilotiques",
+    "language": "samburu",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Samia",
+    "groupEthnic": "Luyia",
+    "language": "samia",
+    "geographicZone": "Kenya, Ouganda"
+  },
+  {
+    "ethnic": "Samo",
+    "groupEthnic": "Mandingues",
+    "language": "samo",
+    "geographicZone": "Burkina Faso, Mali"
+  },
+  {
+    "ethnic": "Bochimans(ou San ou Sango)",
+    "groupEthnic": "Bushmen",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Sandawe",
+    "groupEthnic": "",
+    "language": "sandawe",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Sanga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Sanhadja",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Afrique du Nord"
+  },
+  {
+    "ethnic": "Sankura",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Sapi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sierra Leone"
+  },
+  {
+    "ethnic": "Sapo (ou Wee)",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire, Liberia"
+  },
+  {
+    "ethnic": "Sara",
+    "groupEthnic": "",
+    "language": "langues sara",
+    "geographicZone": "Tchad"
+  },
+  {
+    "ethnic": "Sebei",
+    "groupEthnic": "Kalenjin",
+    "language": "sapiny",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Séké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon, Guinée équatoriale, Cameroun"
+  },
+  {
+    "ethnic": "Sékyani ou Sékiani",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Sélé",
+    "groupEthnic": "Ovimbundus",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Sena",
+    "groupEthnic": "Bantous",
+    "language": "chisena",
+    "geographicZone": "Malawi, Mozambique"
+  },
+  {
+    "ethnic": "Sengélé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Sénoufo",
+    "groupEthnic": "",
+    "language": "Sénoufo",
+    "geographicZone": "ouest Burkina Faso, nord Côte d'Ivoire, sud Mali"
+  },
+  {
+    "ethnic": "Sérères",
+    "groupEthnic": "",
+    "language": "sérère",
+    "geographicZone": "Sénégal, Gambie"
+  },
+  {
+    "ethnic": "Shakandi",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Shaké",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Shambala",
+    "groupEthnic": "Bantous",
+    "language": "shambala",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Shankadi",
+    "groupEthnic": "Luba",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Shashi",
+    "groupEthnic": "Soukouma",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Sherbro",
+    "groupEthnic": "",
+    "language": "sherbro",
+    "geographicZone": "ouest Sierra Leone"
+  },
+  {
+    "ethnic": "Shi",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Shilluk",
+    "groupEthnic": "",
+    "language": "shilluk",
+    "geographicZone": "Soudan du Sud"
+  },
+  {
+    "ethnic": "Shinshé(ou Chinge ou Bashinshe)",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Shirazi",
+    "groupEthnic": "Swahilis",
+    "language": "swahili",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Shonas",
+    "groupEthnic": "",
+    "language": "shona",
+    "geographicZone": "Mozambique, Zimbabwe"
+  },
+  {
+    "ethnic": "Sidamas",
+    "groupEthnic": "",
+    "language": "Sidama",
+    "geographicZone": "sud-ouest Éthiopie"
+  },
+  {
+    "ethnic": "Sihanaka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Sihou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Silt'e",
+    "groupEthnic": "",
+    "language": "Silt'e",
+    "geographicZone": "sud Éthiopie"
+  },
+  {
+    "ethnic": "Sisala (ou Sasala)",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Ghana"
+  },
+  {
+    "ethnic": "Sissihou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Siwi",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Égypte"
+  },
+  {
+    "ethnic": "So",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Soga",
+    "groupEthnic": "Bantous",
+    "language": "soga",
+    "geographicZone": "Ouganda"
+  },
+  {
+    "ethnic": "Sohanti",
+    "groupEthnic": "Sonrhaïs",
+    "language": "",
+    "geographicZone": "Mali, Niger, Burkina Faso, Bénin"
+  },
+  {
+    "ethnic": "Soko",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Solongo",
+    "groupEthnic": "Kongos",
+    "language": "solongo",
+    "geographicZone": "Angola, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Somalis",
+    "groupEthnic": "Kouchite",
+    "language": "Somali",
+    "geographicZone": "Djibouti, Éthiopie, Kenya, Somalie"
+  },
+  {
+    "ethnic": "Somba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin, Togo, Ghana"
+  },
+  {
+    "ethnic": "Somono",
+    "groupEthnic": "Bambaras",
+    "language": "",
+    "geographicZone": "Mali"
+  },
+  {
+    "ethnic": "Songhaï",
+    "groupEthnic": "",
+    "language": "songhaï",
+    "geographicZone": "Mali, Niger"
+  },
+  {
+    "ethnic": "Songo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Songola",
+    "groupEthnic": "Bantous",
+    "language": "songola",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Songyés",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Soninkés",
+    "groupEthnic": "",
+    "language": "soninké",
+    "geographicZone": "Mali, Mauritanie, Sénégal"
+  },
+  {
+    "ethnic": "Sorkos",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Niger"
+  },
+  {
+    "ethnic": "Sossés",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Sénégal"
+  },
+  {
+    "ethnic": "Sothos",
+    "groupEthnic": "Bantous",
+    "language": "sotho du Nord, sotho du Sud, sotho de l'Ouest",
+    "geographicZone": "Afrique du Sud, Lesotho"
+  },
+  {
+    "ethnic": "Soussou",
+    "groupEthnic": "Mandingues",
+    "language": "soussou",
+    "geographicZone": "Guinée, Sierra Leone"
+  },
+  {
+    "ethnic": "Subia",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Botswana, Namibie, Zambie"
+  },
+  {
+    "ethnic": "Suku",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Sukuma",
+    "groupEthnic": "Bantous",
+    "language": "soukouma",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Sundi",
+    "groupEthnic": "Kongos",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Surmas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "sud-ouest Éthiopie, Soudan"
+  },
+  {
+    "ethnic": "Swahilis",
+    "groupEthnic": "",
+    "language": "swahili",
+    "geographicZone": "Kenya, Mozambique, Tanzanie"
+  },
+  {
+    "ethnic": "Swazis",
+    "groupEthnic": "Bantous",
+    "language": "swati",
+    "geographicZone": "Swaziland"
+  },
+  {
+    "ethnic": "Tabwa",
+    "groupEthnic": "Bantous",
+    "language": "kitabwa",
+    "geographicZone": "République démocratique du Congo, Zambie"
+  },
+  {
+    "ethnic": "Tagouana",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Taita",
+    "groupEthnic": "Bantous",
+    "language": "taita",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Tallensi",
+    "groupEthnic": "",
+    "language": "tallensi",
+    "geographicZone": "Ghana, Burkina Faso"
+  },
+  {
+    "ethnic": "Tanéka",
+    "groupEthnic": "",
+    "language": "yom",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Tanindrana",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Tasawaq",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Niger"
+  },
+  {
+    "ethnic": "Tchokwés",
+    "groupEthnic": "Bantous",
+    "language": "tchokwé",
+    "geographicZone": "République démocratique du Congo, Angola, Zambie"
+  },
+  {
+    "ethnic": "Teda",
+    "groupEthnic": "Toubou",
+    "language": "tedaga",
+    "geographicZone": "Niger, Tchad, Libye"
+  },
+  {
+    "ethnic": "Tékés",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo, Gabon"
+  },
+  {
+    "ethnic": "Tellem",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mali"
+  },
+  {
+    "ethnic": "Tém",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Burkina Faso, Ghana, centre Togo, Bénin"
+  },
+  {
+    "ethnic": "Temne",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Guinée, Sierra Leone"
+  },
+  {
+    "ethnic": "Temzit",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Tenda",
+    "groupEthnic": "",
+    "language": "langues tenda",
+    "geographicZone": "Guinée, Guinée-Bissau, Sénégal"
+  },
+  {
+    "ethnic": "Tende",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Terik",
+    "groupEthnic": "Kalenjin",
+    "language": "terik",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Teso",
+    "groupEthnic": "",
+    "language": "teso",
+    "geographicZone": "Ouganda, Kenya"
+  },
+  {
+    "ethnic": "Tetela",
+    "groupEthnic": "Bantous",
+    "language": "tetela",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Tharaka",
+    "groupEthnic": "Bantous",
+    "language": "kitharaka",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Thembu",
+    "groupEthnic": "Xhosa",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Tigré ou Tigray",
+    "groupEthnic": "",
+    "language": "Tigrinya",
+    "geographicZone": "Érythrée, Éthiopie"
+  },
+  {
+    "ethnic": "Tikar",
+    "groupEthnic": "Bantous",
+    "language": "tikar",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Tiriki",
+    "groupEthnic": "Luyia",
+    "language": "tiriki",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Tiv",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Tlaping(ou Batlaping)",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Tofinu",
+    "groupEthnic": "",
+    "language": "tofin-gbe",
+    "geographicZone": "Bénin, Togo, Ghana"
+  },
+  {
+    "ethnic": "Togbo",
+    "groupEthnic": "Banda",
+    "language": "togbo",
+    "geographicZone": "République centrafricaine, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Toka",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Toma",
+    "groupEthnic": "Mandingues",
+    "language": "loma",
+    "geographicZone": "Liberia, Guinée"
+  },
+  {
+    "ethnic": "Tonga",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mozambique"
+  },
+  {
+    "ethnic": "Tonga",
+    "groupEthnic": "Bantous",
+    "language": "chitonga",
+    "geographicZone": "Zambie, Zimbabwe, Malawi"
+  },
+  {
+    "ethnic": "Topoke",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Toposa",
+    "groupEthnic": "",
+    "language": "toposa",
+    "geographicZone": "Soudan du Sud, Ouganda"
+  },
+  {
+    "ethnic": "Totéla",
+    "groupEthnic": "",
+    "language": "langue bantoue",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Touareg ou Touaregs",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Algérie, Libye, Niger, Mali, Burkina Faso"
+  },
+  {
+    "ethnic": "Toubou",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Libye, Niger, Tchad"
+  },
+  {
+    "ethnic": "Toucouleur",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Mauritanie, Sénégal"
+  },
+  {
+    "ethnic": "Toupouri",
+    "groupEthnic": "Soudanais",
+    "language": "",
+    "geographicZone": "Cameroun, Tchad"
+  },
+  {
+    "ethnic": "Toura",
+    "groupEthnic": "Mandingues",
+    "language": "toura",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Toussian",
+    "groupEthnic": "Lobi",
+    "language": "tussian du nord, toussian du sud",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Troglodyte",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Libye, Tchad"
+  },
+  {
+    "ethnic": "Tchokwés",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Tsamay",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Tshogo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Tsimihety",
+    "groupEthnic": "",
+    "language": "tsimihety",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Tsinga",
+    "groupEthnic": "Beti",
+    "language": "tuki",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Tsongas",
+    "groupEthnic": "Bantous",
+    "language": "tsonga",
+    "geographicZone": "Afrique du Sud, Mozambique"
+  },
+  {
+    "ethnic": "Tswanas",
+    "groupEthnic": "Bantous",
+    "language": "tswana",
+    "geographicZone": "Botswana, Namibie, Afrique du Sud"
+  },
+  {
+    "ethnic": "Tugen",
+    "groupEthnic": "Kalenjin",
+    "language": "tugen",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Tula",
+    "groupEthnic": "",
+    "language": "tula",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Tulama",
+    "groupEthnic": "Oromo",
+    "language": "tulama",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Tumandwa",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "République du Congo"
+  },
+  {
+    "ethnic": "Tumbuka",
+    "groupEthnic": "Bantous",
+    "language": "tumbuka",
+    "geographicZone": "Malawi, Zambie"
+  },
+  {
+    "ethnic": "Turka",
+    "groupEthnic": "Sénoufos",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire, Mali, Burkina Faso"
+  },
+  {
+    "ethnic": "Turkana",
+    "groupEthnic": "Nilotiques",
+    "language": "turkana",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Tura",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Turu",
+    "groupEthnic": "",
+    "language": "langue bantoue",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Turumbu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Tutsis",
+    "groupEthnic": "Nilotiques",
+    "language": "",
+    "geographicZone": "Burundi, Rwanda, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Twa",
+    "groupEthnic": "Pygmée",
+    "language": "",
+    "geographicZone": "Rwanda, Burundi"
+  },
+  {
+    "ethnic": "Uduk",
+    "groupEthnic": "",
+    "language": "uduk",
+    "geographicZone": "Éthiopie, Soudan du Sud"
+  },
+  {
+    "ethnic": "Ukuambi",
+    "groupEthnic": "Ovambos",
+    "language": "",
+    "geographicZone": "Namibie"
+  },
+  {
+    "ethnic": "Unga",
+    "groupEthnic": "Bembas",
+    "language": "",
+    "geographicZone": "Zambie"
+  },
+  {
+    "ethnic": "Ura",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Urhobos",
+    "groupEthnic": "",
+    "language": "Urhobo",
+    "geographicZone": "sud Nigeria"
+  },
+  {
+    "ethnic": "Uyangas ou Doko-Uyangas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Vaï",
+    "groupEthnic": "Mandingues",
+    "language": "vaï",
+    "geographicZone": "Liberia, Sierra Leone"
+  },
+  {
+    "ethnic": "Vamé",
+    "groupEthnic": "",
+    "language": "vame",
+    "geographicZone": "Cameroun et Nigéria (Monts Mandara)"
+  },
+  {
+    "ethnic": "Varamas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Vazimbas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Vendas",
+    "groupEthnic": "Bantous",
+    "language": "venda",
+    "geographicZone": "Afrique du Sud, Zimbabwe"
+  },
+  {
+    "ethnic": "Vere",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Vézos",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Vili",
+    "groupEthnic": "Kongo",
+    "language": "vili",
+    "geographicZone": "République du Congo, Gabon"
+  },
+  {
+    "ethnic": "Viyé ou Bihe ou Bie",
+    "groupEthnic": "Ovimbundus",
+    "language": "",
+    "geographicZone": "Angola"
+  },
+  {
+    "ethnic": "Vungu, Voungou ou Bavungu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Gabon"
+  },
+  {
+    "ethnic": "Vute",
+    "groupEthnic": "Semi-Bantous",
+    "language": "vute",
+    "geographicZone": "centre et nord Cameroun"
+  },
+  {
+    "ethnic": "Waama",
+    "groupEthnic": "",
+    "language": "waama",
+    "geographicZone": "Bénin"
+  },
+  {
+    "ethnic": "Waci",
+    "groupEthnic": "Ewe",
+    "language": "waci",
+    "geographicZone": "Bénin, Togo"
+  },
+  {
+    "ethnic": "Wajas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Nigeria, Niger, Bénin"
+  },
+  {
+    "ethnic": "Wamanu",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Wan",
+    "groupEthnic": "Mandingues",
+    "language": "wan",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Wawa",
+    "groupEthnic": "",
+    "language": "wawa",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Welaytas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Éthiopie"
+  },
+  {
+    "ethnic": "Wés",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Wéé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Liberia"
+  },
+  {
+    "ethnic": "Widekum",
+    "groupEthnic": "Bamilékés",
+    "language": "meta'",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Winiamas",
+    "groupEthnic": "Gurunsis",
+    "language": "winye",
+    "geographicZone": "Burkina Faso"
+  },
+  {
+    "ethnic": "Wobé",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Wodaabes",
+    "groupEthnic": "Peuls",
+    "language": "",
+    "geographicZone": "Niger, Nigeria, Cameroun, Tchad, République centrafricaine"
+  },
+  {
+    "ethnic": "Wogo",
+    "groupEthnic": "Songhaï",
+    "language": "wogo ciine",
+    "geographicZone": "Niger, Mali"
+  },
+  {
+    "ethnic": "Wolofs",
+    "groupEthnic": "",
+    "language": "wolof",
+    "geographicZone": "Mauritanie, Sénégal"
+  },
+  {
+    "ethnic": "Wongo",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Woyo",
+    "groupEthnic": "Kongos",
+    "language": "kiwoyo",
+    "geographicZone": "République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Wum",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Wurkun",
+    "groupEthnic": "",
+    "language": "wurkun",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Xhosas",
+    "groupEthnic": "Xhosa",
+    "language": "Xhosa",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Xwla",
+    "groupEthnic": "",
+    "language": "xwla",
+    "geographicZone": "Bénin, Togo"
+  },
+  {
+    "ethnic": "Yaaku",
+    "groupEthnic": "",
+    "language": "yaaku",
+    "geographicZone": "Kenya"
+  },
+  {
+    "ethnic": "Yakö",
+    "groupEthnic": "",
+    "language": "yakö",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Yabassi",
+    "groupEthnic": "Bantous",
+    "language": "yabassi",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Yaka",
+    "groupEthnic": "Bantous",
+    "language": "yaka",
+    "geographicZone": "Angola, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Yakoma",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République centrafricaine, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Yamba",
+    "groupEthnic": "",
+    "language": "yamba",
+    "geographicZone": "Cameroun, Nigeria"
+  },
+  {
+    "ethnic": "Yangéré",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République centrafricaine"
+  },
+  {
+    "ethnic": "Yanzi",
+    "groupEthnic": "Bantous",
+    "language": "yanzi",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Yao",
+    "groupEthnic": "Bantous",
+    "language": "chiyao",
+    "geographicZone": "Malawi, Mozambique, Tanzanie"
+  },
+  {
+    "ethnic": "Yaouré",
+    "groupEthnic": "Mandingues",
+    "language": "Langues mandées",
+    "geographicZone": "Côte d'Ivoire"
+  },
+  {
+    "ethnic": "Yeke",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Yela",
+    "groupEthnic": "Bantous",
+    "language": "yela",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Yezoum",
+    "groupEthnic": "Beti",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Yombe",
+    "groupEthnic": "Kongos",
+    "language": "yombe",
+    "geographicZone": "République du Congo, République démocratique du Congo, Angola"
+  },
+  {
+    "ethnic": "Yombe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Malawi, Zambie"
+  },
+  {
+    "ethnic": "Yorubas",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Bénin, Ghana, Nigeria, Togo"
+  },
+  {
+    "ethnic": "Yukuben",
+    "groupEthnic": "",
+    "language": "yukuben",
+    "geographicZone": "Nigeria, Cameroun"
+  },
+  {
+    "ethnic": "Yungur",
+    "groupEthnic": "",
+    "language": "langues yungur",
+    "geographicZone": "Nigeria"
+  },
+  {
+    "ethnic": "Zafimaniry",
+    "groupEthnic": "Betsileo",
+    "language": "",
+    "geographicZone": "Madagascar"
+  },
+  {
+    "ethnic": "Zaghawa",
+    "groupEthnic": "",
+    "language": "zaghawa",
+    "geographicZone": "Soudan, Tchad"
+  },
+  {
+    "ethnic": "Zandés",
+    "groupEthnic": "",
+    "language": "zande",
+    "geographicZone": "Cameroun, République démocratique du Congo, République centrafricaine, Soudan"
+  },
+  {
+    "ethnic": "Zarabes",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Zaramo",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Zarmas",
+    "groupEthnic": "Songhaï",
+    "language": "zarma",
+    "geographicZone": "Bénin, Burkina Faso, Niger, Nigeria"
+  },
+  {
+    "ethnic": "Zayanes",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Maroc"
+  },
+  {
+    "ethnic": "Zela",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "République démocratique du Congo"
+  },
+  {
+    "ethnic": "Zenagas",
+    "groupEthnic": "Berbères",
+    "language": "",
+    "geographicZone": "Mauritanie, Sénégal"
+  },
+  {
+    "ethnic": "Zénètes",
+    "groupEthnic": "Berbères",
+    "language": "zénète ou zenati, variété du berbère",
+    "geographicZone": "Algérie"
+  },
+  {
+    "ethnic": "Zigua",
+    "groupEthnic": "Bantous",
+    "language": "",
+    "geographicZone": "Tanzanie, Mozambique"
+  },
+  {
+    "ethnic": "Zimba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Zimbu",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Zingwe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Cameroun"
+  },
+  {
+    "ethnic": "Zinza",
+    "groupEthnic": "Bantous",
+    "language": "zinza",
+    "geographicZone": "Tanzanie"
+  },
+  {
+    "ethnic": "Zoghba",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Algérie, Tunisie"
+  },
+  {
+    "ethnic": "Zombe",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Zoreilles",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "La Réunion"
+  },
+  {
+    "ethnic": "Zoulous",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "Afrique du Sud"
+  },
+  {
+    "ethnic": "Zela",
+    "groupEthnic": "",
+    "language": "",
+    "geographicZone": "République du Congo, République démocratique du Congo"
+  },
+  {
+    "ethnic": "Zulgo",
+    "groupEthnic": "Kirdis",
+    "language": "zulgo",
+    "geographicZone": "Cameroun"
+  }
+]

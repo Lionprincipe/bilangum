@@ -2,12 +2,15 @@ import { connect } from 'react-redux'
 import { setReferenceLanguage } from '../actions'
 import ReferenceLanguageSelection from '../components/ReferenceLanguageSelection'
 
-const mapStateToProps = state => ({
+const mapStateToProps = ({
+  referenceLanguage: { languageId },
+  referenceLanguages,
+}) => ({
   name: 'referenceLanguage',
-  referenceLanguagesList: ['french', 'english', 'deutsch'],
-  referenceLanguage: state.referenceLanguage,
+  referenceLanguages,
+  currReferenceLanguageId: languageId,
 })
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   onChange: referenceLanguage =>
     dispatch(setReferenceLanguage({ referenceLanguage })),
 })

@@ -6,9 +6,8 @@ const StyledRadio = styled.label`
   display: inline-block;
   margin: auto 2em;
 `
-const RadioField = ({ text, name, onChange, checked }) => {
+const RadioField = ({ value, text, name, onChange, checked }) => {
   const handleChange = e => {
-    console.log('cnhange')
     const { value } = e.target
     onChange(value)
   }
@@ -16,7 +15,7 @@ const RadioField = ({ text, name, onChange, checked }) => {
     <StyledRadio>
       <input
         type="radio"
-        value={text}
+        value={value || text}
         name={name}
         onChange={handleChange}
         checked={checked}
@@ -28,6 +27,7 @@ const RadioField = ({ text, name, onChange, checked }) => {
 
 RadioField.propTypes = {
   name: PropTypes.string,
+  value: PropTypes.string,
   text: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.number,

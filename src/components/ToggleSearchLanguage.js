@@ -4,13 +4,34 @@ import RadioField from './RadioField'
 
 const ToggleSearchLanguage = ({
   name,
-  preferedLanguages: { ethnic, reference },
+  ethnic,
+  reference,
+  ethnicLanguage,
+  referenceLanguage,
+  onChange,
+  ethnicChecked,
+  referenceChecked,
 }) => {
   return (
-    <div>
-      <RadioField text={reference} name={name} />
-      <RadioField text={ethnic||'ero'} name={name} />
-    </div>
+    ethnic &&
+    reference && (
+      <div>
+        <RadioField
+          text={reference}
+          name={name}
+          value={reference}
+          onChange={() => onChange(referenceLanguage)}
+          checked={referenceChecked}
+        />
+        <RadioField
+          text={ethnic || ''}
+          value={ethnic || ''}
+          name={name}
+          onChange={() => onChange(ethnicLanguage)}
+          checked={ethnicChecked}
+        />
+      </div>
+    )
   )
 }
 

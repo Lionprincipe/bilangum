@@ -40,8 +40,8 @@ const WordCardHeader = ({
       {isEditing ? (
         <InputField
           name={'word'}
-          placeholder={title}
-          value={title}
+          placeholder={'nano'}
+          value={'nano'}
           onSubmit={onSubmit}
         />
       ) : (

@@ -10,7 +10,6 @@ import { getWordElEditStatus } from '../selectors'
 
 const mapPropsToState = (state, ownProps) => ({
   name: 'word',
-  title: state.words[ownProps.wordIndex].word,
   isEditing: getWordElEditStatus(ownProps, state),
 })
 

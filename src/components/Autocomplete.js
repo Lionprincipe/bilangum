@@ -38,16 +38,20 @@ export default class Autocomplete extends Component {
   static propTypes = {
     suggestions: PropTypes.array,
   }
-  state = { suggestions: [], selected: '' }
+  state = { suggestions: [], selected: null }
 
   handleChange = e => {
     const { value } = e.target
-    let { suggestions } = this.props
+    let { suggestions, mainAttribut } = this.props
     if (suggestions && suggestions.length > 0) {
-      suggestions = suggestions.filter(el =>
-        el.toLowerCase().startsWith(value.toLowerCase())
-      )
-      this.setState({ suggestions, selected: value })
+      suggestions = suggestions.filter(el => {
+        console.log(el[mainAttribut], 'value', value)
+        return (
+          typeof el[mainAttribut] === 'string' &&
+          el[mainAttribut].toLowerCase().startsWith(value.toLowerCase())
+        )
+      })
+      this.setState({ suggestions, selected: { [mainAttribut]: value } })
     }
   }
 
@@ -56,12 +60,13 @@ export default class Autocomplete extends Component {
   }
 
   clearState = () => {
-    this.setState({ suggestions: [], selected: '' })
+    this.setState({ suggestions: [], selected: null })
   }
 
   handleSubmit = inputValue => {
     const { onSubmit } = this.props
-    onSubmit && onSubmit(inputValue)
+    const { selected } = this.state
+    onSubmit && onSubmit(selected || inputValue)
     this.clearState()
   }
 
@@ -71,14 +76,15 @@ export default class Autocomplete extends Component {
   }
 
   render() {
-    const { name, placeholder } = this.props
+    const { name, placeholder, mainAttribut } = this.props
     const { suggestions, selected } = this.state
+    const text = (selected && selected[mainAttribut]) || ''
     return (
       <Wrapper>
         <InputStyled>
           <InputField
             name={name}
-            value={selected}
+            value={text}
             onChange={this.handleChange}
             onFocus={this.handleChange}
             placeholder={placeholder}
@@ -88,16 +94,18 @@ export default class Autocomplete extends Component {
           />
         </InputStyled>
         {suggestions.length > 0 && (
-          <SubWrapper>{this.renderSuggestions(suggestions)}</SubWrapper>
+          <SubWrapper>
+            {this.renderSuggestions(suggestions, mainAttribut)}
+          </SubWrapper>
         )}
       </Wrapper>
     )
   }
 
-  renderSuggestions(suggestions) {
+  renderSuggestions(suggestions, mainAttribut) {
     return suggestions.map((el, index) => (
       <StyledSuggestion key={index} onClick={() => this.handleSelection(el)}>
-        {el}
+        {el[mainAttribut]}
       </StyledSuggestion>
     ))
   }

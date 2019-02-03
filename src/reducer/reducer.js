@@ -85,6 +85,26 @@ export default function reducer(state = initialState, action = {}) {
       const { ethnicLanguage } = payload
       return { ...state, ethnicLanguage }
     }
+    case ACTIONS.SET_SEARCH_LANGUAGE: {
+      const { searchLanguage } = payload
+      return { ...state, searchLanguage }
+    }
+    case ACTIONS.UPDATE_EXISTANTE_TRANSLATION: {
+      const {
+        value: { wordId },
+        wordIndex,
+      } = payload
+      const { words } = state
+      const { wordId: translationId, word } = words[wordIndex]
+      const index = words.findIndex(({ wordId: id }) => id === wordId)
+      let { translations } = words[index]
+      translations = updateList(translations, -1, {
+        wordId: translationId,
+        word,
+      })
+      const newWord = { ...words[index], translations }
+      return { ...state, words: updateList(words, index, newWord) }
+    }
 
     default:
       return state

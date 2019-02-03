@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 
 const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
-  const { word, translation } = originalWord
+  const { word, translations } = originalWord
   const text = `Add a  translation for :${word}`
   return (
     <Wrapper>
@@ -20,11 +20,10 @@ const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
         name={name}
         value={''}
         collection={'words'}
-        attributs={['word']}
+        mainAttribut="word"
+        attributs={['word', 'wordId']}
         placeholder={text}
-        onSubmit={value =>
-          onSave({ ...wordCopy, word: value }, translation || [])
-        }
+        onSubmit={value => onSave(wordCopy, value, translations || [])}
       />
     </Wrapper>
   )

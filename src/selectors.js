@@ -1,5 +1,13 @@
 import { findIndexInList, updateList } from './utils'
 
+export const wordsLanguageSelector = ({
+  words,
+  searchLanguage: { languageId: searchId },
+}) =>
+  (words &&
+    words.filter(({ language: { languageId } }) => languageId === searchId)) ||
+  []
+
 export const wordIndexFromWordIdSelector = ({ words }, { wordId }) => {
   return words.findIndex(({ wordId: id }) => id === wordId)
 }
@@ -7,37 +15,67 @@ export const wordIndexFromWordIdSelector = ({ words }, { wordId }) => {
 export const translationListSelector = ({ words }, { translationList }) => {
   if (words && words.length > 0) {
     return words.filter(
-      ({ wordId }) => wordId && translationList.some(el => el === wordId)
+      ({ wordId }) =>
+        wordId && translationList.some(({ wordId: el }) => el === wordId)
     )
   }
 }
 
 export const suggestionsSelector = (state, { collection, attributs }) => {
   const list = state[collection]
-  const suggestions = list.map(el =>
-    attributs.reduce((acc, curr) => (acc = el[curr]), '')
-  )
-  console.log(list, 'list', suggestions, 'sugg', collection, attributs)
+  const suggestions =
+    (list &&
+      list.map(el =>
+        attributs.reduce(
+          (acc, curr) => (acc = { ...acc, [curr]: el[curr] }),
+          {}
+        )
+      )) ||
+    []
+  console.log(collection, 'collction', attributs, 'attribut')
   return suggestions
 }
 
-export const translationAddSelector = (state, ownProps) => {
-  const originalWord = selectCurrentWord(state, ownProps)
-  const { translation, wordId, word, ...others } = originalWord
+export const translationAddSelector = (
+  { words, referenceLanguage, ethnicLanguage },
+  { wordIndex }
+) => {
+  const originalWord = (words && words[wordIndex]) || {}
+  const { translations, language, wordId, word, ...others } = originalWord
   const wordCopy = {
     ...others,
-    translation: updateList(translation || [], -1, wordId) || [],
-    language: 'afro',
+    translations: updateList(translations || [], -1, wordId) || [],
+    language: languageCheckedSelector(language, referenceLanguage)
+      ? ethnicLanguage
+      : referenceLanguage,
   }
-  console.log(wordCopy)
   return { wordCopy, originalWord }
 }
+
+export const languageCheckedSelector = (
+  { languageId: langId },
+  { languageId: searchId }
+) => langId === searchId
 
 export const selectAddPropertyNumber = ({ newProperties }, { wordIndex }) =>
   newProperties && newProperties.filter(el => el === wordIndex).length
 
-export const selectCurrentWord = ({ words }, { wordIndex, word }) =>
-  word || (wordIndex >= 0 && words[wordIndex])
+export const selectWordCardProps = (
+  { words, listOfWordElInOpenMode },
+  { wordId, isOpen }
+) => {
+  const wordIndex = wordIndexFromWordIdSelector({ words }, { wordId })
+  const { word, translations, language, wordId: leave, ...otherProps } = words[
+    wordIndex
+  ]
+  isOpen && console.log(word, 'goman', words[wordIndex])
+  isOpen = !!isOpen || getWordElOpenStatus(wordIndex, listOfWordElInOpenMode)
+  const result =
+    (wordIndex >= 0 && { wordIndex, word, translations, otherProps, isOpen }) ||
+    {}
+
+  return result
+}
 
 export const modalIdSelector = state => {
   const { modal } = state
@@ -65,8 +103,9 @@ export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
     .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
 
 export const getWordElOpenStatus = (
-  { wordIndex, isOpen },
-  { listOfWordElInOpenMode }
+  wordIndex,
+  listOfWordElInOpenMode,
+  isOpen
 ) => {
   const index = findIndexInList(listOfWordElInOpenMode, wordIndex)
   if (typeof isOpen !== 'undefined') {

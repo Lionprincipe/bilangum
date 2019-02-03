@@ -5,17 +5,18 @@ import uuid4 from 'uuid/v4'
 
 const ReferenceLanguageSelection = ({
   name,
-  referenceLanguagesList,
+  referenceLanguages,
   onChange,
-  referenceLanguage,
+  currReferenceLanguageId,
 }) => {
-  const elements = referenceLanguagesList.map(el => (
+  const elements = referenceLanguages.map(({ languageId, language }) => (
     <RadioField
-      key={uuid4()}
+      key={languageId}
       name={name}
-      text={el}
-      onChange={onChange}
-      checked={referenceLanguage === el}
+      value={languageId}
+      text={language}
+      onChange={() => onChange({ languageId, language })}
+      checked={currReferenceLanguageId === languageId}
     />
   ))
   return <div>{elements}</div>
