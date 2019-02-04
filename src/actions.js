@@ -61,7 +61,7 @@ export const saveNewTranslation = (
   dispatch
 ) => {
   const { wordId: id } = value
-  console.log(value, 'id', id)
+  console.log(value, 'id', id, 'list', list)
   if (!id) {
     const wordId = uuidV4()
     newWord = { wordId, ...newWord, ...value }
@@ -77,6 +77,13 @@ export const saveNewTranslation = (
     wordIndex > -1 &&
       value &&
       updateTranslation(wordIndex, updateList(list, -1, value), dispatch)
+  }
+}
+export const saveEthnicLanguage = (ethnicLanguage, dispatch) => {
+  const { languageId } = ethnicLanguage
+
+  if (languageId) {
+    dispatch(setEthnicLanguage({ ethnicLanguage }))
   }
 }
 

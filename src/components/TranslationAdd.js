@@ -11,7 +11,13 @@ const Wrapper = styled.div`
   border-bottom: solid #eee 0.5px;
 `
 
-const TranslationAdd = ({ suggestions, wordCopy, originalWord, onSave, name }) => {
+const TranslationAdd = ({
+  suggestions,
+  wordCopy,
+  originalWord,
+  onSave,
+  name,
+}) => {
   const { word, translations } = originalWord
   const text = `Add a  translation for :${word}`
   return (

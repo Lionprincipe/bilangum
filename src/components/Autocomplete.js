@@ -63,9 +63,9 @@ export default class Autocomplete extends Component {
   }
 
   handleSubmit = inputValue => {
-    const { onSubmit } = this.props
+    const { onSubmit, mainAttribut } = this.props
     const { selected } = this.state
-    onSubmit && onSubmit(selected || inputValue)
+    onSubmit && onSubmit(selected || { [mainAttribut]: inputValue })
     this.clearState()
   }
 
