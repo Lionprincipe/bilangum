@@ -45,7 +45,6 @@ export default class Autocomplete extends Component {
     let { suggestions, mainAttribut } = this.props
     if (suggestions && suggestions.length > 0) {
       suggestions = suggestions.filter(el => {
-        console.log(el[mainAttribut], 'value', value)
         return (
           typeof el[mainAttribut] === 'string' &&
           el[mainAttribut].toLowerCase().startsWith(value.toLowerCase())

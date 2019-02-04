@@ -77,18 +77,14 @@ export default class TranslationCard extends Component {
   render() {
     const { currIndex, expendCurrent } = this.state
     const { translationList, translationWordList } = this.props
-    console.log(translationWordList, 'eaf')
     const isTranslated =
       this.props.translationList && translationList.length > 0
     const { wordId: currId } = translationList[currIndex]
     const { word: currText } = translationWordList.filter(({ wordId }) => {
-      console.log('wie lang', wordId)
       return wordId === currId
     })[0]
-    console.log(currId, 'index', currText)
 
     const count = (translationList && translationList.length) || 0
-    console.log(translationList)
     return (
       isTranslated && (
         <Wrapper>

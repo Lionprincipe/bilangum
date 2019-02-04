@@ -48,6 +48,7 @@ export const createWord = (newWord, dispatch) => {
 }
 
 export const updateTranslation = (wordIndex, newList, dispatch) => {
+  console.log(newList)
   newList &&
     dispatch(wordUpdate({ wordIndex, name: 'translations', value: newList }))
 }
@@ -59,14 +60,16 @@ export const saveNewTranslation = (
   wordIndex,
   dispatch
 ) => {
-  if (typeof value === 'string') {
-    const newWordId = uuidV4()
-    newWord = { wordId: newWordId, ...newWord }
+  const { wordId: id } = value
+  console.log(value, 'id', id)
+  if (!id) {
+    const wordId = uuidV4()
+    newWord = { wordId, ...newWord, ...value }
     newWord && dispatch(addWord({ newWord }))
     wordIndex > -1 &&
       updateTranslation(
         wordIndex,
-        updateList(list, -1, { wordId: newWordId, word: value }),
+        updateList(list, -1, { wordId, ...value }),
         dispatch
       )
   } else {

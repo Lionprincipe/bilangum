@@ -8,8 +8,9 @@ const EthnicLanguageSelection = ({
   name,
   placeholder,
   onSubmit,
+  languages
 }) => {
-  return <AutocompleteContainer collection={'languages'} attributs={['language','languageId']} name={name} value={ethnicLanguage} mainAttribut="language" placeholder={placeholder} onSubmit={onSubmit} />
+  return <AutocompleteContainer list={languages} attributs={['language','languageId']} name={name} value={ethnicLanguage} mainAttribut="language" placeholder={placeholder} onSubmit={onSubmit} />
 }
 
 EthnicLanguageSelection.propTypes = {

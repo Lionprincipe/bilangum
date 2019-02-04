@@ -3,6 +3,7 @@ import EthnicLanguageSelection from '../components/EthnicLanguageSelection'
 import { setEthnicLanguage } from '../actions'
 const mapStateToProps = state => ({
   ethnicLanguage: state.ethnicLanguage,
+  languages: state.languages,
 })
 
 const mapDispatchToProps = dispatch => ({

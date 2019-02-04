@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   border-bottom: solid #eee 0.5px;
 `
 
-const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
+const TranslationAdd = ({ suggestions, wordCopy, originalWord, onSave, name }) => {
   const { word, translations } = originalWord
   const text = `Add a  translation for :${word}`
   return (
@@ -19,7 +19,7 @@ const TranslationAdd = ({ wordCopy, originalWord, onSave, name }) => {
       <AutocompleteContainer
         name={name}
         value={''}
-        collection={'words'}
+        list={suggestions}
         mainAttribut="word"
         attributs={['word', 'wordId']}
         placeholder={text}
@@ -34,6 +34,7 @@ TranslationAdd.propTypes = {
   value: PropTypes.string,
   placeHolder: PropTypes.string,
   onSave: PropTypes.func,
+  suggestions: PropTypes.array,
 }
 
 export default TranslationAdd

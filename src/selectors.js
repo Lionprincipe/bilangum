@@ -7,6 +7,25 @@ export const wordsLanguageSelector = ({
   (words &&
     words.filter(({ language: { languageId } }) => languageId === searchId)) ||
   []
+export const translationsSuggestionSelector = (
+  { words, ethnicLanguage, referenceLanguage },
+  { wordIndex }
+) => {
+  const {
+    language: { languageId },
+  } = words[wordIndex]
+  const { languageId: ethnicId } = ethnicLanguage
+  const { languageId: referenceId } = referenceLanguage
+  if (ethnicId === languageId) {
+    const searchLanguage = referenceLanguage
+    return wordsLanguageSelector({ words, searchLanguage })
+  } else if (referenceId === languageId) {
+    const searchLanguage = ethnicLanguage
+    return wordsLanguageSelector({ words, searchLanguage })
+  } else {
+    return words || []
+  }
+}
 
 export const wordIndexFromWordIdSelector = ({ words }, { wordId }) => {
   return words.findIndex(({ wordId: id }) => id === wordId)
@@ -21,8 +40,7 @@ export const translationListSelector = ({ words }, { translationList }) => {
   }
 }
 
-export const suggestionsSelector = (state, { collection, attributs }) => {
-  const list = state[collection]
+export const suggestionsSelector = (state, { list, attributs }) => {
   const suggestions =
     (list &&
       list.map(el =>
@@ -32,7 +50,6 @@ export const suggestionsSelector = (state, { collection, attributs }) => {
         )
       )) ||
     []
-  console.log(collection, 'collction', attributs, 'attribut')
   return suggestions
 }
 
@@ -68,10 +85,16 @@ export const selectWordCardProps = (
   const { word, translations, language, wordId: leave, ...otherProps } = words[
     wordIndex
   ]
-  isOpen && console.log(word, 'goman', words[wordIndex])
   isOpen = !!isOpen || getWordElOpenStatus(wordIndex, listOfWordElInOpenMode)
   const result =
-    (wordIndex >= 0 && { wordIndex, word, translations, otherProps, isOpen }) ||
+    (wordIndex >= 0 && {
+      wordIndex,
+      word,
+      language,
+      translations,
+      otherProps,
+      isOpen,
+    }) ||
     {}
 
   return result
