@@ -65,10 +65,11 @@ export default class InputField extends Component {
   }
 
   render() {
-    const { name, placeholder, value } = this.props
+    const { name, placeholder, value, inputRef } = this.props
     const { inputValue } = this.state
     return (
       <StyledInput
+        ref={inputRef}
         name={name}
         type="text"
         placeholder={placeholder || value}

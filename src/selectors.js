@@ -130,10 +130,10 @@ export const getWordElOpenStatus = (
   listOfWordElInOpenMode,
   isOpen
 ) => {
-  const index = findIndexInList(listOfWordElInOpenMode, wordIndex)
   if (typeof isOpen !== 'undefined') {
     return isOpen
   } else {
+    const index = findIndexInList(listOfWordElInOpenMode, wordIndex)
     return index > -1 && listOfWordElInOpenMode[index].status
   }
 }

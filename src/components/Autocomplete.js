@@ -56,6 +56,7 @@ export default class Autocomplete extends Component {
 
   handleSelection = suggestion => {
     suggestion && this.setState({ selected: suggestion })
+    this.inputRef.focus()
   }
 
   clearState = () => {
@@ -82,6 +83,9 @@ export default class Autocomplete extends Component {
       <Wrapper>
         <InputStyled>
           <InputField
+            inputRef={input => {
+              this.inputRef = input
+            }}
             name={name}
             value={text}
             onChange={this.handleChange}
