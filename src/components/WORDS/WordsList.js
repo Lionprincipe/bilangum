@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import WordCardContainer from '../container/WordCardContainer'
+import WordCardContainer from '../../container/WordCardContainer'
 const Wrapper = styled.ul`
   padding: 0;
   width: 95%;

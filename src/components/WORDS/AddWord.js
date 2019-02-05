@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import InputField from './InputField'
-import Button from './Button'
-import ButtonAdd from './ButtonAdd'
-import Modal from './Modal'
+import InputField from '../UI/InputField'
+import Button from '../UI/Button'
+import ButtonAdd from '../UI/ButtonAdd'
+import Modal from '../UI/Modal'
 
 const Wrapper = styled.form`
   margin: 0.4em;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Header from '../components/Header'
-import SearchField from '../components/SearchField'
+import SearchField from '../components/UI/SearchField'
 import Footer from '../components/Footer'
 import WordsListContainer from '../container/WordsListContainer'
 import ToggleSearchLanguagesContainer from '../container/ToggleSearchLanguagesContainer'

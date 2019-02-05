@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import AddWord from '../components/AddWord'
+import AddWord from '../components/WORDS/AddWord'
 import { toggleIsAdding, createWord } from '../actions'
 
 const mapStateToProps = state => ({

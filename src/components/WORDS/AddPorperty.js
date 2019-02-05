@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ButtonAdd from './ButtonAdd'
-import NewPropertyContainer from '../container/NewPropertyContainer'
+import ButtonAdd from '../UI/ButtonAdd'
+import NewPropertyContainer from '../../container/NewPropertyContainer'
 
 const AddPorperty = ({ nbField, onClick, wordIndex }) => {
   const inputs =

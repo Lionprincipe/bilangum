@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import PropertyContainer from '../container/PropertyContainer'
-import AddPropertyContainer from '../container/AddPropertyContainer'
+import PropertyContainer from '../../container/PropertyContainer'
+import AddPropertyContainer from '../../container/AddPropertyContainer'
 
 const Wrapper = styled.div`
   box-sizing: border-box;

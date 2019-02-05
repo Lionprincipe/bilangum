@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Modal from '../components/Modal'
+import Modal from '../components/UI/Modal'
 import { modalIdSelector } from '../selectors'
 
 const mapStateToProps = state => ({

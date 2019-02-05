@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import TranslationAdd from '../components/TranslationAdd'
+import TranslationAdd from '../components/WORDS/TRANSLATIONS/TranslationAdd'
 import { saveNewTranslation } from '../actions'
 import {
   translationAddSelector,

@@ -61,7 +61,6 @@ export const saveNewTranslation = (
   dispatch
 ) => {
   const { wordId: id } = value
-  console.log(value, 'id', id, 'list', list)
   if (!id) {
     const wordId = uuidV4()
     newWord = { wordId, ...newWord, ...value }

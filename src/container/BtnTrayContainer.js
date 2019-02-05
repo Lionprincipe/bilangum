@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import BtnTray from '../components/BtnTray'
+import BtnTray from '../components//UI/BtnTray'
 import { composeBtnsList } from '../selectors'
 
 const mapStateToProps = (state, ownProps) => ({

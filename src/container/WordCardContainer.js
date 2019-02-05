@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import WordCard from '../components/WordCard'
+import WordCard from '../components/WORDS/WordCard'
 import { selectWordCardProps } from '../selectors'
 
 const mapPropsToState = (state, ownProps) => ({

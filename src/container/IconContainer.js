@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Icon from '../components/Icon'
+import Icon from '../components/UI/Icon'
 import { iconAttributsSelector } from '../selectors'
 
 const mapStateToProps = (state, ownProps) => ({

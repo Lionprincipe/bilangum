@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import InputField from './InputField'
-import BtnTrayContainer from '../container/BtnTrayContainer'
+import InputField from '../UI/InputField'
+import BtnTrayContainer from '../../container/BtnTrayContainer'
 
 const Wrapper = styled.div`
   display: flex;

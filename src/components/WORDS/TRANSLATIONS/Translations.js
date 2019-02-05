@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TranslationCardContainer from '../container/TranslationCardContainer'
-import TranslationAddContainer from '../container/TranslationAddContainer'
+import TranslationCardContainer from '../../../container/TranslationCardContainer'
+import TranslationAddContainer from '../../../container/TranslationAddContainer'
 
 const Translations = ({ list, wordIndex }) => {
   return (

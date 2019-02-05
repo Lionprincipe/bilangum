@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import ToggleSearchLanguage from '../components/ToggleSearchLanguage'
+import ToggleSearchLanguage from '../components/LANGUAGES/ToggleSearchLanguage'
 import { setSeachLanguage } from '../actions'
 import { languageCheckedSelector } from '../selectors'
 const mapStateToProps = ({

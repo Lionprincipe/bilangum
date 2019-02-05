@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { setReferenceLanguage } from '../actions'
-import ReferenceLanguageSelection from '../components/ReferenceLanguageSelection'
+import ReferenceLanguageSelection from '../components/LANGUAGES/ReferenceLanguageSelection'
 
 const mapStateToProps = ({
   referenceLanguage: { languageId },

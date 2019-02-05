@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { iconsPath } from '../constants/svgPath'
+import { iconsPath } from '../../constants/svgPath'
 
 const Wrapper = styled.div`
   -webkit-transform: ${props =>

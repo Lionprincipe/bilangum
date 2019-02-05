@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import WordCardHeader from '../components/WordCardHeader'
+import WordCardHeader from '../components/WORDS/WordCardHeader'
 import {
   toggleEditMode,
   toggleOpenWordCard,

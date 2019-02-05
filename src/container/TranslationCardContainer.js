@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import TranslationCard from '../components/TranslationCard'
+import TranslationCard from '../components/WORDS/TRANSLATIONS/TranslationCard'
 import { updateTranslation } from '../actions'
 import { translationListSelector } from '../selectors'
 

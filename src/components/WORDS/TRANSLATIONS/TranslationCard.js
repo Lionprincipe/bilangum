@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import BtnTrayContainer from '../container/BtnTrayContainer'
-import { updateList } from '../utils'
+import BtnTrayContainer from '../../../container/BtnTrayContainer'
+import { updateList } from '../../../utils'
 import Translation from './Translation'
 import TranslationDots from './TranslationDots'
-import TranslateViewContainer from '../container/TranslateViewContainer'
+import TranslateViewContainer from '../../../container/TranslateViewContainer'
 
 const Wrapper = styled.div`
   display: flex;

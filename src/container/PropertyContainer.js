@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Property from '../components/Property'
+import Property from '../components/WORDS/Property'
 import { toggleEditMode, deleteWordProperty, wordUpdate } from '../actions'
 import { getWordElEditStatus } from '../selectors'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import AutocompleteContainer from '../container/AutocompleteContainer'
+import AutocompleteContainer from '../../../container/AutocompleteContainer'
 
 const Wrapper = styled.div`
   display: flex;

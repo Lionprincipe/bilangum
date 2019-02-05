@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import UserProfileCard from '../components/UserProfileCard'
-import Button from '../components/Button'
+import UserProfileCard from '../components/USERS/UserProfileCard'
+import Button from '../components/UI/Button'
 import ReferenceLanguageSelectionContainer from '../container/ReferenceLanguageSelectionContainer'
 import EthnicLanguageSelectionContainer from '../container/EthnicLanguageSelectionContainer'
 const Wrapper = styled.div`

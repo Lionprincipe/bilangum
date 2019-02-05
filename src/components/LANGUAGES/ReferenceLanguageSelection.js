@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import RadioField from './RadioField'
-import uuid4 from 'uuid/v4'
+import RadioField from '../UI/RadioField'
 
 const ReferenceLanguageSelection = ({
   name,

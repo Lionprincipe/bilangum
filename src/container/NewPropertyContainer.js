@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Property from '../components/Property'
+import Property from '../components/WORDS/Property'
 import { removeNewProperty, createWordProperty } from '../actions'
 
 const mapStateToProps = (state, ownProps) => ({

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import EthnicLanguageSelection from '../components/EthnicLanguageSelection'
+import EthnicLanguageSelection from '../components/LANGUAGES/EthnicLanguageSelection'
 import { saveEthnicLanguage } from '../actions'
 const mapStateToProps = state => ({
   ethnicLanguage: state.ethnicLanguage,

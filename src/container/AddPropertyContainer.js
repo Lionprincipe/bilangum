@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import AddProperty from '../components/AddPorperty'
+import AddProperty from '../components/WORDS/AddPorperty'
 import { addNewProperty } from '../actions'
 import { selectAddPropertyNumber } from '../selectors'
 

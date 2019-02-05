@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Modal from './Modal'
-import WordCardContainer from '../container/WordCardContainer'
+import Modal from '../../UI/Modal'
+import WordCardContainer from '../../../container/WordCardContainer'
 
 const Wrapper = styled.ul`
   padding: 0;

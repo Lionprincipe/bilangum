@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import RadioField from './RadioField'
+import RadioField from '../UI/RadioField'
 
 const ToggleSearchLanguage = ({
   name,

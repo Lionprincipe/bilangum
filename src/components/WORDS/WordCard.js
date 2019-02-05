@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import WordCardFooter from './WordCardFooter'
-import WordCardHeaderContainer from '../container/WordCardHeaderContainer'
-import WordCardBodyContainer from '../container/WordCardBodyContainer'
-import Translations from './Translations'
+import WordCardHeaderContainer from '../../container/WordCardHeaderContainer'
+import WordCardBodyContainer from '../../container/WordCardBodyContainer'
+import Translations from './TRANSLATIONS/Translations'
 import WordLanguage from './WordLanguage'
 
 const Wrapper = styled('li')`
