@@ -48,7 +48,6 @@ export const createWord = (newWord, dispatch) => {
 }
 
 export const updateTranslation = (wordIndex, newList, dispatch) => {
-  console.log(newList)
   newList &&
     dispatch(wordUpdate({ wordIndex, name: 'translations', value: newList }))
 }

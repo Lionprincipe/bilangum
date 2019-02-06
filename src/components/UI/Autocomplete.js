@@ -4,34 +4,37 @@ import styled from 'styled-components'
 import InputField from './InputField'
 
 const InputStyled = styled.div`
-  padding: 10px 10px;
+  position: relative;
   font-weight: 300;
   border: none;
   outline: none;
   color: #666;
+  width: 100%;
 `
 const Wrapper = styled.div`
-  position: relative;
   border: solid #eee 0.5px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
   background: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  font-size: 1em;
+  padding: 2%;
 `
 const SubWrapper = styled.ul`
-  width: 100%;
+  list-style: none;
+  padding-left: 0;
   min-height: 40px;
-  max-height: 330px;
+  max-height: 200px;
   overflow: scroll;
   z-index: 99;
 `
 const StyledSuggestion = styled.li`
-  padding: 20px 10px;
-  font-size: 13px;
   cursor: pointer;
   transition: all 0.2s;
   list-style-type: none;
+  min-width: 100px;
+  margin: 0 0.6em;
+  padding: 0.3em;
+  border-bottom: solid #eee 0.5px;
 `
 
 export default class Autocomplete extends Component {

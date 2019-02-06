@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import styled from 'styled-components'
 
 import Icon from '../UI/Icon'
@@ -21,7 +21,7 @@ const UserProfileCard = props => {
   return (
     <div>
       <StyledImg>
-        <Icon type="profile" width="100%" height="100%" />
+        <Icon name="profile" width="100%" height="100%" />
       </StyledImg>
       <StyledName>user Name</StyledName>
     </div>

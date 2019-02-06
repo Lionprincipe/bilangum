@@ -61,7 +61,7 @@ export const translationAddSelector = (
   const { translations, language, wordId, word, ...others } = originalWord
   const wordCopy = {
     ...others,
-    translations: updateList(translations || [], -1, wordId) || [],
+    translations: updateList(translations || [], -1, { wordId, word }) || [],
     language: languageCheckedSelector(language, referenceLanguage)
       ? ethnicLanguage
       : referenceLanguage,
