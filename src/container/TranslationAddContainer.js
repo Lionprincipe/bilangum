@@ -11,6 +11,7 @@ const mapStateToProps = (state, ownProps) => ({
   name: 'translation',
   suggestions: translationsSuggestionSelector(state, ownProps),
 })
+
 const mapDispatchToProps = (dispatch, { wordIndex }) => ({
   onSave: (newWord, value, list) =>
     saveNewTranslation(newWord, value, list, wordIndex, dispatch),

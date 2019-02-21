@@ -55,7 +55,7 @@ const Property = ({
 
 Property.propTypes = {
   name: PropTypes.string,
-  value: PropTypes.PropTypes.string,
+  value: PropTypes.string,
   onSubmit: PropTypes.func,
   isEditing: PropTypes.bool,
   toggleEdit: PropTypes.func,

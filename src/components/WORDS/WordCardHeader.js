@@ -20,6 +20,7 @@ const WordTray = styled.div`
 
 const WordCardHeader = ({
   title,
+  name,
   onClick,
   onUpdate,
   open,
@@ -27,9 +28,6 @@ const WordCardHeader = ({
   toggleEdit,
   onDelete,
 }) => {
-  const onSubmit = inputValue => {
-    onUpdate('word', inputValue)
-  }
   return (
     <Wrapper>
       <BtnTrayContainer
@@ -39,10 +37,10 @@ const WordCardHeader = ({
       />
       {isEditing ? (
         <InputField
-          name={'word'}
-          placeholder={'nano'}
-          value={'nano'}
-          onSubmit={onSubmit}
+          name={name}
+          placeholder={title}
+          value={title || ''}
+          onSubmit={inputValue => onUpdate(name, inputValue)}
         />
       ) : (
         <WordTray onClick={onClick}>{title}</WordTray>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
@@ -14,10 +15,12 @@ const store = createStore(
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <PreferencesScreen />
-        <HomeScreen />
-      </Provider>
+      <Router>
+        <Provider store={store}>
+          <Route exact path="/" component={HomeScreen} />
+          <Route path="/preferences" component={PreferencesScreen} />
+        </Provider>
+      </Router>
     )
   }
 }

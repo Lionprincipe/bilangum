@@ -5,6 +5,9 @@ import styled from 'styled-components'
 import AutocompleteContainer from '../../container/AutocompleteContainer'
 const Wrapper = styled.div`
   padding: 0.2em;
+  width: 80%;
+  margin: auto;
+  position: relative;
 `
 
 const EthnicLanguageSelection = ({

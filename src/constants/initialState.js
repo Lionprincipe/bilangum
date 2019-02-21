@@ -1,6 +1,8 @@
 import uuid4 from 'uuid/v4'
 import langData from '../datas/languages.json'
+import iconPath from '../datas/svgPath'
 import wordsData from '../datas/words.json'
+
 export const languages = parseLangagagesData(langData).filter(
   ({ ethnic }) => !!ethnic
 )
@@ -21,10 +23,10 @@ export const newWordProps = [
   'definition',
 ]
 export const newProperties = []
-export const preferedLanguages = {
-  ethnic: 'afro',
-  reference: 'english',
-}
+// export const preferedLanguages = {
+//   ethnic: 'afro',
+//   reference: 'english',
+// }
 export const elBtnsList = [
   {
     name: 'translationOpt',

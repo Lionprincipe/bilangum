@@ -8,7 +8,6 @@ const InputStyled = styled.div`
   font-weight: 300;
   border: none;
   outline: none;
-  color: #666;
   width: 100%;
 `
 const Wrapper = styled.div`
@@ -26,6 +25,9 @@ const SubWrapper = styled.ul`
   max-height: 200px;
   overflow: scroll;
   z-index: 99;
+  &li:last-child {
+    border-bottom: none;
+  }
 `
 const StyledSuggestion = styled.li`
   cursor: pointer;
@@ -45,16 +47,9 @@ export default class Autocomplete extends Component {
 
   handleChange = e => {
     const { value } = e.target
-    let { suggestions, mainAttribut } = this.props
-    if (suggestions && suggestions.length > 0) {
-      suggestions = suggestions.filter(el => {
-        return (
-          typeof el[mainAttribut] === 'string' &&
-          el[mainAttribut].toLowerCase().startsWith(value.toLowerCase())
-        )
-      })
-      this.setState({ suggestions, selected: { [mainAttribut]: value } })
-    }
+    const { mainAttribut } = this.props
+    const suggestions = this.suggestionMatcher(value) || []
+    this.setState({ suggestions, selected: { [mainAttribut]: value } })
   }
 
   handleSelection = suggestion => {
@@ -108,11 +103,28 @@ export default class Autocomplete extends Component {
     )
   }
 
+  suggestionMatcher(text) {
+    const { suggestions, mainAttribut } = this.props
+    const regex = new RegExp(text.toLowerCase(), 'i')
+    return (
+      suggestions &&
+      suggestions.length > 0 &&
+      suggestions.filter(
+        el =>
+          typeof el[mainAttribut] === 'string' &&
+          el[mainAttribut].toLowerCase().match(regex)
+      )
+    )
+  }
+
   renderSuggestions(suggestions, mainAttribut) {
-    return suggestions.map((el, index) => (
-      <StyledSuggestion key={index} onClick={() => this.handleSelection(el)}>
-        {el[mainAttribut]}
-      </StyledSuggestion>
-    ))
+    return (
+      suggestions.length > -1 &&
+      suggestions.map((el, index) => (
+        <StyledSuggestion key={index} onClick={() => this.handleSelection(el)}>
+          {el[mainAttribut]}
+        </StyledSuggestion>
+      ))
+    )
   }
 }
