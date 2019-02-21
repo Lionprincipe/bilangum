@@ -1,5 +1,14 @@
 import { findIndexInList, updateList } from './utils'
 
+export const hasPreferedLanguageSelector = ({
+  referenceLanguage,
+  ethnicLanguage,
+}) =>
+  referenceLanguage &&
+  ethnicLanguage &&
+  Object.keys(referenceLanguage).length > 0 &&
+  Object.keys(ethnicLanguage).length > 0
+
 export const wordsLanguageSelector = ({
   words,
   searchLanguage: { languageId: searchId },

@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import { Redirect } from 'react-router'
 import Header from '../components/Header'
 import SearchField from '../components/UI/SearchField'
 import Footer from '../components/Footer'
@@ -16,8 +17,9 @@ const Main = styled.div`
   margin: 3.5em 1em;
 `
 
-const HomeScreen = () => {
-  return (
+const HomeScreen = ({ hasPreferedLanguages }) => {
+  console.log(hasPreferedLanguages)
+  return hasPreferedLanguages ? (
     <React.Fragment>
       <Header />
       <Main>
@@ -28,7 +30,12 @@ const HomeScreen = () => {
       </Main>
       <Footer />
     </React.Fragment>
+  ) : (
+    <Redirect to="/preferences" />
   )
+}
+HomeScreen.propTypes = {
+  hasPreferedLanguages: PropTypes.bool,
 }
 
 export default HomeScreen

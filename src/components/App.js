@@ -4,7 +4,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import reducer from '../reducer/reducer'
-import HomeScreen from '../screens/HomeScreen'
+import HomeScreenContainer from '../container/HomeScreenContainer'
 import PreferencesScreen from '../screens/PreferencesScreen'
 
 const store = createStore(
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <Router>
         <Provider store={store}>
-          <Route exact path="/" component={HomeScreen} />
+          <Route exact path="/" component={HomeScreenContainer} />
           <Route path="/preferences" component={PreferencesScreen} />
         </Provider>
       </Router>
