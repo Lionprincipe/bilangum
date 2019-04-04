@@ -48,11 +48,11 @@ export const elBtnsList = [
   {
     name: 'appFooter',
     normal: [
-      { name: 'home' },
+      { name: 'home', link: '/' },
       { name: 'search' },
       { name: 'bookmarks' },
       { name: 'notification' },
-      { name: 'settings' },
+      { name: 'settings', link: '/preferences' },
     ],
   },
   { name: 'appHeaderLeft', normal: [{ name: 'menu' }] },

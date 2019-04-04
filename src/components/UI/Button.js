@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -17,8 +18,16 @@ const StyledButton = styled.button`
   }
 `
 
-const Button = ({ children, disabled, onClick, border, width, height }) => {
-  return (
+const Button = ({
+  children,
+  disabled,
+  onClick,
+  border,
+  width,
+  height,
+  link,
+}) => {
+  const button = (
     <StyledButton
       onClick={onClick}
       disabled={disabled}
@@ -29,6 +38,11 @@ const Button = ({ children, disabled, onClick, border, width, height }) => {
       {children}
     </StyledButton>
   )
+  if (link) {
+    return <Link to={link}>{button}</Link>
+  } else {
+    return button
+  }
 }
 
 Button.propTypes = {
@@ -42,6 +56,7 @@ Button.propTypes = {
   border: PropTypes.bool,
   width: PropTypes.string,
   height: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default Button

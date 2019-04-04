@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 import UserProfileCard from '../components/USERS/UserProfileCard'
 import Button from '../components/UI/Button'
 import ReferenceLanguageSelectionContainer from '../container/ReferenceLanguageSelectionContainer'
@@ -19,11 +18,9 @@ const PreferencesScreen = props => {
       <UserProfileCard />
       <EthnicLanguageSelectionContainer />
       <ReferenceLanguageSelectionContainer />
-      <Link to="/">
-        <Button border={true} width="auto" height="auto">
-          Continue
-        </Button>
-      </Link>
+      <Button border={true} width="auto" height="auto" link="/">
+        Continue
+      </Button>
     </Wrapper>
   )
 }
