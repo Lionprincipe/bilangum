@@ -1,0 +1,62 @@
+[
+  {
+    "name": "translationOpt",
+    "normal": [{ "name": "delete", "onClick": "onClickDeleteTranslation" }]
+  },
+  {
+    "name": "translationLeft",
+    "normal": [
+      {
+        "name": "left",
+        "onClick": "onClickLeft"
+      }
+    ]
+  },
+  {
+    "name": "translationRight",
+    "normal": [{ "name": "right", "onClick": "onClickRight" }]
+  },
+  {
+    "name": "appFooter",
+    "normal": [
+      { "name": "home", "link": "/" },
+      { "name": "search" },
+      { "name": "bookmarks" },
+      { "name": "notification" },
+      { "name": "settings", "link": "/preferences" }
+    ]
+  },
+  { "name": "appHeaderLeft", "normal": [{ "name": "menu" }] },
+  {
+    "name": "appWordProperty",
+    "normal": [
+      { "name": "edit", "onClick": "toggleEdit" },
+      { "name": "delete", "onClick": "deleteMe" }
+    ],
+    "edit": [{ "name": "cancel" }]
+  },
+  { "name": "appHeaderRight", "normal": [{ "name": "user" }] },
+  {
+    "name": "wordHeaderLeft",
+    "normal": [{ "name": "toggleDown", "onClick": "toggleOpen" }],
+    "open": [{ "name": "toggleUp" }]
+  },
+  {
+    "name": "wordHeaderRight",
+    "normal": [
+      { "name": "translate", "onClick": "clickTranslate" },
+      { "name": "edit", "onClick": "toggleEdit" },
+      { "name": "delete", "onClick": "deleteWord" }
+    ],
+    "edit": [{ "name": "cancel" }]
+  },
+  { "name": "appHeaderLeft", "normal": [{ "name": "menu" }] },
+  {
+    "name": "appHeaderRight",
+    "normal": [
+      { "name": "home" },
+      { "name": "notification" },
+      { "name": "settings" }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { iconsPath } from '../../constants/svgPath'
+import SvgContainer from '../../container/SvgContainer'
 
 const Wrapper = styled.div`
   -webkit-transform: ${props =>
@@ -17,13 +17,7 @@ const Wrapper = styled.div`
 const Icon = ({ name, width, height, rotate }) => {
   return (
     <Wrapper rotate={rotate}>
-      <svg
-        width={width || '24px'}
-        height={height || '24px'}
-        viewBox="0 0 24 24"
-      >
-        <path d={iconsPath[name]} />
-      </svg>
+      <SvgContainer width={width} height={height} name={name} />
     </Wrapper>
   )
 }

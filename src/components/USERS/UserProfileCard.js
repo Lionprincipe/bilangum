@@ -1,8 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
-
-import Icon from '../UI/Icon'
+import IconContainer from '../../container/IconContainer'
 
 const StyledImg = styled.div`
   margin-top: 6em;
@@ -21,7 +20,7 @@ const UserProfileCard = props => {
   return (
     <div>
       <StyledImg>
-        <Icon name="profile" width="100%" height="100%" />
+        <IconContainer name="profile" width="100%" height="100%" />
       </StyledImg>
       <StyledName>user Name</StyledName>
     </div>

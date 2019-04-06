@@ -1,4 +1,4 @@
-import * as initialState from '../constants/initialState'
+import initialState from '../constants/initialState'
 import ACTIONS from '../actions'
 import { updateList, findIndexInList } from '../utils'
 

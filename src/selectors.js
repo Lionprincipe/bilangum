@@ -1,5 +1,12 @@
 import { findIndexInList, updateList } from './utils'
 
+export const svgPathSelector = ({ svgPathList }, { name }) =>
+  svgPathList &&
+  svgPathList.reduce(
+    (acc, { name: currName, path }) => (acc = currName === name ? path : acc),
+    ''
+  )
+
 export const hasPreferedLanguageSelector = ({
   referenceLanguage,
   ethnicLanguage,
