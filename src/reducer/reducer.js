@@ -1,125 +1,135 @@
-import initialState from '../constants/initialState'
-import ACTIONS from '../actions'
-import { updateList, findIndexInList } from '../utils'
+import initialConfig from "../constants/initialState";
+import ACTIONS from "../actions";
+import { updateList, findIndexInList } from "../utils";
+import { load } from "../services";
+
+const initialState = load("app") || initialConfig;
 
 export default function reducer(state = initialState, action = {}) {
   const {
     words,
     newProperties,
     listOfWordElInOpenMode,
-    listOfWordElInEditMode,
-  } = state
+    listOfWordElInEditMode
+  } = state;
 
-  const { payload } = action
+  const { payload } = action;
 
   switch (action.type) {
+    case ACTIONS.RESET_TO_INITIAL_CONFIG: {
+      return { ...initialConfig };
+    }
+
     case ACTIONS.ADD_NEW_PROPERTY: {
-      return { ...state, newProperties: [...newProperties, payload.wordIndex] }
+      return { ...state, newProperties: [...newProperties, payload.wordIndex] };
     }
 
     case ACTIONS.REMOVE_NEW_PROPERTY: {
-      const { newProperties: prevList } = state
-      const index = prevList.findIndex(el => el === payload.wordIndex)
-      const newProperties = index > -1 ? updateList(prevList, index) : prevList
-      return { ...state, newProperties }
+      const { newProperties: prevList } = state;
+      const index = prevList.findIndex(el => el === payload.wordIndex);
+      const newProperties = index > -1 ? updateList(prevList, index) : prevList;
+      return { ...state, newProperties };
     }
 
     case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
-      const { wordIndex } = payload
+      const { wordIndex } = payload;
       return {
         ...state,
-        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordIndex),
-      }
+        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordIndex)
+      };
     }
 
     case ACTIONS.TOGGLE_EDIT_MODE: {
-      const { wordIndex, name } = payload
+      const { wordIndex, name } = payload;
       return {
         ...state,
         listOfWordElInEditMode: toggleStatus(
           listOfWordElInEditMode,
           wordIndex,
           name
-        ),
-      }
+        )
+      };
     }
 
     case ACTIONS.TOGGLE_IS_ADDING: {
-      const { isAdding } = state
-      return { ...state, isAdding: !isAdding }
+      const { isAdding } = state;
+      return { ...state, isAdding: !isAdding };
     }
 
     case ACTIONS.ADD_WORD: {
-      const { newWord } = payload
-      return { ...state, words: [...words, newWord && newWord] }
+      const { newWord } = payload;
+      return { ...state, words: [...words, newWord && newWord] };
     }
 
     case ACTIONS.WORD_UPDATE: {
-      const { wordIndex: index, name, value } = payload
-      const newWord = { ...words[index], [name]: value }
-      return { ...state, words: updateList(words, index, newWord) }
+      const { wordIndex: index, name, value } = payload;
+      const newWord = { ...words[index], [name]: value };
+      return { ...state, words: updateList(words, index, newWord) };
     }
 
     case ACTIONS.DELETE_WORD: {
-      const { wordIndex: index } = payload
-      return { ...state, words: updateList(words, index) }
+      const { wordIndex: index } = payload;
+      return { ...state, words: updateList(words, index) };
     }
 
     case ACTIONS.DELETE_WORD_PROPERTY: {
-      const { wordIndex: index, name } = payload
-      const newWord = removeKeyInObject(words[index], name)
-      return { ...state, words: updateList(words, index, newWord) }
+      const { wordIndex: index, name } = payload;
+      const newWord = removeKeyInObject(words[index], name);
+      return { ...state, words: updateList(words, index, newWord) };
     }
 
     case ACTIONS.ADD_WORD_PROPERTY: {
-      const { wordIndex: index, name, value } = payload
-      const newWord = { ...words[index], [name]: value || '' }
-      return { ...state, words: updateList(words, index, newWord) }
+      const { wordIndex: index, name, value } = payload;
+      const newWord = { ...words[index], [name]: value || "" };
+      return { ...state, words: updateList(words, index, newWord) };
     }
 
     case ACTIONS.SET_REFERENCE_LANGUAGE: {
-      const { referenceLanguage } = payload
-      return { ...state, referenceLanguage }
+      const { referenceLanguage } = payload;
+      return { ...state, referenceLanguage };
     }
+
     case ACTIONS.SET_ETHNIC_LANGUAGE: {
-      const { ethnicLanguage } = payload
-      return { ...state, ethnicLanguage }
+      const { ethnicLanguage } = payload;
+      return { ...state, ethnicLanguage };
     }
+
     case ACTIONS.SET_SEARCH_LANGUAGE: {
-      const { searchLanguage } = payload
-      return { ...state, searchLanguage }
+      const { searchLanguage } = payload;
+      return { ...state, searchLanguage };
     }
+
     case ACTIONS.UPDATE_EXISTANTE_TRANSLATION: {
       const {
         value: { wordId },
-        wordIndex,
-      } = payload
-      const { words } = state
-      const { wordId: translationId, word } = words[wordIndex]
-      const index = words.findIndex(({ wordId: id }) => id === wordId)
-      let { translations } = words[index]
+        wordIndex
+      } = payload;
+      const { words } = state;
+      const { wordId: translationId, word } = words[wordIndex];
+      const index = words.findIndex(({ wordId: id }) => id === wordId);
+      let { translations } = words[index];
       translations = updateList(translations, -1, {
         wordId: translationId,
-        word,
-      })
-      const newWord = { ...words[index], translations }
-      return { ...state, words: updateList(words, index, newWord) }
+        word
+      });
+      const newWord = { ...words[index], translations };
+      return { ...state, words: updateList(words, index, newWord) };
     }
 
     default:
-      return state
+      return state;
   }
 }
 
 function removeKeyInObject(object, key) {
   return Object.keys(object)
     .filter(el => el !== key)
-    .reduce((acc, curr) => (acc = { ...acc, [curr]: object[curr] }), {})
+    .reduce((acc, curr) => (acc = { ...acc, [curr]: object[curr] }), {});
 }
 
 function toggleStatus(list, id, name) {
   const index = findIndexInList(list, id, name),
     status = !(index > -1) || !list[index].status,
-    newEntry = name ? { id, name, status } : { id, status }
-  return updateList(list, index, newEntry)
+    newEntry = name ? { id, name, status } : { id, status };
+  return updateList(list, index, newEntry);
 }
