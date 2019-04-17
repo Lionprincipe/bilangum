@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
-
 import reducer from '../reducer/reducer'
+import thunk from 'redux-thunk'
 import HomeScreenContainer from '../container/HomeScreenContainer'
 import PreferencesScreen from '../screens/PreferencesScreen'
+import { saveToLocalStorage } from '../middlewares'
 
 const store = createStore(
   reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  compose(
+    window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__(),
+    applyMiddleware(saveToLocalStorage, thunk)
+  )
 )
 
 class App extends Component {
