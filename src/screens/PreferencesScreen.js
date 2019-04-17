@@ -11,8 +11,7 @@ const Wrapper = styled.div`
   justify-content: space-evenly;
   height: 100vh;
 `
-
-const PreferencesScreen = props => {
+const PreferencesScreen = ({ resetPreferences, resetAllData }) => {
   return (
     <Wrapper>
       <UserProfileCard />
@@ -21,6 +20,10 @@ const PreferencesScreen = props => {
       <Button border={true} width="auto" height="auto" link="/">
         Continue
       </Button>
+      <div>
+        <Button onClick={resetPreferences}>Reset Preferences</Button>
+        <Button onClick={resetAllData}>Reset All</Button>
+      </div>
     </Wrapper>
   )
 }
