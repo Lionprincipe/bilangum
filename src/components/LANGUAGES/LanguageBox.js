@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 
 import styled from "styled-components";
 import InputField from "../InputField";
+import Button from "../UI/Button";
+import Icon from "../UI/Icon";
 
 const Wrapper = styled.section`
   margin-top: 3em;
@@ -17,6 +19,9 @@ const Wrapper = styled.section`
   justify-content: center;
   & nav {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 `;
 
@@ -59,7 +64,12 @@ export default class LanguageBox extends Component {
     ));
     return (
       <Wrapper>
-        <nav onClick={this.toggleSearch}>{btns}</nav>
+        <nav>
+          {btns}
+          <Button onClick={this.toggleSearch}>
+            <Icon name={"search"} />
+          </Button>
+        </nav>
         {isSearching && (
           <InputField type="search" name="searchlang" placeholder="search" />
         )}
