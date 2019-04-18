@@ -1,5 +1,4 @@
 export function save(name, data) {
-  console.log('saved', data)
   localStorage.setItem(name, JSON.stringify(data))
 }
 

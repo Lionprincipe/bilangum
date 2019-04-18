@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
-import styled from "styled-components";
-import InputField from "../InputField";
-import Button from "../UI/Button";
-import Icon from "../UI/Icon";
+import styled, { css } from 'styled-components'
+import InputField from '../InputField'
+import Button from '../UI/Button'
+import Icon from '../UI/Icon'
 
 const Wrapper = styled.section`
   margin-top: 3em;
@@ -23,57 +23,82 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: space-evenly;
   }
-`;
+`
 
 const StyleButton = styled.button`
   background: transparent;
+  font-weight: 600;
   border: none;
   margin: 0 0.5%;
   width: 38%;
   outline: none;
   min-height: 43px;
+  text-transform: uppercase;
+  ${props =>
+    props.selected &&
+    css`
+      border-bottom: solid 3px #000;
+    `}
 
-  &:hover,
-  .sel {
-    border-bottom: solid 3px #4284f3;
-  }
-
-  &:hover {
+  &:active {
+    border-bottom: solid 3px #000;
     background: #eee;
   }
-`;
+`
 
 export default class LanguageBox extends Component {
   static propTypes = {
-    languages: PropTypes.arrayOf(PropTypes.object)
-  };
+    languages: PropTypes.arrayOf(PropTypes.object).isRequired,
+    onChange: PropTypes.func.isRequired,
+  }
   state = {
-    isSearching: false
-  };
+    isSearching: false,
+    selectedLanguage: null,
+  }
 
   toggleSearch = () => {
-    const { isSearching } = this.state;
-    this.setState({ isSearching: !isSearching });
-  };
+    const { isSearching } = this.state
+    this.setState({ isSearching: !isSearching })
+  }
+  toggleSelectedLanguageHandler = language => {
+    const { languageId } = language
+    this.setState({ selectedLanguage: languageId })
+    this.props.onChange(language)
+  }
   render() {
-    const { languages } = this.props;
-    const { isSearching } = this.state;
-
-    const btns = languages.map(({ id, name }) => (
-      <StyleButton key={id}>{name}</StyleButton>
-    ));
+    const { isSearching } = this.state
     return (
       <Wrapper>
         <nav>
-          {btns}
+          {this.renderButtons()}
           <Button onClick={this.toggleSearch}>
-            <Icon name={"search"} />
+            <Icon name={'search'} />
           </Button>
         </nav>
         {isSearching && (
           <InputField type="search" name="searchlang" placeholder="search" />
         )}
       </Wrapper>
-    );
+    )
+  }
+
+  renderButtons() {
+    const { languages } = this.props
+    const { selectedLanguage } = this.state
+    return (
+      languages &&
+      languages.map(language => {
+        const { languageId, language: text } = language
+        return (
+          <StyleButton
+            key={languageId}
+            selected={selectedLanguage === languageId}
+            onClick={() => this.toggleSelectedLanguageHandler(language)}
+          >
+            {text}
+          </StyleButton>
+        )
+      })
+    )
   }
 }
