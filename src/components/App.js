@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { createStore, applyMiddleware, compose } from 'redux'
-import { Provider } from 'react-redux'
-import reducer from '../reducer/reducer'
-import thunk from 'redux-thunk'
-import HomeScreenContainer from '../container/HomeScreenContainer'
-import { saveToLocalStorage } from '../middlewares'
-import PreferenceScreenContainer from '../container/PreferenceScreenContainer'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { createStore, applyMiddleware, compose } from "redux";
+import { Provider } from "react-redux";
+import reducer from "../reducer/reducer";
+import thunk from "redux-thunk";
+import HomeScreenContainer from "../container/HomeScreenContainer";
+import { saveToLocalStorage } from "../middlewares";
+import PreferenceScreenContainer from "../container/PreferenceScreenContainer";
 
 const store = createStore(
   reducer,
   compose(
     applyMiddleware(thunk, saveToLocalStorage),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
+    window.devToolsExtension ? window.devToolsExtension() : _ => _
   )
-)
+);
 
 class App extends Component {
   render() {
@@ -25,8 +25,8 @@ class App extends Component {
           <Route path="/preferences" component={PreferenceScreenContainer} />
         </Provider>
       </Router>
-    )
+    );
   }
 }
 
-export default App
+export default App;
