@@ -53,16 +53,15 @@ export default class LanguageBox extends Component {
   }
   state = {
     isSearching: false,
-    selectedLanguage: null,
+    selectedLanguage: 'ALL',
   }
 
   toggleSearch = () => {
     const { isSearching } = this.state
     this.setState({ isSearching: !isSearching })
   }
-  toggleSelectedLanguageHandler = language => {
-    const { languageId } = language
-    this.setState({ selectedLanguage: languageId })
+  toggleSelectedLanguageHandler = (selection, language) => {
+    this.setState({ selectedLanguage: selection })
     this.props.onChange(language)
   }
   render() {
@@ -86,19 +85,29 @@ export default class LanguageBox extends Component {
     const { languages } = this.props
     const { selectedLanguage } = this.state
     return (
-      languages &&
-      languages.map(language => {
-        const { languageId, language: text } = language
-        return (
-          <StyleButton
-            key={languageId}
-            selected={selectedLanguage === languageId}
-            onClick={() => this.toggleSelectedLanguageHandler(language)}
-          >
-            {text}
-          </StyleButton>
-        )
-      })
+      <React.Fragment>
+        <StyleButton
+          selected={selectedLanguage === 'ALL'}
+          onClick={() => this.toggleSelectedLanguageHandler('ALL', languages)}
+        >
+          ALL
+        </StyleButton>
+        {languages &&
+          languages.map(language => {
+            const { languageId, language: text } = language
+            return (
+              <StyleButton
+                key={languageId}
+                selected={selectedLanguage === languageId}
+                onClick={() =>
+                  this.toggleSelectedLanguageHandler(languageId, [language])
+                }
+              >
+                {text}
+              </StyleButton>
+            )
+          })}
+      </React.Fragment>
     )
   }
 }

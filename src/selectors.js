@@ -16,12 +16,15 @@ export const hasPreferedLanguageSelector = ({
   Object.keys(referenceLanguage).length > 0 &&
   Object.keys(ethnicLanguage).length > 0
 
-export const wordsLanguageSelector = ({
-  words,
-  searchLanguage: { languageId: searchId },
-}) =>
+export const wordsLanguageSelector = ({ words, searchLanguage }) =>
   (words &&
-    words.filter(({ language: { languageId } }) => languageId === searchId)) ||
+    words.filter(
+      ({ language: { languageId } }) =>
+        searchLanguage &&
+        searchLanguage.some(
+          ({ languageId: searchId }) => languageId === searchId
+        )
+    )) ||
   []
 export const translationsSuggestionSelector = (
   { words, ethnicLanguage, referenceLanguage },
@@ -33,8 +36,12 @@ export const translationsSuggestionSelector = (
   const { languageId: ethnicId } = ethnicLanguage
   const { languageId: referenceId } = referenceLanguage
   if (ethnicId === languageId) {
+    //S1
     const searchLanguage = referenceLanguage
-    return wordsLanguageSelector({ words, searchLanguage })
+    return wordsLanguageSelector({
+      words,
+      searchLanguage,
+    })
   } else if (referenceId === languageId) {
     const searchLanguage = ethnicLanguage
     return wordsLanguageSelector({ words, searchLanguage })

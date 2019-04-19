@@ -92,7 +92,7 @@ export const resetPreferences = dispatch => {
   dispatch(setReferenceLanguage({ referenceLanguage: {} }))
   dispatch(
     setSeachLanguage({
-      searchLanguage: {},
+      searchLanguage: [],
     })
   )
 }

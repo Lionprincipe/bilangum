@@ -18,7 +18,7 @@ const initialState = {
   referenceLanguages,
   referenceLanguage: {},
   ethnicLanguage: {},
-  searchLanguage: {},
+  searchLanguage: [],
   modal: [],
   newWordProps: ['word', 'type', 'language', 'translation', 'definition'],
   newProperties: [],
