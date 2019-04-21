@@ -6,12 +6,7 @@ import { load } from '../services'
 const initialState = load('app') || initialConfig
 
 export default function reducer(state = initialState, action = {}) {
-  const {
-    words,
-    newProperties,
-    listOfWordElInOpenMode,
-    listOfWordElInEditMode,
-  } = state
+  const { words, newProperties, listOfWordElInEditMode } = state
 
   const { payload } = action
 
@@ -29,14 +24,6 @@ export default function reducer(state = initialState, action = {}) {
       const index = prevList.findIndex(el => el === payload.wordIndex)
       const newProperties = index > -1 ? updateList(prevList, index) : prevList
       return { ...state, newProperties }
-    }
-
-    case ACTIONS.TOGGLE_OPEN_WORD_CARD: {
-      const { wordIndex } = payload
-      return {
-        ...state,
-        listOfWordElInOpenMode: toggleStatus(listOfWordElInOpenMode, wordIndex),
-      }
     }
 
     case ACTIONS.TOGGLE_EDIT_MODE: {
