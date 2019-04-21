@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components'
 import InputField from '../InputField'
 import Button from '../UI/Button'
 import Icon from '../UI/Icon'
+import Toggle from '../../container/Toggle'
 
 const Wrapper = styled.section`
   margin-top: 3em;
@@ -65,18 +66,27 @@ export default class LanguageBox extends Component {
     this.props.onChange(language)
   }
   render() {
-    const { isSearching } = this.state
     return (
       <Wrapper>
-        <nav>
-          {this.renderButtons()}
-          <Button onClick={this.toggleSearch}>
-            <Icon name={'search'} />
-          </Button>
-        </nav>
-        {isSearching && (
-          <InputField type="search" name="searchlang" placeholder="search" />
-        )}
+        <Toggle
+          toggle={(isToggled, toggleMe) => (
+            <React.Fragment>
+              <nav>
+                {this.renderButtons()}
+                <Button onClick={toggleMe}>
+                  <Icon name={'search'} />
+                </Button>
+              </nav>
+              {isToggled && (
+                <InputField
+                  type="search"
+                  name="searchlang"
+                  placeholder="search"
+                />
+              )}
+            </React.Fragment>
+          )}
+        />
       </Wrapper>
     )
   }

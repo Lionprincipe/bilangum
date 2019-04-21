@@ -7,6 +7,7 @@ import WordCardHeaderContainer from '../../container/WordCardHeaderContainer'
 import WordCardBodyContainer from '../../container/WordCardBodyContainer'
 import Translations from './TRANSLATIONS/Translations'
 import WordLanguage from './WordLanguage'
+import Toggle from '../../container/Toggle'
 
 const Wrapper = styled('li')`
   margin-bottom: 0.4em;
@@ -16,34 +17,34 @@ const Wrapper = styled('li')`
   border-radius: 4px;
 `
 
-const WordCard = ({
-  isOpen,
-  wordIndex,
-  word,
-  language,
-  translations,
-  otherProps,
-}) => {
+const WordCard = ({ wordIndex, word, language, translations, otherProps }) => {
   return (
     <Wrapper>
-      <WordCardHeaderContainer
-        open={isOpen}
-        wordIndex={wordIndex}
-        title={word}
-        name={'word'}
-      />
+      <Toggle
+        toggle={(isOpen, toggleMe) => (
+          <React.Fragment>
+            <WordCardHeaderContainer
+              open={isOpen}
+              wordIndex={wordIndex}
+              title={word}
+              name={'word'}
+              toggleMe={toggleMe}
+            />
 
-      {isOpen && (
-        <React.Fragment>
-          <Translations list={translations} wordIndex={wordIndex} />
-          <WordLanguage language={language} />
-          <WordCardBodyContainer
-            wordIndex={wordIndex}
-            properties={otherProps}
-          />
-          <WordCardFooter />
-        </React.Fragment>
-      )}
+            {isOpen && (
+              <React.Fragment>
+                <Translations list={translations} wordIndex={wordIndex} />
+                <WordLanguage language={language} />
+                <WordCardBodyContainer
+                  wordIndex={wordIndex}
+                  properties={otherProps}
+                />
+                <WordCardFooter />
+              </React.Fragment>
+            )}
+          </React.Fragment>
+        )}
+      />
     </Wrapper>
   )
 }

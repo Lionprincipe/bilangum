@@ -20,7 +20,6 @@ const WordCard = ({
   wordIndex,
   word: { word, translation, ...others },
 }) => {
-  console.log(word, translation, 'heoooooooo')
   return (
     <Wrapper>
       <WordCardHeaderContainer

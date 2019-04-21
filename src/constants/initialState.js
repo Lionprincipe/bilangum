@@ -23,7 +23,6 @@ const initialState = {
   newWordProps: ['word', 'type', 'language', 'translation', 'definition'],
   newProperties: [],
   listOfWordElInEditMode: [],
-  listOfWordElInOpenMode: [],
   inputName: 'language',
 }
 

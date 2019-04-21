@@ -20,7 +20,7 @@ export const wordsLanguageSelector = ({ words, searchLanguage }) =>
   (words &&
     words.filter(
       ({ language: { languageId } }) =>
-        searchLanguage &&
+        searchLanguage.length > 0 &&
         searchLanguage.some(
           ({ languageId: searchId }) => languageId === searchId
         )
@@ -100,15 +100,11 @@ export const languageCheckedSelector = (
 export const selectAddPropertyNumber = ({ newProperties }, { wordIndex }) =>
   newProperties && newProperties.filter(el => el === wordIndex).length
 
-export const selectWordCardProps = (
-  { words, listOfWordElInOpenMode },
-  { wordId, isOpen }
-) => {
+export const selectWordCardProps = ({ words }, { wordId }) => {
   const wordIndex = wordIndexFromWordIdSelector({ words }, { wordId })
   const { word, translations, language, wordId: leave, ...otherProps } = words[
     wordIndex
   ]
-  isOpen = !!isOpen || getWordElOpenStatus(wordIndex, listOfWordElInOpenMode)
   const result =
     (wordIndex >= 0 && {
       wordIndex,
@@ -116,7 +112,6 @@ export const selectWordCardProps = (
       language,
       translations,
       otherProps,
-      isOpen,
     }) ||
     {}
 
@@ -147,19 +142,6 @@ export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
   buttonsAttributs
     .filter(e => e.name === name)
     .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
-
-export const getWordElOpenStatus = (
-  wordIndex,
-  listOfWordElInOpenMode,
-  isOpen
-) => {
-  if (typeof isOpen !== 'undefined') {
-    return isOpen
-  } else {
-    const index = findIndexInList(listOfWordElInOpenMode, wordIndex)
-    return index > -1 && listOfWordElInOpenMode[index].status
-  }
-}
 
 export const getWordElEditStatus = (ownProps, state) => {
   const { wordIndex, name } = ownProps
