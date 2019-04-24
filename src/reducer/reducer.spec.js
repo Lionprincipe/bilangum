@@ -99,30 +99,7 @@ describe('reducer', () => {
       })
     })
   })
-  //       TOGGLE_OPEN_WORD_CARD: 'TOGGLE_OPEN_WORD_CARD',
-  describe(ACTIONS.TOGGLE_OPEN_WORD_CARD, () => {
-    it('toggle open mode for a word property ', () => {
-      state = {
-        ...state,
-        listOfWordElInOpenMode: [
-          { id: 1, status: true },
-          { id: 2, status: false },
-        ],
-      }
-      const action = {
-        type: ACTIONS.TOGGLE_OPEN_WORD_CARD,
-        payload: { wordIndex: 0 },
-      }
-      expect(reducer(state, action)).toEqual({
-        ...state,
-        listOfWordElInOpenMode: [
-          { id: 1, status: true },
-          { id: 2, status: false },
-          { id: 0, status: true },
-        ],
-      })
-    })
-  })
+
   //         TOGGLE_EDIT_MODE: 'TOGGLE_EDIT_MODE',
   describe(ACTIONS.TOGGLE_EDIT_MODE, () => {
     it('toggle edit mode for a word property', () => {
@@ -189,6 +166,4 @@ describe('reducer', () => {
       })
     })
   })
-
-  //                 TOGGLE_IS_ADDING: 'TOGGLE_IS_ADDING',
 })

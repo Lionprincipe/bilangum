@@ -16,16 +16,20 @@ export const hasPreferedLanguageSelector = ({
   Object.keys(referenceLanguage).length > 0 &&
   Object.keys(ethnicLanguage).length > 0
 
-export const wordsLanguageSelector = ({ words, searchLanguage }) =>
-  (words &&
-    words.filter(
-      ({ language: { languageId } }) =>
-        searchLanguage.length > 0 &&
-        searchLanguage.some(
-          ({ languageId: searchId }) => languageId === searchId
-        )
-    )) ||
-  []
+export const wordsLanguageSelector = ({ words, searchLanguage }) => {
+  return (
+    (words &&
+      words.filter(
+        ({ language: { languageId } }) =>
+          searchLanguage.length > 0 &&
+          searchLanguage.some(
+            ({ languageId: searchId }) => languageId === searchId
+          )
+      )) ||
+    []
+  )
+}
+
 export const translationsSuggestionSelector = (
   { words, ethnicLanguage, referenceLanguage },
   { wordIndex }
@@ -36,23 +40,21 @@ export const translationsSuggestionSelector = (
   const { languageId: ethnicId } = ethnicLanguage
   const { languageId: referenceId } = referenceLanguage
   if (ethnicId === languageId) {
-    //S1
-    const searchLanguage = referenceLanguage
+    const searchLanguage = [referenceLanguage]
     return wordsLanguageSelector({
       words,
       searchLanguage,
     })
   } else if (referenceId === languageId) {
-    const searchLanguage = ethnicLanguage
+    const searchLanguage = [ethnicLanguage]
     return wordsLanguageSelector({ words, searchLanguage })
   } else {
     return words || []
   }
 }
 
-export const wordIndexFromWordIdSelector = ({ words }, { wordId }) => {
-  return words.findIndex(({ wordId: id }) => id === wordId)
-}
+export const wordIndexFromWordIdSelector = ({ words }, { wordId }) =>
+  words.findIndex(({ wordId: id }) => id === wordId)
 
 export const translationListSelector = ({ words }, { translationList }) => {
   if (words && words.length > 0) {
@@ -63,7 +65,7 @@ export const translationListSelector = ({ words }, { translationList }) => {
   }
 }
 
-export const suggestionsSelector = (state, { list, attributs }) => {
+export const suggestionsSelector = ({ list, attributs }) => {
   const suggestions =
     (list &&
       list.map(el =>
@@ -98,29 +100,18 @@ export const languageCheckedSelector = (
 ) => langId === searchId
 
 export const selectAddPropertyNumber = ({ newProperties }, { wordIndex }) =>
-  newProperties && newProperties.filter(el => el === wordIndex).length
+  (newProperties && newProperties.filter(el => el === wordIndex).length) || 0
 
 export const selectWordCardProps = ({ words }, { wordId }) => {
   const wordIndex = wordIndexFromWordIdSelector({ words }, { wordId })
-  const { word, translations, language, wordId: leave, ...otherProps } = words[
-    wordIndex
-  ]
-  const result =
-    (wordIndex >= 0 && {
-      wordIndex,
-      word,
-      language,
-      translations,
-      otherProps,
-    }) ||
-    {}
-
+  let result = {}
+  if (wordIndex >= 0) {
+    const { word, translations, language, wordId: _, ...otherProps } = words[
+      wordIndex
+    ]
+    result = { wordIndex, word, language, translations, otherProps }
+  }
   return result
-}
-
-export const modalIdSelector = state => {
-  const { modal } = state
-  return (modal && modal.length - 1) || 0
 }
 
 export const composeBtnsList = (state, ownProps) => {
