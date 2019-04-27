@@ -7,7 +7,6 @@ const ACTIONS = {
   DELETE_WORD: 'DELETE_WORD',
   DELETE_WORD_PROPERTY: 'DELETE_WORD_PROPERTY',
   ADD_WORD_PROPERTY: 'ADD_WORD_PROPERTY',
-  TOGGLE_EDIT_MODE: 'TOGGLE_EDIT_MODE',
   ADD_NEW_PROPERTY: 'ADD_NEW_PROPERTY',
   REMOVE_NEW_PROPERTY: 'REMOVE_NEW_PROPERTY',
   TOGGLE_IS_ADDING: 'TOGGLE_IS_ADDING',
@@ -23,7 +22,6 @@ export const wordUpdate = createAction(ACTIONS.WORD_UPDATE)
 export const deleteWord = createAction(ACTIONS.DELETE_WORD)
 export const deleteWordProperty = createAction(ACTIONS.DELETE_WORD_PROPERTY)
 export const addWordProperty = createAction(ACTIONS.ADD_WORD_PROPERTY)
-export const toggleEditMode = createAction(ACTIONS.TOGGLE_EDIT_MODE)
 export const toggleIsAdding = createAction(ACTIONS.TOGGLE_IS_ADDING)
 export const addNewProperty = createAction(ACTIONS.ADD_NEW_PROPERTY)
 export const removeNewProperty = createAction(ACTIONS.REMOVE_NEW_PROPERTY)

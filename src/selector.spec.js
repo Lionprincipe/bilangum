@@ -239,23 +239,6 @@ describe('selector', () => {
       })
     })
   })
-  describe('getWordElEditStatus', () => {
-    it('not in the list', () => {
-      const ownProps = { wordIndex: 1, name: 'type' }
-      const state = { listOfWordElInEditMode: [] }
-      expect(selectors.getWordElEditStatus(ownProps, state)).toBe(false)
-    })
-    it('select property edit status', () => {
-      const ownProps = { wordIndex: 1, name: 'type' }
-      const state = {
-        listOfWordElInEditMode: [
-          { id: 1, status: true, name: 'type' },
-          { id: 2, status: false, name: 'type' },
-        ],
-      }
-      expect(selectors.getWordElEditStatus(ownProps, state)).toBe(true)
-    })
-  })
 
   describe('iconAttributsSelector', () => {
     it('select property edit status', () => {

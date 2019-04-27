@@ -19,12 +19,12 @@ const WordTray = styled.div`
 `
 
 const WordCardHeader = ({
-  title,
-  name,
-  onUpdate,
-  open,
   isEditing,
   toggleEdit,
+  title,
+  name,
+  onSubmit,
+  open,
   onDelete,
   toggleMe,
 }) => {
@@ -40,16 +40,18 @@ const WordCardHeader = ({
           name={name}
           placeholder={title}
           value={title || ''}
-          onSubmit={inputValue => onUpdate(name, inputValue)}
+          onSubmit={inputValue => onSubmit(name, inputValue)}
         />
       ) : (
         <WordTray onClick={toggleMe}>{title}</WordTray>
       )}
+
       <BtnTrayContainer
         name={'wordHeaderRight'}
         status={isEditing ? 'edit' : 'default'}
         toggleEdit={toggleEdit}
         deleteWord={onDelete}
+        isEditing={isEditing}
       />
     </Wrapper>
   )

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import PropertyContainer from '../../container/PropertyContainer'
 import AddPropertyContainer from '../../container/AddPropertyContainer'
+import Toggle from '../../container/Toggle'
 
 const Wrapper = styled.div`
   box-sizing: border-box;
@@ -16,12 +17,18 @@ const WordCardBody = ({ wordIndex, properties, children, onUpdate }) => {
   const elList =
     keys.length > 0 &&
     keys.map((el, index) => (
-      <PropertyContainer
+      <Toggle
         key={index}
-        name={el}
-        value={properties[el]}
-        onUpdate={onUpdate}
-        wordIndex={wordIndex}
+        toggle={(isEditing, toggleEdit) => (
+          <PropertyContainer
+            name={el}
+            value={properties[el]}
+            onUpdate={onUpdate}
+            wordIndex={wordIndex}
+            isEditing={isEditing}
+            toggleEdit={toggleEdit}
+          />
+        )}
       />
     ))
 

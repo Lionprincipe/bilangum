@@ -6,7 +6,7 @@ import { load } from '../services'
 const initialState = load('app') || initialConfig
 
 export default function reducer(state = initialState, action = {}) {
-  const { words, newProperties, listOfWordElInEditMode } = state
+  const { words, newProperties } = state
 
   const { payload } = action
 
@@ -24,18 +24,6 @@ export default function reducer(state = initialState, action = {}) {
       const index = prevList.findIndex(el => el === payload.wordIndex)
       const newProperties = index > -1 ? updateList(prevList, index) : prevList
       return { ...state, newProperties }
-    }
-
-    case ACTIONS.TOGGLE_EDIT_MODE: {
-      const { wordIndex, name } = payload
-      return {
-        ...state,
-        listOfWordElInEditMode: toggleStatus(
-          listOfWordElInEditMode,
-          wordIndex,
-          name
-        ),
-      }
     }
 
     case ACTIONS.TOGGLE_IS_ADDING: {

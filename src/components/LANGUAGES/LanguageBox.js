@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import styled, { css } from 'styled-components'
-import InputField from '../InputField'
+import InputField from '../UI/InputField'
 import Button from '../UI/Button'
 import Icon from '../UI/Icon'
 import Toggle from '../../container/Toggle'
@@ -82,6 +82,7 @@ export default class LanguageBox extends Component {
                   type="search"
                   name="searchlang"
                   placeholder="search"
+                  value=""
                 />
               )}
             </React.Fragment>

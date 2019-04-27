@@ -22,7 +22,6 @@ const initialState = {
   modal: [],
   newWordProps: ['word', 'type', 'language', 'translation', 'definition'],
   newProperties: [],
-  listOfWordElInEditMode: [],
   inputName: 'language',
 }
 

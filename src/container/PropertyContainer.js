@@ -1,22 +1,16 @@
 import { connect } from 'react-redux'
 import Property from '../components/WORDS/Property'
-import { toggleEditMode, deleteWordProperty, wordUpdate } from '../actions'
-import { getWordElEditStatus } from '../selectors'
+import { deleteWordProperty, wordUpdate } from '../actions'
 
-const mapStateToProps = (state, ownProps) => ({
-  isEditing: getWordElEditStatus(ownProps, state),
-})
-
-const mapDispatchToProps = (dispatch, { wordIndex, name }) => ({
-  toggleEdit: () => dispatch(toggleEditMode({ wordIndex, name })),
+const mapDispatchToProps = (dispatch, { wordIndex, name, toggleEdit }) => ({
   deleteMe: () => dispatch(deleteWordProperty({ wordIndex, name })),
   onSubmit: value => {
     dispatch(wordUpdate({ wordIndex, name, value }))
-    dispatch(toggleEditMode({ wordIndex, name }))
+    toggleEdit()
   },
 })
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(Property)

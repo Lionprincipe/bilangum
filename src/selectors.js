@@ -116,30 +116,27 @@ export const selectWordCardProps = ({ words }, { wordId }) => {
 
 export const composeBtnsList = (state, ownProps) => {
   const { elBtnsList } = state
-  const { name, status, ...others } = ownProps
+  const { wordIndex, name, status, isEditing, ...others } = ownProps
   const { normal, edit, open } = getTrayBtns(name, elBtnsList)
-  return (
+  let btnList =
     normal &&
-    normal.map((el, index) => ({
-      ...el,
-      ...onClickSelector(el.onClick, others),
-      ...modeSelector(status, edit, index),
-      ...modeSelector(status, open, index),
-    }))
-  )
+    normal.map(({ onClick: normalOnClick, ...el }, index) => {
+      const { onClick } = !!(edit && edit[index]) && edit[index]
+
+      return {
+        ...el,
+        ...(isEditing && modeSelector(status, edit, index)),
+        ...modeSelector(status, open, index),
+        ...onClickSelector((isEditing && onClick) || normalOnClick, others),
+      }
+    })
+  return btnList
 }
 
 export const iconAttributsSelector = ({ buttonsAttributs }, { name }) =>
   buttonsAttributs
     .filter(e => e.name === name)
     .reduce((acc, curr) => (acc = { ...curr, name: curr.icon }), {})
-
-export const getWordElEditStatus = (ownProps, state) => {
-  const { wordIndex, name } = ownProps
-  const { listOfWordElInEditMode } = state
-  const index = findIndexInList(listOfWordElInEditMode, wordIndex, name)
-  return index > -1 && listOfWordElInEditMode[index].status
-}
 
 function getTrayBtns(name, list) {
   return name && list.filter(el => name && name === el.name)[0]

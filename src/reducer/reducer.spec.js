@@ -100,30 +100,6 @@ describe('reducer', () => {
     })
   })
 
-  //         TOGGLE_EDIT_MODE: 'TOGGLE_EDIT_MODE',
-  describe(ACTIONS.TOGGLE_EDIT_MODE, () => {
-    it('toggle edit mode for a word property', () => {
-      state = {
-        ...state,
-        listOfWordElInEditMode: [
-          { id: 1, status: true, name: 'type' },
-          { id: 2, status: false, name: 'type' },
-        ],
-      }
-      const action = {
-        type: ACTIONS.TOGGLE_EDIT_MODE,
-        payload: { wordIndex: 1, name: 'type' },
-      }
-      expect(reducer(state, action)).toEqual({
-        ...state,
-        listOfWordElInEditMode: [
-          { id: 1, status: false, name: 'type' },
-          { id: 2, status: false, name: 'type' },
-        ],
-      })
-    })
-  })
-
   //           ADD_NEW_PROPERTY: 'ADD_NEW_PROPERTY',
   describe(ACTIONS.ADD_NEW_PROPERTY, () => {
     it('show a new propety input in a  specific wordcard', () => {
@@ -163,6 +139,81 @@ describe('reducer', () => {
       expect(reducer(state, action)).toEqual({
         ...state,
         isAdding: true,
+      })
+    })
+  })
+
+  describe(ACTIONS.SET_REFERENCE_LANGUAGE, () => {
+    it('set a value to reference language', () => {
+      const action = {
+        type: ACTIONS.SET_REFERENCE_LANGUAGE,
+        payload: {
+          referenceLanguage: {
+            languageId: 'ddd',
+            language: 'french',
+          },
+        },
+      }
+
+      state = { ...state, referenceLanguage: {} }
+
+      expect(reducer(state, action)).toEqual({
+        ...state,
+        referenceLanguage: {
+          languageId: 'ddd',
+          language: 'french',
+        },
+      })
+    })
+  })
+  describe(ACTIONS.SET_ETHNIC_LANGUAGE, () => {
+    it('set a value to reference language', () => {
+      const action = {
+        type: ACTIONS.SET_ETHNIC_LANGUAGE,
+        payload: {
+          ethnicLanguage: {
+            languageId: 'ddd',
+            language: 'french',
+          },
+        },
+      }
+
+      state = { ...state, ethnicLanguage: {} }
+
+      expect(reducer(state, action)).toEqual({
+        ...state,
+        ethnicLanguage: {
+          languageId: 'ddd',
+          language: 'french',
+        },
+      })
+    })
+  })
+
+  describe(ACTIONS.SET_SEARCH_LANGUAGE, () => {
+    it('set a value to reference language', () => {
+      const action = {
+        type: ACTIONS.SET_SEARCH_LANGUAGE,
+        payload: {
+          searchLanguage: [
+            {
+              languageId: 'ddd',
+              language: 'french',
+            },
+          ],
+        },
+      }
+
+      state = { ...state, searchLanguage: [] }
+
+      expect(reducer(state, action)).toEqual({
+        ...state,
+        searchLanguage: [
+          {
+            languageId: 'ddd',
+            language: 'french',
+          },
+        ],
       })
     })
   })

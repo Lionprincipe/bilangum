@@ -48,7 +48,7 @@
       { "name": "edit", "onClick": "toggleEdit" },
       { "name": "delete", "onClick": "deleteWord" }
     ],
-    "edit": [{ "name": "cancel" }]
+    "edit": [{}, { "name": "cancel", "onClick": "toggleEdit" }]
   },
   { "name": "appHeaderLeft", "normal": [{ "name": "menu" }] },
   {

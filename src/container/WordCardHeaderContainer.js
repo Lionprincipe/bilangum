@@ -1,24 +1,17 @@
 import { connect } from 'react-redux'
 import WordCardHeader from '../components/WORDS/WordCardHeader'
-import { toggleEditMode, wordUpdate, deleteWord } from '../actions'
-import { getWordElEditStatus } from '../selectors'
+import { wordUpdate, deleteWord } from '../actions'
 
 const mapPropsToState = (state, ownProps) => ({
   name: 'word',
-  isEditing: getWordElEditStatus(ownProps, state),
 })
 
-const mapDispatchToProps = (dispatch, { wordIndex, name }) => ({
-  toggleEdit: () => dispatch(toggleEditMode({ wordIndex, name })),
+const mapDispatchToProps = (dispatch, { wordIndex, name, toggleEdit }) => ({
   onDelete: () => dispatch(deleteWord({ wordIndex })),
-  onUpdate: (name, value) =>
-    dispatch(
-      wordUpdate({
-        wordIndex,
-        name,
-        value,
-      })
-    ),
+  onSubmit: (name, value) => {
+    dispatch(wordUpdate({ wordIndex, name, value }))
+    toggleEdit()
+  },
 })
 
 export default connect(

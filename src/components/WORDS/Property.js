@@ -48,6 +48,7 @@ const Property = ({
         status={isEditing ? 'edit' : 'default'}
         toggleEdit={toggleEdit}
         deleteMe={deleteMe}
+        isEditing={isEditing}
       />
     </Wrapper>
   )

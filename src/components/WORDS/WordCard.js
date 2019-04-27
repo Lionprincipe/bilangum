@@ -23,14 +23,19 @@ const WordCard = ({ wordIndex, word, language, translations, otherProps }) => {
       <Toggle
         toggle={(isOpen, toggleMe) => (
           <React.Fragment>
-            <WordCardHeaderContainer
-              open={isOpen}
-              wordIndex={wordIndex}
-              title={word}
-              name={'word'}
-              toggleMe={toggleMe}
+            <Toggle
+              toggle={(isEditing, toggleEdit) => (
+                <WordCardHeaderContainer
+                  open={isOpen}
+                  wordIndex={wordIndex}
+                  title={word}
+                  name={'word'}
+                  toggleMe={toggleMe}
+                  toggleEdit={toggleEdit}
+                  isEditing={isEditing}
+                />
+              )}
             />
-
             {isOpen && (
               <React.Fragment>
                 <Translations list={translations} wordIndex={wordIndex} />

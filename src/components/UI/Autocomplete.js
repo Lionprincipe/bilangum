@@ -49,7 +49,10 @@ export default class Autocomplete extends Component {
     const { value } = e.target
     const { mainAttribut } = this.props
     const suggestions = this.suggestionMatcher(value) || []
-    this.setState({ suggestions, selected: { [mainAttribut]: value } })
+    this.setState({
+      suggestions,
+      selected: { [mainAttribut]: value },
+    })
   }
 
   handleSelection = suggestion => {
@@ -58,7 +61,10 @@ export default class Autocomplete extends Component {
   }
 
   clearState = () => {
-    this.setState({ suggestions: [], selected: null })
+    this.setState({
+      suggestions: [],
+      selected: null,
+    })
   }
 
   handleSubmit = inputValue => {
@@ -74,9 +80,9 @@ export default class Autocomplete extends Component {
   }
 
   render() {
-    const { name, placeholder, mainAttribut } = this.props
+    const { name, placeholder, mainAttribut, value } = this.props
     const { suggestions, selected } = this.state
-    const text = (selected && selected[mainAttribut]) || ''
+    const text = (selected && selected[mainAttribut]) || value || ''
     return (
       <Wrapper>
         <InputStyled>
@@ -84,6 +90,7 @@ export default class Autocomplete extends Component {
             inputRef={input => {
               this.inputRef = input
             }}
+            suggested={true}
             name={name}
             value={text}
             onChange={this.handleChange}
